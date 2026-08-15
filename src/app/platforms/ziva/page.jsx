@@ -2,15 +2,11 @@
 import React from 'react';
 import Link from 'next/link';
 import { ChevronRight, Home as HomeIcon } from 'lucide-react';
-import Navbar from '../../../components/Navbar';
-import Footer from '../../../components/Footer';
 
 export default function ZivaPage() {
   return (
     <div className="font-sans text-gray-800 selection:bg-[#ff7f00] selection:text-white">
-      <Navbar />
-
-      {/* HERO SECTION */}
+{/* HERO SECTION */}
       <section className="relative pt-32 pb-24 px-6 lg:px-12 min-h-[85vh] flex items-center">
         {/* Background Image with Dark Green Overlay */}
         <div 
@@ -617,8 +613,6 @@ export default function ZivaPage() {
           
         </div>
       </section>
-
-      <Footer />
-    </div>
+</div>
   );
 }

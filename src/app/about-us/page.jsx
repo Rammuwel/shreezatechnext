@@ -1,7 +1,5 @@
 "use client";
 import React, { useEffect, useRef, useState } from 'react';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -57,9 +55,7 @@ export default function AboutUsPage() {
 
   return (
     <div className="min-h-screen bg-[#081229] font-sans overflow-x-hidden">
-      <Navbar />
-
-      {/* Hero Scroll Animation Section */}
+{/* Hero Scroll Animation Section */}
       <div ref={containerRef} className="h-[250vh] relative bg-[#081229]">
         
         {/* Sticky Container */}
@@ -654,8 +650,7 @@ export default function AboutUsPage() {
       </section>
 
       <div className="relative z-30 bg-white">
-        <Footer />
-      </div>
+</div>
     </div>
   );
 }

@@ -1,249 +1,155 @@
 "use client";
 import React from 'react';
-import Link from 'next/link';
-import { ChevronRight, Home as HomeIcon, MessageSquare, FileText, ShieldCheck, Zap } from 'lucide-react';
-import Navbar from '../../../components/Navbar';
-import Footer from '../../../components/Footer';
-import Clients from '../../../components/Clients';
-import Contact from '../../../components/Contact';
+import ServiceTemplate from '../../../components/ServiceTemplate';
+import { ShieldCheck, FileText, Bot, Search, Zap, Activity, Globe } from 'lucide-react';
 
-export default function InsurTechPage() {
-  return (
-    <div className="bg-[#000000] min-h-screen text-white selection:bg-[#ff7f00] selection:text-white">
-      <Navbar />
+export default function InsurtechPage() {
+  const config = {
+    breadcrumb: {
+      label: 'InsurTech',
+      href: '/solutions/insurtech',
+      parentLabel: 'Solutions',
+      parentHref: '/solutions'
+    },
+    hero: {
+      slides: [
+        {
+          image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80",
+          badgeText: "Modern Insurance Infrastructure",
+          badgeColor: "#00A2FF",
+          title1: "Intelligent",
+          title2: "InsurTech Solutions",
+          title2Gradient: "text-transparent bg-clip-text bg-gradient-to-r from-[#00A2FF] to-[#00f2fe]",
+          description: "We modernize legacy insurance platforms, integrating AI-driven underwriting, automated claims processing, and seamless policyholder portals.",
+          primaryButton: { text: "Modernize Core Systems", href: "#capabilities" }
+        },
+        {
+          image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80",
+          badgeText: "Data-Driven Risk Assessment",
+          badgeColor: "#D4AF37",
+          title1: "Predictive",
+          title2: "Risk Modeling",
+          title2Gradient: "text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#fde08b]",
+          description: "Harness massive datasets and machine learning to calculate risk with pinpoint accuracy, dramatically reducing liability costs.",
+          secondaryButton: { text: "Explore Risk Analytics", href: "/contact" }
+        }
+      ]
+    },
+    stats: [
+      { value: "50%", label: "Faster Claims Processing" },
+      { value: "30%", label: "Fraud Reduction" },
+      { value: "100+", label: "API Integrations" }
+    ],
+    philosophy: {
+      tagline: "Our InsurTech Philosophy",
+      title1: "Agility in a",
+      title2: "Regulated Market",
+      description: [
+        "The insurance industry is historically encumbered by monolithic legacy systems that make adapting to modern consumer expectations nearly impossible. Policyholders today demand instant quotes, seamless digital claims, and personalized premiums.",
+        "We help insurers transition to agile, cloud-native architectures. By decoupling policy administration from customer-facing portals, we enable insurers to launch new digital products in weeks instead of years, all while maintaining absolute compliance with stringent regulatory frameworks."
+      ],
+      points: [
+        { title: "Legacy Strangling", subtitle: "Modernizing core systems without downtime" },
+        { title: "Customer-Centric", subtitle: "Frictionless digital experiences" }
+      ],
+      image1: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80",
+      image2: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80"
+    },
+    ecosystem: {
+      title1: "Insurance Core",
+      title2: "Modernization",
+      description: "Comprehensive software engineering for the entire insurance lifecycle: from quote to claim.",
+      cards: [
+        {
+          icon: <FileText className="w-8 h-8" />,
+          title: "Policy Administration Systems",
+          description: "Architecting flexible PAS platforms that handle complex rating engines, endorsements, renewals, and multi-line billing.",
+          features: ["Dynamic Rating Engines", "Automated Renewals", "Omnichannel Billing"]
+        },
+        {
+          icon: <Zap className="w-8 h-8" />,
+          title: "Automated Claims Processing",
+          description: "Building intelligent workflows that use OCR and computer vision to instantly process 'First Notice of Loss' (FNOL) and auto-approve minor claims.",
+          features: ["AI Damage Assessment", "Straight-Through Processing", "Mobile FNOL Apps"]
+        },
+        {
+          icon: <Globe className="w-8 h-8" />,
+          title: "Agent & Broker Portals",
+          description: "Digital hubs that empower your distribution network with quick quoting tools, real-time commission tracking, and CRM integrations.",
+          features: ["Salesforce Integration", "Digital Signatures", "Commission Analytics"]
+        }
+      ]
+    },
+    security: {
+      title1: "Fraud Prevention.<br/>",
+      title2: "Data Integrity.",
+      description: "Insurance fraud costs the industry billions annually. We build intelligent systems that detect anomalies before payouts occur, while fiercely protecting policyholder data.",
+      button: { text: "Review Security Protocols", href: "/contact" },
+      cards: [
+        {
+          icon: <Search className="w-12 h-12 text-[#00A2FF]" />,
+          title: "AI Fraud Detection",
+          description: "Machine learning models that cross-reference claims against massive historical datasets and social graphs to flag suspicious patterns."
+        },
+        {
+          icon: <ShieldCheck className="w-12 h-12 text-[#D4AF37]" />,
+          title: "Data Sovereignty & GDPR",
+          description: "Ensuring all PII and sensitive health data (for life/health lines) is stored and encrypted according to local geographic laws."
+        },
+        {
+          icon: <Bot className="w-12 h-12 text-[#00A2FF]" />,
+          title: "Automated Underwriting",
+          description: "Rules engines that securely pull third-party credit, driving, and medical data via API to instantly underwrite low-risk policies."
+        },
+        {
+          icon: <Activity className="w-12 h-12 text-[#D4AF37]" />,
+          title: "Telematics Integration",
+          description: "Securely ingesting real-time IoT data from vehicles or smart homes to adjust premiums dynamically (Usage-Based Insurance)."
+        }
+      ]
+    },
+    expertise: {
+      title: "Insurance Verticals",
+      description: "Tailored InsurTech solutions across major product lines.",
+      cards: [
+        {
+          image: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80",
+          title: "Auto & P&C Insurance",
+          description: "Telematics apps for usage-based insurance (UBI) and AI computer vision for instant vehicle damage estimation."
+        },
+        {
+          image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80",
+          title: "Life & Health",
+          description: "Secure portals connecting insurers with EHR systems to drastically reduce the time required for medical underwriting."
+        },
+        {
+          image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80",
+          title: "Commercial & Specialty",
+          description: "Complex rating engines designed to handle the massive variables associated with enterprise liability and cyber insurance."
+        }
+      ]
+    },
+    process: {
+      title1: "Our InsurTech Engineering",
+      title2: "Process",
+      steps: [
+        { title: "Legacy Architecture Review", description: "Analyzing your existing mainframe or on-premise PAS to determine the most secure path for cloud migration." },
+        { title: "API Microservices Design", description: "Designing an API-first middleware layer that allows your legacy core to communicate with modern web and mobile frontends." },
+        { title: "Rating Engine Programming", description: "Codifying complex actuarial tables and underwriting rules into highly performant, scalable calculation engines." },
+        { title: "Frontend Development", description: "Building frictionless mobile apps for policyholders (ID cards, FNOL) and powerful web portals for agents." },
+        { title: "Security & Load Testing", description: "Subjecting the platform to intense penetration testing and simulating mass-claim events (like a hurricane) to ensure uptime." },
+        { title: "Data Migration & Go-Live", description: "Executing a zero-data-loss migration of active policies and historical claims to the new cloud infrastructure." }
+      ]
+    },
+    cta: {
+      subtitle: "De-Risk Your Digital Transformation",
+      title1: "Ready to modernize",
+      title2: "your core systems?",
+      description: "Partner with engineering experts who understand the extreme regulatory and technical demands of the insurance industry.",
+      button1: { text: "Schedule Architecture Audit", href: "/contact" },
+      button2: { text: "View InsurTech Portfolio", href: "/contact" }
+    }
+  };
 
-      {/* HERO SECTION */}
-      <section className="relative bg-[#1A0B05] pt-32 pb-24 px-6 lg:px-12 overflow-hidden min-h-[60vh] flex items-center">
-        {/* Abstract wavy background elements using CSS gradients */}
-        <div className="absolute top-0 left-0 w-full h-full opacity-40 pointer-events-none">
-          <div className="absolute -top-[20%] -right-[10%] w-[70%] h-[100%] rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#ff7f00]/10 via-[#0a3a7a]/5 to-transparent blur-3xl"></div>
-          <div className="absolute -bottom-[30%] -left-[10%] w-[60%] h-[80%] rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#4DB8A0]/10 via-[#1A0B05] to-transparent blur-3xl"></div>
-        </div>
-
-        <div className="max-w-[1300px] mx-auto relative z-10 w-full">
-          <div className="max-w-4xl">
-            <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance">
-              Future-Ready InsurTech for an Ever-Changing World
-            </h1>
-            
-            <p className="text-[20px] leading-[34px] font-normal text-gray-300 max-w-2xl mb-10 text-balance">
-              Empower your insurance business with connected InsurTech solutions that streamline operations, improve customer experiences, and accelerate growth.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Breadcrumb Section */}
-      <div className="w-full bg-white pt-6 pb-4 px-6 lg:px-12">
-        <div className="max-w-[1300px] mx-auto">
-          <nav aria-label="Breadcrumb" className="flex items-center text-[14px] text-gray-500 font-medium">
-            <Link href="/" className="hover:text-[#0A3A7A] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff7f00] rounded px-1 -ml-1 flex items-center">
-              <HomeIcon size={16} />
-            </Link>
-            <ChevronRight size={16} className="mx-2 text-gray-400" />
-            <Link href="#solutions" className="text-gray-500 hover:text-[#0A3A7A] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff7f00]">
-              Solution
-            </Link>
-            <ChevronRight size={16} className="mx-2 text-gray-400" />
-            <span className="text-gray-800" aria-current="page">InsurTech</span>
-          </nav>
-        </div>
-      </div>
-
-      <main className="w-full bg-white text-black">
-        {/* About Section */}
-        <section className="py-20 px-6 lg:px-12">
-          <div className="max-w-[1300px] mx-auto">
-            <div className="mb-12">
-              <h2 className="text-[38px] md:text-[46px] leading-[1.2] font-normal text-[#212529] max-w-4xl">
-                Driving Sustainable Business Growth Amid Rising Customer Expectations
-              </h2>
-            </div>
-            
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <div className="relative h-[400px] w-full rounded-tr-[100px] overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop" 
-                  alt="InsurTech About" 
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-              </div>
-              <div className="flex flex-col justify-center h-full pt-2 md:pt-6">
-                <p className="text-[#212529] text-[20px] md:text-[22px] leading-[36px] font-normal mb-8">
-                  The insurance industry is operating in an increasingly dynamic era. Policyholders increasingly expect personalized products, convenient digital interactions and effortless claims experiences. Meanwhile, regulatory needs, risk exposures, and competition continue to grow. Insurers need to adopt modern, customer-centric InsurTech solutions that improve agility and customer satisfaction.
-                </p>
-                <p className="text-gray-700 text-[16px] md:text-[18px] leading-[30px] font-normal">
-                  Novac serves as a trusted digital transformation partner, helping insurers build scalable businesses. Our platform transforms insurance operations across underwriting, claims, fraud management, analytics, and digital distribution, while maintaining operational agility and compliance.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Transformation Section */}
-        <section className="py-24 px-6 lg:px-12 bg-[#090503] text-white relative overflow-hidden">
-          <div className="max-w-[1300px] mx-auto relative z-10">
-            <h2 className="text-[36px] md:text-[44px] leading-[1.2] font-normal mb-16 max-w-2xl">
-              Expanding Revenue Streams Through <span className="text-[#ff7f00]">Digital Innovation</span>
-            </h2>
-            
-            <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
-              {/* Item 1 */}
-              <div className="flex flex-col">
-                <div className="mb-6">
-                  <MessageSquare size={48} className="text-white" strokeWidth={1} />
-                </div>
-                <h3 className="text-[22px] font-medium mb-4">Better Customer Experience</h3>
-                <p className="text-gray-400 text-[16px] leading-[28px] border-b border-white/10 pb-8 h-full">
-                  Insurers giving priority to digital transformation will offer personalized services. This facilitates faster claim settlement, higher policyholder retention (procuring of insurance plans), and quicker resolution of policy-related queries.
-                </p>
-              </div>
-              
-              {/* Item 2 */}
-              <div className="flex flex-col">
-                <div className="mb-6">
-                  <FileText size={48} className="text-white" strokeWidth={1} />
-                </div>
-                <h3 className="text-[22px] font-medium mb-4">Data-Driven Decision Making</h3>
-                <p className="text-gray-400 text-[16px] leading-[28px] border-b border-white/10 pb-8 h-full">
-                  Data analytics helps insurers make intelligent underwriting and pricing decisions. This enables improved risk assessment and fraud detection while creating customer-focused products aligned with market needs.
-                </p>
-              </div>
-              
-              {/* Item 3 */}
-              <div className="flex flex-col">
-                <div className="mb-6">
-                  <ShieldCheck size={48} className="text-white" strokeWidth={1} />
-                </div>
-                <h3 className="text-[22px] font-medium mb-4">Improved Risk Management</h3>
-                <p className="text-gray-400 text-[16px] leading-[28px] border-b border-white/10 pb-8 h-full">
-                  Insurers can assess risks in an analytical manner and take steps to mitigate them. Eventually, a higher level of accuracy in risk assessment will help in reducing liability costs.
-                </p>
-              </div>
-              
-              {/* Item 4 */}
-              <div className="flex flex-col">
-                <div className="mb-6">
-                  <Zap size={48} className="text-white" strokeWidth={1} />
-                </div>
-                <h3 className="text-[22px] font-medium mb-4">Enhanced Agility</h3>
-                <p className="text-gray-400 text-[16px] leading-[28px] border-b border-white/10 pb-8 h-full">
-                  Cloud-native platform can now help insurers adapt quickly to the market conditions. This results in scalable operations and timely responses to customer expectations and risk dynamics.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Why Choose Novac Section */}
-        <section className="py-24 px-6 lg:px-12 bg-[#FCFAF5]">
-          <div className="max-w-[1300px] mx-auto">
-            <div className="grid lg:grid-cols-2 gap-16">
-              <div>
-                <h2 className="text-[36px] md:text-[44px] leading-[1.2] font-normal text-[#212529] mb-6">
-                  <span className="text-[#D4AF37]">Why Choose</span><br />Novac?
-                </h2>
-                <p className="text-gray-700 text-[18px] leading-[32px]">
-                  Novac Technologies is rooted in the strength of Shriram Group, a USD 30 billion financial conglomerate with customers across the world.
-                </p>
-              </div>
-              
-              <div className="grid sm:grid-cols-2 gap-x-8 gap-y-12">
-                <div className="flex flex-col">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-1.5 h-1.5 bg-black"></div>
-                    <span className="text-[18px] font-medium">CMMI Level 5 Certified</span>
-                  </div>
-                  <div className="w-full h-px bg-gray-200 mt-6"></div>
-                </div>
-                
-                <div className="flex flex-col">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-1.5 h-1.5 bg-black"></div>
-                    <span className="text-[18px] font-medium">Proven Expertise across diverse Domains</span>
-                  </div>
-                  <div className="w-full h-px bg-gray-200 mt-6"></div>
-                </div>
-                
-                <div className="flex flex-col">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-1.5 h-1.5 bg-black"></div>
-                    <span className="text-[18px] font-medium">754+ Implementations</span>
-                  </div>
-                  <div className="w-full h-px bg-gray-200 mt-6"></div>
-                </div>
-                
-                <div className="flex flex-col">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-1.5 h-1.5 bg-black"></div>
-                    <span className="text-[18px] font-medium">1600+ Associates</span>
-                  </div>
-                  <div className="w-full h-px bg-gray-200 mt-6"></div>
-                </div>
-                
-                <div className="flex flex-col sm:col-span-2">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-1.5 h-1.5 bg-black"></div>
-                    <span className="text-[18px] font-medium">Strong Information Security Practices</span>
-                  </div>
-                  <div className="w-full h-px bg-gray-200 mt-6"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Connected Insurance Section */}
-        <section className="py-24 px-6 lg:px-12 bg-white">
-          <div className="max-w-[1300px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
-            <div className="relative h-[520px] w-full rounded-xl overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop" 
-                alt="Connected Insurance" 
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-            </div>
-            <div>
-              <h2 className="text-[38px] md:text-[46px] leading-[1.2] font-normal text-[#212529] mb-8">
-                <span className="text-[#0A3A7A]">Connected Ins</span>urance Beyond Core Operations
-              </h2>
-              <p className="text-gray-700 text-[16px] md:text-[18px] leading-[30px] mb-6">
-                STATIM® extends insurance operations beyond core systems by connecting customers, agents, brokers, and partners through a unified digital ecosystem. With omni-channel engagement, configurable workflows, and a single point of change, it enables seamless onboarding, servicing, policy management, claims, and payments while improving operational efficiency and customer experiences.
-              </p>
-              <p className="text-gray-700 text-[16px] md:text-[18px] leading-[30px] mb-10">
-                Built on a low-code, AI-enabled architecture, STATIM® combines persona-based portals, digital journeys, integration capabilities, centralized data management, and analytics into one intelligent platform. Supporting General and Health Insurance operations across the policy lifecycle, it helps insurers accelerate digital growth, reduce operational costs, improve turnaround times, and deliver better business outcomes.
-              </p>
-              <Link href="#contact" className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#D4AF37] border border-[#D4AF37] text-white font-medium hover:bg-transparent hover:text-[#0A3A7A] hover:border-[#0A3A7A] transition-all shadow-sm">
-                Know more
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* Journeying Together */}
-        <section className="py-20 bg-gray-50 text-center">
-          <div className="max-w-[1300px] mx-auto px-6">
-             <h2 className="text-[36px] md:text-[44px] leading-[1.2] font-normal text-[#212529] mb-4">
-                <span className="text-[#D4AF37]">Journeying</span> Together
-              </h2>
-              <p className="text-gray-600 text-[18px] max-w-2xl mx-auto mb-12">
-                Leading insurers partner with us to streamline core operations, accelerate product innovation, and drive sustainable growth across the insurance value chain.
-              </p>
-          </div>
-          <Clients />
-        </section>
-
-      </main>
-      
-      {/* Contact Section */}
-      <div className="bg-[#041b25]">
-        <Contact 
-          title={<><span>Let's Talk</span></>} 
-          subtitle="Bring in the change to your Insurance business with STATIM®" 
-        />
-      </div>
-
-      <Footer />
-    </div>
-  );
+  return <ServiceTemplate {...config} />;
 }

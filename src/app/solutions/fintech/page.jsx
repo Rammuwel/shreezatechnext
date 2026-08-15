@@ -1,77 +1,185 @@
 "use client";
 import React from 'react';
-import Link from 'next/link';
-import { ChevronRight, ShieldCheck, Zap, LineChart, Briefcase, FileCheck, ArrowRight, Building2, Home as HomeIcon } from 'lucide-react';
-import Navbar from '../../../components/Navbar';
-import Footer from '../../../components/Footer';
-import Services from '../../../components/Services';
-import Discover from '../../../components/Discover';
-import Ziva from '../../../components/Ziva';
-import Insights from '../../../components/Insights';
-import Contact from '../../../components/Contact';
-import About from '../../../components/About';
+import SolutionTemplate from '../../../components/SolutionTemplate';
+import { Network, Database, Lock, Globe, Server, Code, ShieldCheck, Zap } from 'lucide-react';
 
-export default function FinTechPage() {
-  return (
-    <div className="bg-[#000000] min-h-screen text-white selection:bg-[#ff7f00] selection:text-white">
-      <Navbar />
+export default function FinTechSolutionPage() {
+  const config = {
+    breadcrumb: {
+      label: 'FinTech Solutions',
+      parentLabel: 'Solutions',
+      parentHref: '/solutions'
+    },
+    hero: {
+      bgImage: "https://images.unsplash.com/photo-1639762681485-074b7f4ec651?auto=format&fit=crop&q=80",
+      badge: "Enterprise Financial Infrastructure",
+      title1: "Architecting the Future of",
+      title2: "Digital Finance",
+      description: "We engineer highly secure, low-latency financial systems—from decentralized payment gateways to core banking replacements—designed to move value instantly across the globe.",
+      primaryButton: { text: "Schedule Architecture Review", href: "/contact" },
+      stats: [
+        { label: "Transactions Processed", value: "$12B+", trend: "↑ 24% YOY" },
+        { label: "System Uptime", value: "99.999%", trend: "Zero Downtime" },
+        { label: "Settlement Speed", value: "< 50ms", trend: "Ultra-Low Latency" }
+      ]
+    },
+    challenge: {
+      title1: "The Cost of",
+      title2: "Technical Debt",
+      description: [
+        "The financial sector is undergoing a massive paradigm shift. Consumers expect instantaneous, frictionless money movement, yet most institutions are running on decades-old COBOL mainframes that were never designed for the internet era.",
+        "Legacy systems result in batch-processing delays, exorbitant maintenance costs, and a near-inability to launch new digital products quickly. In an industry where speed is revenue, technical debt is an existential threat."
+      ],
+      painPoints: [
+        "Rigid legacy core systems preventing agile product development",
+        "High latency and high failure rates in cross-border transactions",
+        "Increasingly sophisticated cyber threats and fraud rings",
+        "Complex, ever-changing global regulatory requirements (PSD2, GDPR)"
+      ],
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80",
+      floatingStat: {
+        value: "40%",
+        label: "Of IT budgets wasted on legacy maintenance"
+      }
+    },
+    features: {
+      title1: "Our FinTech",
+      title2: "Capabilities",
+      description: "We deliver full-stack financial engineering, from the bare metal to the mobile banking app, ensuring every transaction is secure, compliant, and instantaneous.",
+      bentoCards: [
+        {
+          icon: <Network />,
+          title: "Payment Gateways",
+          description: "Custom payment switches that route transactions across Visa, Mastercard, and localized alternative payment methods (APMs) with intelligent failover.",
+          span: "col-span-1 md:col-span-2",
+          link: true
+        },
+        {
+          icon: <Database />,
+          title: "Core Banking Modernization",
+          description: "Strangling legacy mainframes safely to modern cloud-native architectures."
+        },
+        {
+          icon: <Lock />,
+          title: "Crypto Custody",
+          description: "Multi-party computation (MPC) wallets for institutional digital asset security."
+        },
+        {
+          icon: <Globe />,
+          title: "Cross-Border Remittance",
+          description: "Bypassing SWIFT with blockchain-based stablecoin rails for instant settlement.",
+          span: "col-span-1 md:col-span-2",
+          link: true
+        },
+        {
+          icon: <Server />,
+          title: "RegTech Automation",
+          description: "Automated KYC/AML pipelines and real-time transaction monitoring."
+        },
+        {
+          icon: <Code />,
+          title: "BaaS APIs",
+          description: "Banking-as-a-Service architecture for issuing virtual cards."
+        }
+      ]
+    },
+    architecture: {
+      title: "Zero-Trust Financial Architecture",
+      layers: [
+        {
+          icon: <ShieldCheck className="w-8 h-8" />,
+          title: "Perimeter Security",
+          items: ["Web Application Firewall (WAF)", "DDoS Mitigation (Cloudflare)", "Network Tokenization"]
+        },
+        {
+          icon: <Zap className="w-8 h-8" />,
+          title: "Microservices Core",
+          items: ["Kubernetes Orchestration", "Event-Driven (Kafka)", "ACID Compliant Ledgers"]
+        },
+        {
+          icon: <Database className="w-8 h-8" />,
+          title: "Data & Storage",
+          items: ["WORM Databases (Immutable)", "Hardware Security Modules (HSM)", "AES-256 Encryption"]
+        }
+      ]
+    },
+    roi: {
+      title1: "Measurable",
+      title2: "Business Impact",
+      metrics: [
+        { value: "3x", title: "Faster Time to Market", description: "By moving from monolithic to microservices, feature releases drop from months to weeks." },
+        { value: "40%", title: "Cost Reduction", description: "Eliminating mainframe licensing fees and optimizing cloud infrastructure drastically lowers OpEx." },
+        { value: "0", title: "Compliance Breaches", description: "Automated regulatory reporting and strict PII isolation guarantee compliance." },
+        { value: "90%", title: "Fraud Reduction", description: "Machine learning models flag anomalous transaction velocity instantly." }
+      ]
+    },
+    caseStudies: {
+      title: "Trusted by Global Financial Innovators",
+      studies: [
+        {
+          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80",
+          industry: "Neobanking",
+          title: "Scaling a Digital Bank to 5 Million Users in 12 Months",
+          stats: [ { value: "5M", label: "Users" }, { value: "10ms", label: "Latency" } ]
+        },
+        {
+          image: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80",
+          industry: "Decentralized Finance",
+          title: "Engineering an Institutional Crypto Custody Solution",
+          stats: [ { value: "$2B", label: "Secured" }, { value: "Zero", label: "Breaches" } ]
+        },
+        {
+          image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&q=80",
+          industry: "Payment Gateway",
+          title: "Achieving 10,000 TPS for a Global E-Commerce Processor",
+          stats: [ { value: "10K", label: "TPS" }, { value: "99.99%", label: "Uptime" } ]
+        },
+        {
+          image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80",
+          industry: "Wealth Management",
+          title: "Robo-Advisory Platform for High-Net-Worth Individuals",
+          stats: [ { value: "30%", label: "AUM Growth" }, { value: "1s", label: "Trade Exec" } ]
+        }
+      ]
+    },
+    compliance: {
+      title: "Certified Compliant By Global Standards",
+      logos: [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/PCI_Security_Standards_Council_logo.svg/1200px-PCI_Security_Standards_Council_logo.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/8/87/GDPR_logo.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/SOC_2_Logo.png/800px-SOC_2_Logo.png"
+      ]
+    },
+    faq: {
+      questions: [
+        {
+          question: "How do you securely modernize a legacy core banking system without downtime?",
+          answer: "We utilize the 'Strangler Fig' pattern. We build the new microservices alongside the old mainframe, and route traffic to the new services via an API gateway one module at a time. This allows for safe, zero-downtime modernization."
+        },
+        {
+          question: "What technologies do you use for high-frequency trading applications?",
+          answer: "For systems where microseconds matter, we write core execution engines in C++ or Rust. For highly concurrent payment gateways, we heavily utilize Go (Golang) and Elixir due to their exceptional handling of massive concurrency."
+        },
+        {
+          question: "Do you provide smart contract auditing?",
+          answer: "Yes. Our Web3 division performs rigorous formal verification, static analysis, and manual peer-review of Solidity and Rust smart contracts to prevent reentrancy attacks, oracle manipulation, and flash loan exploits."
+        },
+        {
+          question: "How do you handle PCI-DSS compliance?",
+          answer: "We design the architecture so that your primary servers never actually touch raw Primary Account Numbers (PAN). We utilize network tokenization via third-party vaults (like VGS or Stripe), keeping your application completely out of PCI scope."
+        }
+      ]
+    },
+    cta: {
+      subtitle: "De-Risk Your Technical Architecture",
+      title1: "Ready to process",
+      title2: "millions globally?",
+      description: "Partner with an engineering team that understands both the extreme speed required by a startup and the extreme security demanded by a bank.",
+      button1: { text: "Contact Our Financial Engineers", href: "/contact" },
+      button2: { text: "View API Documentation", href: "/contact" }
+    }
+  };
 
-      {/* HERO SECTION */}
-      <section className="relative bg-[#041b25] pt-32 pb-12 px-6 lg:px-12 overflow-hidden">
-        {/* Abstract wavy background elements using CSS gradients */}
-        <div className="absolute top-0 left-0 w-full h-full opacity-30 pointer-events-none">
-          <div className="absolute -top-[20%] -right-[10%] w-[70%] h-[100%] rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#4DB8A0]/20 via-[#0a3a7a]/10 to-transparent blur-3xl"></div>
-          <div className="absolute -bottom-[30%] -left-[10%] w-[60%] h-[80%] rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#ff7f00]/10 via-[#041b25] to-transparent blur-3xl"></div>
-        </div>
-
-        <div className="max-w-[1400px] mx-auto relative z-10">
-          <div className="max-w-4xl">
-            <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance">
-              Revolutionizing <span className="text-[#4DB8A0]">Financial</span> Access by Crafting a Seamless Digital Lending Journey
-            </h1>
-            
-            <p className="text-[20px] leading-[34px] font-normal text-gray-300 max-w-2xl mb-10 text-balance">
-              Our Fintech solutions equip lenders with powerful tools, enabling data-driven decisions that balance risk and opportunity. Built strictly for NBFCs and HFCs to scale efficiently.
-            </p>
-
-            <Link 
-              href="#demo" 
-              className="inline-flex items-center justify-center bg-[#4DB8A0] border border-[#4DB8A0] text-[#041b25] font-semibold text-[16px] px-8 py-4 rounded hover:bg-transparent hover:text-[#00A2FF] hover:border-[#00A2FF] transition-all focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#ff7f00] active:scale-[0.98]"
-            >
-              Request a Demo
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Breadcrumb Section */}
-      <div className="w-full bg-white pt-4 pb-4 px-6 lg:px-12">
-        <div className="max-w-[1300px] mx-auto">
-          <nav aria-label="Breadcrumb" className="flex items-center text-[14px] text-gray-500 font-medium">
-            <Link href="/" className="hover:text-[#0A3A7A] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff7f00] rounded px-1 -ml-1 flex items-center">
-              <HomeIcon size={16} />
-            </Link>
-            <ChevronRight size={16} className="mx-2 text-gray-400" />
-            <Link href="#solutions" className="text-gray-500 hover:text-[#0A3A7A] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff7f00]">
-              Solutions
-            </Link>
-            <ChevronRight size={16} className="mx-2 text-gray-400" />
-            <span className="text-gray-800" aria-current="page">FinTech</span>
-          </nav>
-        </div>
-      </div>
-
-      {/* MAIN CONTENT SECTION */}
-      <main className="w-full">
-        <About />
-        <Services />
-        <Discover />
-        <Ziva />
-        <Insights />
-        <Contact />
-      </main>
-
-      <Footer />
-    </div>
-  );
+  return <SolutionTemplate {...config} />;
 }

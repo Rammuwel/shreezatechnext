@@ -2,15 +2,11 @@
 import React from 'react';
 import Link from 'next/link';
 import { ChevronRight, Home as HomeIcon } from 'lucide-react';
-import Navbar from '../../../components/Navbar';
-import Footer from '../../../components/Footer';
 
 export default function StatimPage() {
   return (
     <div className="font-sans text-gray-800 selection:bg-[#ff7f00] selection:text-white">
-      <Navbar />
-
-      {/* Hero Section */}
+{/* Hero Section */}
       <section className="relative pt-32 pb-24 px-6 lg:px-12 min-h-[85vh] flex items-center bg-[#070b0d]">
         <div 
           className="absolute inset-0 bg-cover bg-right z-0 opacity-40" 
@@ -517,8 +513,6 @@ export default function StatimPage() {
 
         </div>
       </section>
-
-      <Footer />
-    </div>
+</div>
   );
 }

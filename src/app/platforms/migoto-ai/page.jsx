@@ -1,7 +1,5 @@
 "use client";
 import React, { useState } from 'react';
-import Navbar from '../../../components/Navbar';
-import Footer from '../../../components/Footer';
 import Clients from '../../../components/Clients';
 import Contact from '../../../components/Contact';
 import Insights from '../../../components/Insights';
@@ -52,9 +50,7 @@ export default function MigotoAIPage() {
 
   return (
     <div className="min-h-screen font-sans bg-white pt-20">
-      <Navbar />
-
-      {/* Hero Section */}
+{/* Hero Section */}
       <section className="relative bg-[#162142] overflow-hidden py-24 lg:py-32">
         <div className="absolute inset-0 z-0">
           <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Abstract Data" className="w-full h-full object-cover opacity-20 mix-blend-screen" />
@@ -609,8 +605,6 @@ export default function MigotoAIPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+</div>
   );
 }

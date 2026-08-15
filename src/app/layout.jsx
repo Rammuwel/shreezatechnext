@@ -1,6 +1,8 @@
 import { Manrope, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import AosInit from "../components/AosInit";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -20,9 +22,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${manrope.variable} ${plusJakartaSans.variable}`}>
-      <body>
+      <body className="flex flex-col min-h-screen">
         <AosInit />
-        {children}
+        <Navbar />
+        <main className="flex-grow">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

@@ -1,17 +1,13 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Navbar from '../../../components/Navbar';
-import Footer from '../../../components/Footer';
 
 export default function AxlePage() {
   const [activeTab, setActiveTab] = useState('klass');
 
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
-
-      {/* Hero Section */}
+{/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 px-6 lg:px-12 bg-gradient-to-br from-[#fef5ef] via-white to-[#fef5ef] overflow-hidden">
         {/* Background shapes */}
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-br from-[#fae8db] to-transparent rounded-full opacity-50 blur-3xl -translate-y-1/4 translate-x-1/4 pointer-events-none"></div>
@@ -822,8 +818,6 @@ export default function AxlePage() {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+</div>
   );
 }
