@@ -9,18 +9,18 @@ const benefitsData = [
     icon: <Users size={56} strokeWidth={1} /> 
   },
   { 
-    title: 'Improved Operational Efficiency and Revenue Generation', 
-    desc: 'Deploying the right set of transformation tools that streamlines operational processes by automating manual tasks and integrating data, thereby resulting in increased profits.', 
+    title: 'Improved Operational Efficiency and Agility', 
+    desc: 'Deploying the right transformation tools streamlines operational processes by automating manual tasks and integrating data across cloud platforms, resulting in increased agility and profits.', 
     icon: <TrendingUp size={56} strokeWidth={1} /> 
   },
   { 
-    title: 'Agility and Operational Productivity', 
-    desc: 'A well-structured digital ecosystem enables seamless scaling and flexible adaptations to regulatory shifts, allowing enterprises to bring innovative products to market significantly faster.', 
+    title: 'Scalable & Secure Architecture', 
+    desc: 'A well-structured digital ecosystem enables seamless scaling and robust security adaptations, allowing enterprises to bring innovative software products to market significantly faster.', 
     icon: <Zap size={56} strokeWidth={1} /> 
   },
   { 
-    title: 'Insight-driven decision', 
-    desc: 'Advanced analytics and AI-driven data intelligence provide deep visibility into market trends and user behavior, empowering leaders to make confident, proactive strategic moves.', 
+    title: 'Insight-Driven Decision Making', 
+    desc: 'Advanced data analytics, machine learning, and AI-driven intelligence provide deep visibility into market trends and user behavior, empowering leaders to make proactive strategic moves.', 
     icon: <PieChart size={56} strokeWidth={1} /> 
   }
 ];
@@ -33,7 +33,7 @@ export default function Services() {
         {/* Section Heading */}
         <div className="mb-20 max-w-4xl" data-aos="fade-up">
           <h2 className="text-[36px] md:text-[44px] leading-[1.3] font-normal text-white">
-            What Makes Digital Transformation <br className="hidden md:block" /> a Principal Move in the <span className="text-[#00A2FF]">Fintech Sector?</span>
+            Why Digital Transformation is a <br className="hidden md:block" /> Strategic Imperative for <span className="text-[#00A2FF]">Modern Enterprises</span>
           </h2>
         </div>
 

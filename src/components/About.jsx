@@ -24,7 +24,7 @@ function AnimatedCounter({ end, suffix }) {
           const updateCounter = (timestamp) => {
             if (!startTime) startTime = timestamp;
             const progress = timestamp - startTime;
-            
+
             if (progress < duration) {
               const t = progress / duration;
               const easeOutQuart = 1 - Math.pow(1 - t, 4);
@@ -59,7 +59,7 @@ export default function About() {
         {/* Top Heading */}
         <div className="w-full mb-12" data-aos="fade-up">
           <h2 className="text-[38px] md:text-[46px] leading-[1.2] font-normal text-[#212529] max-w-5xl">
-            Elevating Lenders by Sculpting <span className="text-[#459C75]">Lending Experiences</span> that Transcends Boundaries and Transforms Lives
+            Transforming Ideas into <span className="text-[#0A3A7A]">Robust Digital Realities</span>
           </h2>
         </div>
 
@@ -67,27 +67,28 @@ export default function About() {
 
           <div className="lg:col-span-6 relative" data-aos="fade-right">
             {/* Slanted Image */}
-            <div 
+            <div
               className="relative w-full h-[350px] lg:h-[450px] overflow-hidden"
               style={{ clipPath: 'polygon(0 0, 100% 0, calc(100% - 100px) 100%, 0 100%)' }}
             >
-              <img 
-                src="/images/about-tech-team.jpg" 
-                alt="Tech Team Collaboration" 
+              <img
+                src="/images/about_diversity_1786877446906.jpg"
+                alt="Tech Team Collaboration"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
             </div>
           </div>
 
           <div className="lg:col-span-6 flex flex-col justify-center h-full pt-2 md:pt-6" data-aos="fade-left" data-aos-delay="200">
-            <p className="text-[#212529] text-[20px] md:text-[22px] leading-[36px] font-normal mb-8">
-              Digital transformation disrupts the fintech industry by making the sector more customer-centric and technologically relevant. With fresh perspectives in place, your financial company can gain the needed agile growth with a proven approach and dynamic experiences for sustained outcomes.
+            <h3 className="text-[#0A3A7A] text-lg font-medium mb-3 uppercase tracking-wider">Who We Are</h3>
+            <p className="text-[#212529] text-[20px] md:text-[22px] leading-[36px] font-normal mb-6">
+              Shreeza Tech is a premier software engineering and IT consulting firm dedicated to solving complex business challenges through technology. We specialize in delivering end-to-end digital solutions, from custom web and mobile applications to enterprise cloud architectures.
             </p>
-            <p className="text-gray-700 text-[16px] md:text-[18px] leading-[30px] font-normal mb-10">
-              By embracing this paradigm shift, financial companies can position themselves at the forefront, which not only enhances customer experiences but also empowers them to adapt swiftly to changing market trends and demands.
+            <p className="text-gray-600 text-[16px] md:text-[18px] leading-[30px] font-light mb-10">
+              We partner with forward-thinking enterprises and startups to drive innovation, streamline operations, and accelerate growth. By leveraging agile methodologies and modern tech stacks—including AI, IoT, and Next-Gen Cloud services—we build secure, future-proof platforms tailored precisely to your strategic goals.
             </p>
-            <Link href="/contact-us" className="inline-flex items-center gap-2 px-8 py-3 bg-[#D4AF37] text-white hover:bg-[#0A3A7A] hover:text-white font-medium rounded transition-colors shadow-lg">
-              Let's Talk
+            <Link href="/about-us" className="inline-flex items-center gap-2 px-8 py-3 bg-[#D4AF37] text-white hover:bg-[#0A3A7A] hover:text-white font-medium rounded transition-colors shadow-lg w-fit">
+              Discover Our Journey
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </Link>
           </div>
