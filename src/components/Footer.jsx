@@ -59,8 +59,8 @@ export default function Footer() {
               <a href="mailto:info@shreezatech.com" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors flex items-center gap-2 text-sm">
                 <Mail size={16} /> info@shreezatech.com
               </a>
-              <a href="tel:8770699464" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors flex items-center gap-2 text-sm">
-                <Phone size={16} /> 8770699464
+              <a href="tel:+918223087569" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors flex items-center gap-2 text-sm">
+                <Phone size={16} /> +91 8223087569
               </a>
             </div>
           </div>
