@@ -3,11 +3,11 @@ import React from 'react';
 
 export default function AboutUsPage() {
    return (
-      <div className="min-h-screen bg-[#081229] font-sans overflow-x-hidden pt-[80px]">
+      <div className="min-h-screen bg-[#081229] font-sans overflow-x-hidden">
          {/* Hero Section */}
          <section className="h-[50vh] min-h-[400px] w-full relative overflow-hidden bg-[#081229] flex items-center border-b border-[#ffffff10]">
             <div className="absolute inset-0 z-0">
-               <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" alt="About Us Hero" className="w-full h-full object-cover opacity-20 grayscale" />
+               <img src="/images/about-hero.jpg" alt="About Us Hero" className="w-full h-full object-cover opacity-20 grayscale" />
                <div className="absolute inset-0 bg-gradient-to-r from-[#040026] via-[#040026]/95 to-transparent"></div>
             </div>
 
@@ -111,7 +111,7 @@ export default function AboutUsPage() {
                   <div className="w-full lg:w-1/2">
                      <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                         <img
-                           src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&q=80"
+                           src="/images/about-diversity.jpg"
                            alt="Diversity and Inclusivity"
                            className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
                         />

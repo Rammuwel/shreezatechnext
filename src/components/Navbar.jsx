@@ -15,8 +15,8 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2 group/logo">
           <Image src="/logo.png" alt="Shreezatech" width={240} height={72} className="h-10 w-auto object-contain transition-transform duration-300 group-hover/logo:scale-105" priority />
           <div className="flex flex-col justify-center">
-            <h1 className="text-[20px] font-extrabold tracking-widest text-[#2F65E0]  leading-none mb-1.5">
-              Shreeza
+            <h1 className="text-[20px] font-extrabold tracking-widest text-[#2F65E0] leading-none mb-1.5">
+              Shreezatech
             </h1>
             <p className="text-[9px] text-gray-500 tracking-widest font-bold leading-none">
               Tech Consulting & Software Solutions
@@ -213,7 +213,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Toggle */}
-          <button 
+          <button
             className="lg:hidden p-2 text-gray-600 hover:text-[#2F65E0] transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >

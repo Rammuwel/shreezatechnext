@@ -6,7 +6,7 @@ export default function Discover() {
       <div className="max-w-[1300px] mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           
-          {/* Left Side: Creative Geometric Graphic (Similar to Novac's N-shape) */}
+          {/* Left Side: Creative Geometric Graphic */}
           <div className="relative h-[400px] md:h-[550px] w-full hidden md:block" data-aos="fade-right">
             <div className="absolute inset-0 flex justify-center items-center">
               
@@ -22,7 +22,7 @@ export default function Discover() {
                 style={{ clipPath: 'polygon(0 0, 100% 0, 70% 100%, 30% 100%)' }}
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop" 
+                  src="/images/discover-tech-1.jpg" 
                   alt="Professional" 
                   className="w-full h-full object-cover"
                 />
@@ -40,7 +40,7 @@ export default function Discover() {
           {/* Mobile version of image */}
           <div className="relative h-[300px] w-full md:hidden rounded-lg overflow-hidden mb-8 shadow-md" data-aos="fade-up">
             <img 
-              src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop" 
+              src="/images/discover-tech-2.jpg" 
               alt="Professional" 
               className="w-full h-full object-cover"
             />
@@ -60,7 +60,7 @@ export default function Discover() {
             </p>
             
             <p className="text-gray-700 text-[16px] md:text-[18px] leading-[30px] font-normal">
-              Introducing <strong>Shreezatech ZIVA®</strong> - A cloud lending management solution with comprehensive features designed to streamline operations, mitigate risk, and accelerate growth for forward-thinking financial institutions.
+              Introducing <strong>Shreezatech Cloud Solutions</strong> - A comprehensive suite of enterprise management tools designed to streamline operations, mitigate risk, and accelerate growth for forward-thinking financial institutions.
             </p>
           </div>
           

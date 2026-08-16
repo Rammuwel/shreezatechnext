@@ -3,19 +3,19 @@ import { ArrowRight } from 'lucide-react';
 
 const insightsData = [
   {
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/insights-fintech.jpg',
     date: 'Dec/11/2024',
     category: 'FinTech',
     title: 'Loan Origination Systems - A Complete Guide'
   },
   {
-    image: 'https://images.unsplash.com/photo-1622979135225-d33ce8292dce?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/insights-immersive.jpg',
     date: 'Dec/31/2024',
     category: 'ImmersiveTech',
     title: 'A Year in Innovation: AR, VR and MR’s Evolution in 2024 and a...'
   },
   {
-    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1974&auto=format&fit=crop',
+    image: '/images/insights-fintech-trend.jpg',
     date: 'Feb/20/2025',
     category: 'FinTech',
     title: 'Top Digital Lending Trends to Watch in 2025'

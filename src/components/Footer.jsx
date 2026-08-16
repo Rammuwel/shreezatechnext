@@ -1,53 +1,54 @@
 import { MapPin, Mail, Phone } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
     <footer className="bg-[#020012] pt-16 pb-8 border-t border-white/5">
       <div className="max-w-[1300px] mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
-          
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-6 gap-y-10 mb-12">
+
           <div className="col-span-1">
-            <h4 className="text-white text-lg font-bold mb-6">Solutions</h4>
+            <h4 className="text-white text-lg font-bold mb-6">Services</h4>
             <ul className="space-y-3">
-              <li><a href="#solutions" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Cloud Transformation</a></li>
-              <li><a href="#solutions" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Data Engineering</a></li>
-              <li><a href="#solutions" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Enterprise AI</a></li>
-              <li><a href="#solutions" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Digital Automation</a></li>
-            </ul>
-          </div>
-          
-          <div className="col-span-1">
-            <h4 className="text-white text-lg font-bold mb-6">Platforms</h4>
-            <ul className="space-y-3">
-              <li><a href="#platforms" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Healthcare Tech</a></li>
-              <li><a href="#platforms" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">FinTech Systems</a></li>
-              <li><a href="#platforms" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">EduTech Portals</a></li>
-              <li><a href="#platforms" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Immersive Tech</a></li>
-            </ul>
-          </div>
-          
-          <div className="col-span-1">
-            <h4 className="text-white text-lg font-bold mb-6">Discover Us</h4>
-            <ul className="space-y-3">
-              <li><a href="#about" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">About Us</a></li>
-              <li><a href="#leadership" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Leadership</a></li>
-              <li><a href="#careers" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Join Us</a></li>
-              <li><a href="#csr" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">CSR</a></li>
-            </ul>
-          </div>
-          
-          <div className="col-span-1">
-            <h4 className="text-white text-lg font-bold mb-6">Resources</h4>
-            <ul className="space-y-3">
-              <li><a href="#blog" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Blogs</a></li>
-              <li><a href="#brochure" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Brochures</a></li>
-              <li><a href="#webinars" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Webinars</a></li>
-              <li><a href="#media" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Media Kit</a></li>
+              <li><Link href="/services/web-development" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Web Development</Link></li>
+              <li><Link href="/services/mobile-app-development" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Mobile App Development</Link></li>
+              <li><Link href="/services/ai-and-automation" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">AI & Automation</Link></li>
+              <li><Link href="/services/iot" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">IoT Solutions</Link></li>
             </ul>
           </div>
 
-          <div className="col-span-1 lg:col-span-1">
+          <div className="col-span-1">
+            <h4 className="text-white text-lg font-bold mb-6">Solutions</h4>
+            <ul className="space-y-3">
+              <li><Link href="/solutions/healthcare" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Healthcare</Link></li>
+              <li><Link href="/solutions/finance" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Finance</Link></li>
+              <li><Link href="/solutions/education" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Education</Link></li>
+              <li><Link href="/solutions/manufacturing" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Manufacturing</Link></li>
+            </ul>
+          </div>
+
+          <div className="col-span-1">
+            <h4 className="text-white text-lg font-bold mb-6">Company</h4>
+            <ul className="space-y-3">
+              <li><Link href="/about-us" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">About Us</Link></li>
+              <li><Link href="/leadership" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Leadership</Link></li>
+              <li><Link href="/contact-us" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Contact Us</Link></li>
+              <li><Link href="/careers" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Careers</Link></li>
+            </ul>
+          </div>
+
+          <div className="col-span-1">
+            <h4 className="text-white text-lg font-bold mb-6">Resources</h4>
+            <ul className="space-y-3">
+              <li><Link href="#blog" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Blogs</Link></li>
+              <li><Link href="#brochure" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Brochures</Link></li>
+              <li><Link href="#webinars" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Webinars</Link></li>
+              <li><Link href="#media" className="text-[#B0B3C6] hover:text-[#D4AF37] transition-colors">Media Kit</Link></li>
+            </ul>
+          </div>
+
+          <div className="col-span-2 md:col-span-4 lg:col-span-1">
             <h4 className="text-white text-lg font-bold mb-6">Address</h4>
             <address className="text-[#B0B3C6] not-italic leading-relaxed mb-4 text-sm">
               <span className="flex items-start gap-2 mb-2">
@@ -64,11 +65,19 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          
+
         </div>
-        
+
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-white/5 text-[#B0B3C6] text-sm">
-          <Image src="/logo.png" alt="Shreezatech" width={150} height={50} className="object-contain opacity-80" />
+          <div className="flex items-center gap-3">
+            <Image src="/logo.png" alt="Shreezatech" width={60} height={60} className="object-contain opacity-90" />
+            <span
+              className="text-[20px] font-extrabold tracking-widest text-white leading-none inline-block"
+              style={{ WebkitBoxReflect: 'below -4px linear-gradient(transparent, transparent 30%, rgba(255,255,255,0.3))' }}
+            >
+              Shreezatech
+            </span>
+          </div>
           <p>&copy; {new Date().getFullYear()} Shreezatech Consulting &amp; Software Solutions. All rights reserved.</p>
         </div>
       </div>

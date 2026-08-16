@@ -3,10 +3,10 @@ import React, { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
 
 const statsData = [
-  { value: 200, suffix: '+', label: 'Clients' },
-  { value: 8, suffix: '+', label: 'Products' },
-  { value: 10, suffix: '+', label: 'Offices across India' },
-  { value: 12, suffix: '+', label: 'Awards' }
+  { value: 50, suffix: '+', label: 'Projects Delivered' },
+  { value: 30, suffix: '+', label: 'Happy Clients' },
+  { value: 5, suffix: '+', label: 'Years of Experience' },
+  { value: 98, suffix: '%', label: 'Client Satisfaction' }
 ];
 
 function AnimatedCounter({ end, suffix }) {
@@ -66,13 +66,13 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
 
           <div className="lg:col-span-6 relative" data-aos="fade-right">
-            {/* Slanted Image like Novac */}
+            {/* Slanted Image */}
             <div 
               className="relative w-full h-[350px] lg:h-[450px] overflow-hidden"
               style={{ clipPath: 'polygon(0 0, 100% 0, calc(100% - 100px) 100%, 0 100%)' }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" 
+                src="/images/about-tech-team.jpg" 
                 alt="Tech Team Collaboration" 
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
