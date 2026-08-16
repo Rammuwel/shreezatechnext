@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState, useRef } from 'react';
+import Link from 'next/link';
 
 const statsData = [
   { value: 200, suffix: '+', label: 'Clients' },
@@ -85,10 +86,10 @@ export default function About() {
             <p className="text-gray-700 text-[16px] md:text-[18px] leading-[30px] font-normal mb-10">
               By embracing this paradigm shift, financial companies can position themselves at the forefront, which not only enhances customer experiences but also empowers them to adapt swiftly to changing market trends and demands.
             </p>
-            <a href="#contact" className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#D4AF37] border border-[#D4AF37] text-white font-medium hover:bg-transparent hover:text-[#0A3A7A] hover:border-[#0A3A7A] transition-all shadow-sm w-fit group">
-              Partner With Us
-              <svg className="w-5 h-5 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-            </a>
+            <Link href="/contact-us" className="inline-flex items-center gap-2 px-8 py-3 bg-[#D4AF37] text-white hover:bg-[#0A3A7A] hover:text-white font-medium rounded transition-colors shadow-lg">
+              Let's Talk
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+            </Link>
           </div>
 
         </div>

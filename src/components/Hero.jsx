@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { CreditCard, ShieldCheck, Monitor, Box } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, EffectFade, Parallax } from 'swiper/modules';
@@ -11,7 +12,7 @@ export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <section className="h-[70vh] min-h-[500px] w-full relative overflow-hidden bg-[#040026]">
+    <section className="min-h-[750px] md:h-[85vh] w-full relative overflow-hidden bg-[#040026]">
       <style>{`
         .mySwiper .swiper-pagination-bullet {
           width: 24px;
@@ -51,10 +52,10 @@ export default function Hero() {
         {/* Slide 1 */}
         <SwiperSlide className="w-full h-full relative flex items-center">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop" alt="Digital Innovation" className="w-full h-full object-cover" />
+            <img src="/images/hero-slide-1.jpg" alt="Digital Innovation" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-[#040026]/70"></div>
           </div>
-          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-20 pb-40 w-full">
+          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-16 pb-64 md:pb-72 w-full">
             <div className="max-w-4xl">
               <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
                 Tech Consulting & <br />
@@ -64,7 +65,7 @@ export default function Hero() {
                 We build enterprise software, AI-powered platforms, and scalable cloud infrastructure that transform businesses worldwide.
               </p>
               <div data-swiper-parallax="-100">
-                <a href="#contact" className="inline-block px-8 py-3 border-2 border-white text-white rounded font-bold transition-all hover:bg-transparent hover:text-[#00A2FF] hover:border-[#00A2FF] hover:shadow-lg">Get in Touch</a>
+                <Link href="/contact-us" className="inline-block px-8 py-3 bg-[#D4AF37] text-white rounded font-bold transition-all hover:bg-[#0A3A7A] hover:text-white hover:shadow-lg">Get in Touch</Link>
               </div>
             </div>
           </div>
@@ -73,10 +74,10 @@ export default function Hero() {
         {/* Slide 2 (Requested BFSI Content) */}
         <SwiperSlide className="w-full h-full relative flex items-center">
           <div className="absolute inset-0 z-0">
-            <img src="https://cdn.novactech.com/uploads/Artboard_2_1_1_8e1abd4837.webp" alt="BFSI Sector" className="w-full h-full object-cover" />
+            <img src="/images/hero-slide-2.jpg" alt="Deep Domain Solutions" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-[#040026]/60"></div>
           </div>
-          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-20 pb-40 w-full">
+          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-16 pb-64 md:pb-72 w-full">
             <div className="max-w-4xl">
               <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
                 Deep-Domain Solutions <br />
@@ -86,7 +87,7 @@ export default function Hero() {
                 Delivering highly specialized, HIPAA-compliant and secure software platforms for Healthcare, Finance, Education, and Real Estate.
               </p>
               <div data-swiper-parallax="-100">
-                <a href="#contact" className="inline-block px-8 py-3 border-2 border-white text-white rounded font-bold transition-all hover:bg-transparent hover:text-[#00A2FF] hover:border-[#00A2FF] hover:shadow-lg">Explore</a>
+                <Link href="/contact-us" className="inline-block px-8 py-3 bg-[#D4AF37] text-white rounded font-bold transition-all hover:bg-[#0A3A7A] hover:text-white hover:shadow-lg">Explore</Link>
               </div>
             </div>
           </div>
@@ -95,10 +96,10 @@ export default function Hero() {
         {/* Slide 3 */}
         <SwiperSlide className="w-full h-full relative flex items-center">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2065&auto=format&fit=crop" alt="Cloud and AI" className="w-full h-full object-cover" />
+            <img src="/images/hero-slide-3.jpg" alt="Cloud and AI" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-[#040026]/70"></div>
           </div>
-          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-20 pb-40 w-full">
+          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-16 pb-64 md:pb-72 w-full">
             <div className="max-w-4xl">
               <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
                 Scalable Digital Products <br />
@@ -108,7 +109,7 @@ export default function Hero() {
                 From custom web and mobile applications to complete digital transformation, we engineer scalable solutions from idea to launch.
               </p>
               <div data-swiper-parallax="-100">
-                <a href="#solutions" className="inline-block px-8 py-3 border-2 border-white text-white rounded font-bold transition-all hover:bg-transparent hover:text-[#00A2FF] hover:border-[#00A2FF] hover:shadow-lg">Discover More</a>
+                <a href="#solutions" className="inline-block px-8 py-3 bg-[#D4AF37] text-white rounded font-bold transition-all hover:bg-[#0A3A7A] hover:text-white hover:shadow-lg">Discover More</a>
               </div>
             </div>
           </div>
@@ -117,10 +118,10 @@ export default function Hero() {
         {/* Slide 4 */}
         <SwiperSlide className="w-full h-full relative flex items-center">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" alt="Technical Excellence" className="w-full h-full object-cover" />
+            <img src="/images/hero-slide-4.jpg" alt="Technical Excellence" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-[#040026]/70"></div>
           </div>
-          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-20 pb-40 w-full">
+          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-16 pb-64 md:pb-72 w-full">
             <div className="max-w-4xl">
               <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
                 The New Age of <br />
@@ -130,7 +131,7 @@ export default function Hero() {
                 Leveraging advanced LLMs, intelligent automation, and robust AWS/Azure cloud infrastructure to drive real business outcomes.
               </p>
               <div data-swiper-parallax="-100">
-                <a href="#about" className="inline-block px-8 py-3 border-2 border-white text-white rounded font-bold transition-all hover:bg-transparent hover:text-[#00A2FF] hover:border-[#00A2FF] hover:shadow-lg">Our Journey</a>
+                <a href="#about" className="inline-block px-8 py-3 bg-[#D4AF37] text-white rounded font-bold transition-all hover:bg-[#0A3A7A] hover:text-white hover:shadow-lg">Our Journey</a>
               </div>
             </div>
           </div>

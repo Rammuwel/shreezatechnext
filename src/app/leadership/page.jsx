@@ -4,6 +4,12 @@ import PageTemplate from '../../components/PageTemplate';
 
 const boardOfDirectors = [
   {
+    name: "Ram M",
+    role: "Founder & CEO",
+    image: "/images/founder.png",
+    desc: "As the visionary Founder and CEO of Shreeza Tech, Ram M has been the driving force behind the company's innovation and growth strategies. With a deep passion for digital transformation and technology-led business models, he continues to shape the future of enterprise software solutions."
+  },
+  {
     name: "N.S. Nanda Kishore",
     role: "Managing Director & Chief Executive Officer",
     image: "https://cdn.novactech.com/uploads/teamimg11_5ac8c98706.webp",
@@ -69,34 +75,34 @@ const executiveLeadership = [
 ];
 
 export default function LeadershipPage() {
-  
+
   const renderProfile = (person, index) => {
     const isEven = index % 2 === 0;
-    
+
     return (
       <div key={index} className={`flex flex-col md:flex-row items-center gap-10 md:gap-20 mb-20 ${!isEven ? 'md:flex-row-reverse' : ''}`}>
         {/* Image Side */}
         <div className="w-full md:w-[350px] shrink-0">
           <div className="bg-[#f0f4ff] overflow-hidden">
-            <img 
-              src={person.image} 
-              alt={person.name} 
-              className="w-full h-auto object-cover" 
+            <img
+              src={person.image}
+              alt={person.name}
+              className="w-full h-auto object-cover"
             />
           </div>
         </div>
-        
+
         {/* Content Side */}
         <div className="w-full md:w-[60%] flex flex-col justify-center">
           <h3 className="text-3xl font-light text-black mb-1">{person.name}</h3>
           <h4 className="text-[17px] text-gray-500 font-light mb-6">{person.role}</h4>
-          
+
           <p className="text-[16px] text-[#444] font-light leading-[1.8] whitespace-pre-line mb-8">
             {person.desc}
           </p>
-          
+
           <button className="flex items-center gap-2 text-black font-light text-[15px] group w-fit">
-            Know More 
+            Know More
             <span className="w-8 h-8 rounded-full border border-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 5l7 7-7 7"></path></svg>
             </span>
@@ -112,7 +118,7 @@ export default function LeadershipPage() {
       <section className="relative w-full h-[500px] flex items-center bg-[#13072e] overflow-hidden bg-gradient-to-tr from-[#0a071f] via-[#151142] to-[#201c64]">
         <div className="max-w-[1300px] w-full mx-auto px-6 lg:px-12 relative z-10">
           <h1 className="text-4xl md:text-6xl font-light text-white mb-6 leading-tight">
-            Meet Our <br/> <span className="text-[#3b82f6]">Leadership</span> Team
+            Meet Our <br /> <span className="text-[#3b82f6]">Leadership</span> Team
           </h1>
           <p className="text-lg md:text-[21px] text-gray-300 font-light max-w-2xl leading-relaxed">
             Empowering Businesses with Digital Transformation Solution from Leader's of Tomorrow
@@ -135,26 +141,26 @@ export default function LeadershipPage() {
           <h2 className="text-2xl md:text-[32px] font-medium tracking-wide uppercase text-black mb-16 border-b pb-4">
             Board Of Directors
           </h2>
-          
+
           <div className="flex flex-col">
             {boardOfDirectors.map((person, index) => renderProfile(person, index))}
           </div>
         </div>
       </section>
-      
+
       {/* Executive Leadership */}
       <section className="py-10 bg-white">
         <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
           <h2 className="text-2xl md:text-[32px] font-medium tracking-wide uppercase text-black mb-16 border-b pb-4">
             Executive Leadership
           </h2>
-          
+
           <div className="flex flex-col">
             {executiveLeadership.map((person, index) => renderProfile(person, index))}
           </div>
         </div>
       </section>
-      
+
     </PageTemplate>
   );
 }

@@ -15,7 +15,10 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
-  title: "SHREEZATECH | Consulting and Software Solutions",
+  title: {
+    template: "shreezatech | %s",
+    default: "shreezatech | home",
+  },
   description: "Shreezatech provides top-tier digital transformation and consulting IT solutions for enterprises.",
 };
 

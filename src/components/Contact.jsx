@@ -106,8 +106,8 @@ export default function Contact({ title, subtitle }) {
               ></textarea>
               
               <div className="flex justify-end mt-4">
-                <button type="button" className="px-10 py-3.5 bg-[#F97316] border border-[#F97316] hover:bg-transparent hover:text-[#2F65E0] hover:border-[#2F65E0] text-white font-medium transition-all rounded shadow-sm">
-                  Submit
+                <button type="button" className="px-10 py-3.5 bg-[#D4AF37] text-white hover:bg-[#0A3A7A] font-medium transition-all rounded shadow-sm">
+                  Submit Message
                 </button>
               </div>
 

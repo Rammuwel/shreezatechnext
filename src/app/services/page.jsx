@@ -7,7 +7,7 @@ import Link from 'next/link';
 import TechStack from '../../components/TechStack';
 
 export const metadata = {
-  title: 'Our Services | ShreezaTech',
+  title: "services",
   description: 'Explore ShreezaTech’s comprehensive suite of digital services including Web & Mobile Development, AI & Automation, UX/UI Design, IoT, and Robotics.',
 };
 
@@ -15,42 +15,42 @@ export default function ServicesPage() {
   const services = [
     {
       id: 'web-development',
-      title: 'Web Development',
+      title: "services",
       description: 'Building scalable, secure, and modern web applications tailored to your specific business needs. We use cutting-edge frameworks to deliver blazing fast experiences.',
       icon: <Code size={40} className="text-[#0A3A7A] group-hover:text-white transition-colors duration-300" />,
       features: ['Custom Web Apps', 'E-commerce Solutions', 'CMS Development', 'API Integration']
     },
     {
       id: 'mobile-app-development',
-      title: 'Mobile App Development',
+      title: "services",
       description: 'Creating intuitive and high-performance native and cross-platform mobile apps for iOS and Android. Engaging your users wherever they are.',
       icon: <Smartphone size={40} className="text-[#0A3A7A] group-hover:text-white transition-colors duration-300" />,
       features: ['Native iOS & Android', 'React Native / Flutter', 'App Modernization', 'UI/UX Optimization']
     },
     {
       id: 'ai-and-automation',
-      title: 'AI & Automation',
+      title: "services",
       description: 'Streamlining your business operations with intelligent automation and AI-driven insights. Turn data into decisions and manual tasks into automated workflows.',
       icon: <Bot size={40} className="text-[#0A3A7A] group-hover:text-white transition-colors duration-300" />,
       features: ['Machine Learning', 'Workflow Automation', 'Predictive Analytics', 'Chatbots & Virtual Assistants']
     },
     {
       id: 'ux-ui-design',
-      title: 'UX/UI Design',
+      title: "services",
       description: 'Designing user-centric, aesthetically pleasing, and highly functional interfaces that drive engagement and improve user retention.',
       icon: <PenTool size={40} className="text-[#0A3A7A] group-hover:text-white transition-colors duration-300" />,
       features: ['User Research', 'Wireframing & Prototyping', 'Visual Design', 'Usability Testing']
     },
     {
       id: 'iot',
-      title: 'IoT Solutions',
+      title: "services",
       description: 'Connecting devices and systems for smarter, data-driven environments. Leverage the Internet of Things to monitor, control, and optimize your assets.',
       icon: <Wifi size={40} className="text-[#0A3A7A] group-hover:text-white transition-colors duration-300" />,
       features: ['Smart Devices', 'Sensor Networks', 'Edge Computing', 'IoT Dashboards']
     },
     {
       id: 'robotics',
-      title: 'Robotics Engineering',
+      title: "services",
       description: 'Advanced robotic systems and RPA to automate complex physical and digital tasks. Enhance precision, safety, and efficiency across your entire operation.',
       icon: <Cpu size={40} className="text-[#0A3A7A] group-hover:text-white transition-colors duration-300" />,
       features: ['Process Automation', 'Industrial Bots', 'Drone Software', 'Computer Vision']
@@ -60,25 +60,25 @@ export default function ServicesPage() {
   const processSteps = [
     {
       number: '01',
-      title: 'Discovery & Strategy',
+      title: "services",
       description: 'We dive deep into your business requirements, target audience, and market landscape to formulate a winning digital strategy.',
       icon: <Search size={24} className="text-[#D4AF37]" />
     },
     {
       number: '02',
-      title: 'UI/UX Prototyping',
+      title: "services",
       description: 'Our design team creates interactive wireframes and high-fidelity prototypes to visualize the end-product before coding begins.',
       icon: <LayoutTemplate size={24} className="text-[#D4AF37]" />
     },
     {
       number: '03',
-      title: 'Agile Development',
+      title: "services",
       description: 'Our engineers build your solution using modern tech stacks, operating in two-week agile sprints for continuous delivery and feedback.',
       icon: <Terminal size={24} className="text-[#D4AF37]" />
     },
     {
       number: '04',
-      title: 'Testing & Launch',
+      title: "services",
       description: 'Rigorous QA testing ensures zero critical bugs. We then seamlessly deploy to production and provide ongoing post-launch support.',
       icon: <Rocket size={24} className="text-[#D4AF37]" />
     }

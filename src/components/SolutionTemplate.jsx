@@ -53,7 +53,7 @@ export default function SolutionTemplate({
               {hero.description}
             </p>
             <div className="flex flex-wrap gap-6">
-              <Link href={hero.primaryButton.href} className="inline-flex items-center justify-center px-10 py-5 bg-[#00A2FF] text-white font-bold text-[18px] hover:bg-white hover:text-[#040026] transition-all shadow-[0_0_30px_rgba(0,162,255,0.4)] hover:-translate-y-1 rounded-sm group">
+              <Link href={hero.primaryButton.href} className="inline-flex items-center justify-center px-10 py-5 bg-[#D4AF37] text-white font-bold text-[18px] hover:bg-[#0A3A7A] hover:text-white transition-all shadow-[0_0_30px_rgba(212,175,55,0.4)] hover:-translate-y-1 rounded-sm group">
                 {hero.primaryButton.text}
                 <ArrowRight className="ml-3 group-hover:translate-x-2 transition-transform" size={20} />
               </Link>
@@ -348,7 +348,7 @@ export default function SolutionTemplate({
               {cta.description}
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-              <Link href={cta.button1.href} className="w-full sm:w-auto px-12 py-5 bg-[#D4AF37] text-[#040026] font-bold text-[18px] hover:bg-white transition-all shadow-[0_0_30px_rgba(212,175,55,0.4)] hover:-translate-y-1 rounded-sm">
+              <Link href={cta.button1.href} className="w-full sm:w-auto px-12 py-5 bg-[#D4AF37] text-white font-bold text-[18px] hover:bg-[#0A3A7A] hover:text-white transition-all shadow-[0_0_30px_rgba(212,175,55,0.4)] hover:-translate-y-1 rounded-sm">
                 {cta.button1.text}
               </Link>
               {cta.button2 && (

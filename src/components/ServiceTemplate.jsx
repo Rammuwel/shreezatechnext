@@ -88,7 +88,7 @@ export default function ServiceTemplate({
                   </p>
                   <div data-swiper-parallax="-200" className="flex flex-wrap gap-6">
                     {slide.primaryButton && (
-                      <Link href={slide.primaryButton.href} className="inline-flex items-center justify-center px-10 py-5 bg-[#D4AF37] text-[#040026] font-bold hover:bg-white transition-all shadow-[0_0_30px_rgba(212,175,55,0.3)] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] group">
+                      <Link href={slide.primaryButton.href} className="inline-flex items-center justify-center px-10 py-5 bg-[#D4AF37] text-white font-bold hover:bg-[#0A3A7A] hover:text-white transition-all shadow-[0_0_30px_rgba(212,175,55,0.3)] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] group">
                         {slide.primaryButton.text}
                         <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                       </Link>
@@ -242,7 +242,7 @@ export default function ServiceTemplate({
                   {security.description}
                 </p>
                 {security.button && (
-                  <Link href={security.button.href} className="inline-flex items-center justify-center px-8 py-4 border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#040026] font-bold transition-all group">
+                  <Link href={security.button.href} className="inline-flex items-center justify-center px-8 py-4 bg-[#D4AF37] text-white hover:bg-[#0A3A7A] hover:text-white font-bold transition-all group">
                     {security.button.text}
                     <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                   </Link>
@@ -402,7 +402,7 @@ export default function ServiceTemplate({
               {cta.description}
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-              <Link href={cta.button1.href} className="w-full sm:w-auto px-12 py-5 bg-[#D4AF37] text-[#040026] font-bold text-[18px] hover:bg-white transition-all shadow-[0_0_30px_rgba(212,175,55,0.4)] hover:-translate-y-1 rounded-sm">
+              <Link href={cta.button1.href} className="w-full sm:w-auto px-12 py-5 bg-[#D4AF37] text-white font-bold text-[18px] hover:bg-[#0A3A7A] hover:text-white transition-all shadow-[0_0_30px_rgba(212,175,55,0.4)] hover:-translate-y-1 rounded-sm">
                 {cta.button1.text}
               </Link>
               {cta.button2 && (

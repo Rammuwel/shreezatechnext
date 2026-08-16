@@ -2,14 +2,13 @@
 import React from 'react';
 import Link from 'next/link';
 import { ChevronRight, Home as HomeIcon } from 'lucide-react';
-import Navbar from './Navbar';
-import Footer from './Footer';
+
 import Contact from './Contact';
 
 export default function PageTemplate({ title, breadcrumbText }) {
   return (
     <div className="bg-[#000000] min-h-screen text-white selection:bg-[#ff7f00] selection:text-white">
-      <Navbar />
+
 
       {/* HERO SECTION */}
       <section className="relative bg-[#040026] pt-32 pb-24 px-6 lg:px-12 overflow-hidden min-h-[40vh] flex items-center">
@@ -62,7 +61,7 @@ export default function PageTemplate({ title, breadcrumbText }) {
         <Contact />
       </div>
 
-      <Footer />
+
     </div>
   );
 }
