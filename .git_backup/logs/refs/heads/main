@@ -1,0 +1,8 @@
+0000000000000000000000000000000000000000 68051ea8395cfaa2df21aa5ecf84f70db8c4cdb8 ram muwel <shrirammuwel02017@gmail.com> 1786560292 +0530	commit (initial): Initial commit from Create Next App
+68051ea8395cfaa2df21aa5ecf84f70db8c4cdb8 90e32409fba487552252969d26f2b20b3ac67d96 ram muwel <shrirammuwel02017@gmail.com> 1786728653 +0530	commit: first commit
+90e32409fba487552252969d26f2b20b3ac67d96 90e32409fba487552252969d26f2b20b3ac67d96 ram muwel <shrirammuwel02017@gmail.com> 1786728653 +0530	Branch: renamed refs/heads/master to refs/heads/main
+90e32409fba487552252969d26f2b20b3ac67d96 4964eefe68e67364b73c07786d4d145e616e7068 ram muwel <shrirammuwel02017@gmail.com> 1786754055 +0530	commit: Migrate all solutions pages to new SolutionTemplate
+4964eefe68e67364b73c07786d4d145e616e7068 266ea64fcbec4f03e6d90041a991989527266c40 ram muwel <shrirammuwel02017@gmail.com> 1786872422 +0530	commit: something do done
+266ea64fcbec4f03e6d90041a991989527266c40 4f66f3de72793b5c7872fd108b35e6d82336cc2d ram muwel <shrirammuwel02017@gmail.com> 1787855100 +0530	commit (merge): Merge branch shriram excluding about and contact pages
+4f66f3de72793b5c7872fd108b35e6d82336cc2d d44d598d18704e61df1fac4a49982167b94aecfe ram muwel <shrirammuwel02017@gmail.com> 1787857219 +0530	rebase (finish): refs/heads/main onto 9c35e1f4509439b27a4328c5b3e9ff9f0495734a
+d44d598d18704e61df1fac4a49982167b94aecfe 8cdd3d07575819f47e3bd8b024a021b90f05a1d5 ram muwel <shrirammuwel02017@gmail.com> 1787858060 +0530	commit: Fix founder image path

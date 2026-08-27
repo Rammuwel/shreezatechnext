@@ -1,0 +1,1 @@
+const fs = require('fs'); let code = fs.readFileSync('src/components/SolutionTemplate.jsx', 'utf8'); code = code.replace(/href=\{([^}]+)\}/g, (match, p1) => 'href={' + p1 + ' || \'#\'}'); fs.writeFileSync('src/components/SolutionTemplate.jsx', code);

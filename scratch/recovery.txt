@@ -1,0 +1,115 @@
+Created At: 2026-08-21T04:55:38+05:30
+Completed At: 2026-08-21T04:55:38+05:30
+File Path: `file:///c:/Users/shrir/shreezatech/src/components/SolutionTemplate.jsx`
+Total Lines: 536
+Total Bytes: 29470
+Showing lines 430 to 536
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+430:               <Link href={cta.button1.href} className="w-full sm:w-auto px-12 py-5 bg-[#ffb916] border-2 border-[#ffb916] cursor-pointer text-white font-bold text-[18px] transition-all shadow-[0_0_30px_rgba(212,175,55,0.4)] hover:-translate-y-1 rounded-sm hover:bg-transparent hover:border-[#154EA1] hover:text-[#154EA1]">
+431:                 {cta.button1.text}
+432:               </Link>
+433:               {cta.button2 && (
+434:                 <Link href={cta.button2.href} className="w-full sm:w-auto px-12 py-5 border border-white/30 text-white font-bold text-[18px] hover:bg-white/10 transition-colors rounded-sm">
+435:                   {cta.button2.text}
+436:                 </Link>
+437:               )}
+438:             </div>
+439:           </div>
+440:         </section>
+441:       )}
+442: 
+443:     </div>
+444:   );
+445: }
+446: 
+447:                 </SwiperSlide >
+448:               ))}
+449:             </Swiper >
+450:           </div >
+451:         </section >
+452:       )}
+453: 
+454: {/* 8. COMPLIANCE & INTEGRATIONS */ }
+455: {
+456:   compliance && (
+457:     <section className="py-20 bg-gray-50 border-y border-gray-200 overflow-hidden">
+458:       <div className="max-w-[1300px] mx-auto px-6 lg:px-12 text-center">
+459:         <h4 className="text-gray-500 font-bold tracking-widest uppercase mb-10 text-sm">{compliance.title}</h4>
+460:         <div className="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+461:           {compliance.logos.map((logo, idx) => (
+462:             <img key={idx} src={logo} alt={`Partner ${idx}`} className="h-12 object-contain" />
+463:           ))}
+464:         </div>
+465:       </div>
+466:     </section>
+467:   )
+468: }
+469: 
+470: {/* 9. INTERACTIVE FAQ */ }
+471: {
+472:   faq && (
+473:     <section className="py-24 lg:py-32 px-6 lg:px-12 bg-white">
+474:       <div className="max-w-[900px] mx-auto">
+475:         <div className="text-center mb-16" data-aos="fade-up">
+476:           <h2 className="text-[36px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
+477:             Technical <span className="text-[#ffb916]">FAQ</span>
+478:           </h2>
+479:         </div>
+480: 
+481:         <div className="space-y-4">
+482:           {faq.questions.map((q, idx) => (
+483:             <details key={idx} className="group bg-white rounded-xl shadow-[0_5px_20px_rgba(0,0,0,0.03)] border border-gray-100 [&_summary::-webkit-details-marker]:hidden" data-aos="fade-up" data-aos-delay={idx * 50}>
+484:               <summary className="flex cursor-pointer items-center justify-between p-6 text-gray-900 font-bold text-[18px]">
+485:                 {q.question}
+486:                 <span className="relative ml-4 flex h-6 w-6 shrink-0 items-center justify-center bg-gray-50 rounded-full group-open:bg-[#00A2FF]/10 transition-colors">
+487:                   <span className="absolute h-0.5 w-3 bg-gray-500 group-open:bg-[#00A2FF] transition-transform duration-300 group-open:rotate-180"></span>
+488:                   <span className="absolute h-3 w-0.5 bg-gray-500 group-open:bg-[#00A2FF] transition-transform duration-300 group-open:rotate-90"></span>
+489:                 </span>
+490:               </summary>
+491:               <div className="px-6 pb-6 text-gray-600 leading-relaxed border-t border-gray-50 pt-4">
+492:                 <p>{q.answer}</p>
+493:               </div>
+494:             </details>
+495:           ))}
+496:         </div>
+497:       </div>
+498:     </section>
+499:   )
+500: }
+501: 
+502: {/* 10. GRAND CTA SECTION */ }
+503: {
+504:   cta && (
+505:     <section className="bg-[#0A3A7A] py-24 lg:py-32 px-6 relative overflow-hidden">
+506:       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80')] opacity-20 object-cover mix-blend-overlay"></div>
+507:       <div className="absolute inset-0 bg-gradient-to-t from-[#040026] to-transparent opacity-90"></div>
+508: 
+509:       <div className="max-w-[1000px] mx-auto text-center relative z-10" data-aos="zoom-in">
+510:         <h4 className="text-[#ffb916] font-bold tracking-widest uppercase mb-6">{cta.subtitle}</h4>
+511:         <h2 className="text-[40px] md:text-[64px] font-normal text-white mb-8 leading-[1.1] tracking-tight">
+512:           {cta.title1} <span className="font-bold text-[#00A2FF]">{cta.title2}</span>
+513:         </h2>
+514:         <p className="text-blue-100 mb-12 text-[18px] md:text-[22px] max-w-2xl mx-auto leading-relaxed">
+515:           {cta.description}
+516:         </p>
+517:         <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+518:           <Link href={cta.button1.href} className="w-full sm:w-auto px-12 py-5 bg-[#ffb916] border-2 border-[#ffb916] cursor-pointer text-white font-bold text-[18px] transition-all shadow-[0_0_30px_rgba(212,175,55,0.4)] hover:-translate-y-1 rounded-sm hover:bg-transparent hover:border-[#154EA1] hover:text-[#154EA1]">
+519:             {cta.button1.text}
+520:           </Link>
+521:           {cta.button2 && (
+522:             <Link href={cta.button2.href} className="w-full sm:w-auto px-12 py-5 border border-white/30 text-white font-bold text-[18px] hover:bg-white/10 transition-colors rounded-sm">
+523:               {cta.button2.text}
+524:             </Link>
+525:           )}
+526:         </div>
+527:       </div>
+528:     </section>
+529:   )
+530: }
+531: 
+532:     </div >
+533:   );
+534: }
+535: 
+536: 
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

@@ -1,0 +1,24 @@
+0000000000000000000000000000000000000000 68051ea8395cfaa2df21aa5ecf84f70db8c4cdb8 ram muwel <shrirammuwel02017@gmail.com> 1786560292 +0530	commit (initial): Initial commit from Create Next App
+68051ea8395cfaa2df21aa5ecf84f70db8c4cdb8 90e32409fba487552252969d26f2b20b3ac67d96 ram muwel <shrirammuwel02017@gmail.com> 1786728653 +0530	commit: first commit
+90e32409fba487552252969d26f2b20b3ac67d96 0000000000000000000000000000000000000000 ram muwel <shrirammuwel02017@gmail.com> 1786728653 +0530	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 90e32409fba487552252969d26f2b20b3ac67d96 ram muwel <shrirammuwel02017@gmail.com> 1786728653 +0530	Branch: renamed refs/heads/master to refs/heads/main
+90e32409fba487552252969d26f2b20b3ac67d96 4964eefe68e67364b73c07786d4d145e616e7068 ram muwel <shrirammuwel02017@gmail.com> 1786754055 +0530	commit: Migrate all solutions pages to new SolutionTemplate
+4964eefe68e67364b73c07786d4d145e616e7068 266ea64fcbec4f03e6d90041a991989527266c40 ram muwel <shrirammuwel02017@gmail.com> 1786872422 +0530	commit: something do done
+266ea64fcbec4f03e6d90041a991989527266c40 266ea64fcbec4f03e6d90041a991989527266c40 ram muwel <shrirammuwel02017@gmail.com> 1786873259 +0530	checkout: moving from main to shriram
+266ea64fcbec4f03e6d90041a991989527266c40 af5da060503633f8c773e929e48f25a53acd30fa ram muwel <shrirammuwel02017@gmail.com> 1786886277 +0530	commit: check responsive
+af5da060503633f8c773e929e48f25a53acd30fa 7b8ab811694fe82a2e8b510c12db1bf715478d7f ram muwel <shrirammuwel02017@gmail.com> 1787351739 +0530	commit: Update SolutionTemplate layout and Challenge section content
+7b8ab811694fe82a2e8b510c12db1bf715478d7f 0967e18f2c5a2a226507f81b006b8a5dcb35bf27 ram muwel <shrirammuwel02017@gmail.com> 1787351843 +0530	commit: Update remaining website content and components
+0967e18f2c5a2a226507f81b006b8a5dcb35bf27 4bffdcd573440a47e956ea4194f3cfe8a74ed11c ram muwel <shrirammuwel02017@gmail.com> 1787854793 +0530	commit: Save progress before merge
+4bffdcd573440a47e956ea4194f3cfe8a74ed11c 266ea64fcbec4f03e6d90041a991989527266c40 ram muwel <shrirammuwel02017@gmail.com> 1787854798 +0530	checkout: moving from shriram to main
+266ea64fcbec4f03e6d90041a991989527266c40 4f66f3de72793b5c7872fd108b35e6d82336cc2d ram muwel <shrirammuwel02017@gmail.com> 1787855100 +0530	commit (merge): Merge branch shriram excluding about and contact pages
+4f66f3de72793b5c7872fd108b35e6d82336cc2d 9c35e1f4509439b27a4328c5b3e9ff9f0495734a ram muwel <shrirammuwel02017@gmail.com> 1787855509 +0530	pull origin main --rebase (start): checkout 9c35e1f4509439b27a4328c5b3e9ff9f0495734a
+9c35e1f4509439b27a4328c5b3e9ff9f0495734a ed3f6cb45d55001a680688f8351fb35040dc8326 ram muwel <shrirammuwel02017@gmail.com> 1787855509 +0530	pull origin main --rebase (pick): Update SolutionTemplate layout and Challenge section content
+ed3f6cb45d55001a680688f8351fb35040dc8326 94aa6f0998b350b6d7248edd32ed1ab92d9674cf ram muwel <shrirammuwel02017@gmail.com> 1787857218 +0530	rebase (continue): Update remaining website content and components
+94aa6f0998b350b6d7248edd32ed1ab92d9674cf d44d598d18704e61df1fac4a49982167b94aecfe ram muwel <shrirammuwel02017@gmail.com> 1787857219 +0530	rebase (pick): Save progress before merge
+d44d598d18704e61df1fac4a49982167b94aecfe d44d598d18704e61df1fac4a49982167b94aecfe ram muwel <shrirammuwel02017@gmail.com> 1787857219 +0530	rebase (finish): returning to refs/heads/main
+d44d598d18704e61df1fac4a49982167b94aecfe 8cdd3d07575819f47e3bd8b024a021b90f05a1d5 ram muwel <shrirammuwel02017@gmail.com> 1787858060 +0530	commit: Fix founder image path
+8cdd3d07575819f47e3bd8b024a021b90f05a1d5 4bffdcd573440a47e956ea4194f3cfe8a74ed11c ram muwel <shrirammuwel02017@gmail.com> 1787858060 +0530	checkout: moving from main to shriram
+4bffdcd573440a47e956ea4194f3cfe8a74ed11c 4bffdcd573440a47e956ea4194f3cfe8a74ed11c ram muwel <shrirammuwel02017@gmail.com> 1787858239 +0530	reset: moving to HEAD
+4bffdcd573440a47e956ea4194f3cfe8a74ed11c 8cdd3d07575819f47e3bd8b024a021b90f05a1d5 ram muwel <shrirammuwel02017@gmail.com> 1787858239 +0530	reset: moving to main
+8cdd3d07575819f47e3bd8b024a021b90f05a1d5 1962d0d85a5106669f5d52f989e2d2e572326a08 ram muwel <shrirammuwel02017@gmail.com> 1787864504 +0530	commit: chore: branding overhaul, CDN asset migration, and mobile responsiveness optimizations
+1962d0d85a5106669f5d52f989e2d2e572326a08 8cdd3d07575819f47e3bd8b024a021b90f05a1d5 ram muwel <shrirammuwel02017@gmail.com> 1787864527 +0530	checkout: moving from shriram to main
