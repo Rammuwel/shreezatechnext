@@ -47,10 +47,10 @@ export default function OurServices() {
     <section id="our-services" className="py-10 md:py-20 lg:py-24 bg-gray-50 relative">
       <div className="max-w-[1300px] mx-auto px-6 relative z-10">
         <div className="text-center mb-16" data-aos="fade-up">
-          <h2 className="text-[22px] md:text-[44px] font-light leading-[1.2] text-[#111]">
+          <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-light text-[#111]">
             Comprehensive <span className="font-semibold text-[#0A3A7A]">Services</span>
           </h2>
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-[16px] leading-[26px] md:text-[18px] md:leading-[30px]">
             Delivering robust digital solutions to transform your business and drive scalable growth in the modern era.
           </p>
         </div>
@@ -71,11 +71,11 @@ export default function OurServices() {
                   {service.icon}
                 </div>
                 
-                <h3 className="text-[22px] font-medium text-[#111] mb-4">
+                <h3 className="text-[22px] md:text-[26px] font-medium text-[#111] mb-4">
                   {service.title}
                 </h3>
                 
-                <p className="text-gray-600 leading-relaxed mb-8 h-auto lg:h-16">
+                <p className="text-[16px] leading-[26px] text-gray-600 mb-8 h-auto lg:h-16">
                   {service.desc}
                 </p>
                 

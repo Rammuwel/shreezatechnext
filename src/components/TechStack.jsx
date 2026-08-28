@@ -37,7 +37,7 @@ export default function TechStack() {
          <div className="max-w-[1300px] mx-auto px-6 lg:px-12">
             {/* Technologies Grid */}
             <div className="text-center mb-16 max-w-3xl mx-auto" data-aos="fade-up">
-               <h2 className="text-[20px] md:text-[40px] font-light leading-[1.2] text-[#111] mb-4">
+               <h2 className="text-[28px] md:text-[44px] leading-[36px] md:leading-[52px] font-light text-[#111] mb-4">
                   Technologies <span className="font-semibold text-[#0A3A7A]">We Master</span>
                </h2>
                <p className="text-[16px] text-gray-500 font-light leading-[1.6]">

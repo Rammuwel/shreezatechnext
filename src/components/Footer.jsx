@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#020012] pt-16 pb-8 border-t border-white/5">
       <div className="max-w-[1300px] mx-auto px-6">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 mb-12">
 
           <div className="col-span-1">
             <h4 className="text-white text-lg font-bold mb-6">Services</h4>
@@ -68,17 +68,17 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-white/5 text-[#B0B3C6] text-sm">
           <div className="flex items-center gap-[4px] shrink-0">
-            <Image src="/logo.png" alt="Shreezatech" width={56} height={56} className="h-[56px] w-auto object-contain drop-shadow-sm" />
+            <Image src="/logo.png" alt="Shreezatech" width={56} height={56} className="h-[40px] md:h-[56px] w-auto object-contain drop-shadow-sm" />
             <div className="flex flex-col justify-center">
               <span
-                className="text-[28px] font-semibold tracking-[0.03em] leading-none uppercase"
+                className="text-[20px] md:text-[28px] font-semibold tracking-[0.03em] leading-none uppercase"
                 style={{ fontFamily: 'var(--font-family-logo-main)' }}
               >
                 <span className="text-white">SHREEZA</span>
                 <span style={{ color: 'var(--color-logo-accent-orange)' }}>TECH</span>
               </span>
               <span
-                className="text-[13px] font-normal tracking-[0.04em] leading-tight mt-0 text-white/60"
+                className="text-[9px] md:text-[13px] font-normal tracking-[0.04em] leading-tight mt-0 text-white/60"
                 style={{ fontFamily: 'var(--font-family-logo-tag)' }}
               >
                 Consulting & Software Solutions

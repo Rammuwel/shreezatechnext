@@ -32,32 +32,32 @@ export default function Services() {
         
         {/* Section Heading */}
         <div className="mb-20 max-w-4xl" data-aos="fade-up">
-          <h2 className="text-[22px] md:text-[44px] leading-[1.3] font-normal text-white">
+          <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-normal text-white">
             Why Digital Transformation is a <br className="hidden md:block" /> Strategic Imperative for <span className="text-[#00A2FF]">Modern Enterprises</span>
           </h2>
         </div>
 
         {/* 2-Column Grid exactly like screenshot */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 md:gap-y-16">
           {benefitsData.map((item, index) => (
             <div 
               key={index} 
-              className="flex flex-col"
+              className="flex flex-col group cursor-default"
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
               {/* Icon with green accent */}
-              <div className="mb-8 text-white relative w-fit">
+              <div className="mb-8 text-white relative w-fit group-hover:-translate-y-2 transition-transform duration-300">
                 {item.icon}
                 {/* Accent element (simulating the green accents from their custom SVGs) */}
                 <div className="absolute top-1 right-0 w-3 h-3 bg-[#8CE57F] rounded-full translate-x-2 -translate-y-1 shadow-[0_0_8px_rgba(140,229,127,0.6)]"></div>
               </div>
               
-              <h3 className="text-[24px] font-normal text-white mb-4 leading-[1.3]">
+              <h3 className="text-[22px] md:text-[26px] font-normal text-white mb-4 leading-[1.3]">
                 {item.title}
               </h3>
               
-              <p className="text-[#B0B3C6] text-[18px] leading-[30px] font-normal">
+              <p className="text-[#B0B3C6] text-[16px] leading-[26px] md:text-[18px] md:leading-[30px] font-normal">
                 {item.desc}
               </p>
               

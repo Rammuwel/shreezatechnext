@@ -43,7 +43,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${manrope.variable} ${plusJakartaSans.variable} ${montserrat.variable} ${poppins.variable}`}>
-      <body className="flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-screen overflow-x-hidden w-full">
         <AosInit />
         <Navbar />
         <main className="flex-grow">

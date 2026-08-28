@@ -34,14 +34,14 @@ export default function ServiceTemplate({
         <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center pt-32 md:pt-48 relative z-10 w-full">
           <div className="max-w-4xl" data-aos="fade-right">
 
-            <h1 className="text-[24px] leading-[1.3] md:text-[40px] md:leading-[56px] font-normal mb-4 md:mb-6 text-white text-balance">
+            <h1 className="text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-normal mb-4 md:mb-6 text-white text-balance">
               {hero.slides?.[0]?.title1 || hero.title1} <br />
               <span className={hero.slides?.[0]?.title2Gradient || hero.title2Gradient || "text-[#ffb916] font-normal"}>
                 {hero.slides?.[0]?.title2 || hero.title2}
               </span>
             </h1>
             {(hero.slides?.[0]?.description || hero.description) && (
-              <p className="text-[14px] leading-[1.6] md:text-[20px] md:leading-[34px] font-normal text-gray-300 max-w-2xl mb-8 md:mb-10 text-balance">
+              <p className="text-[16px] leading-[26px] md:text-[20px] md:leading-[34px] font-normal text-gray-300 max-w-2xl mb-8 md:mb-10 text-balance">
                 {hero.slides?.[0]?.description || hero.description}
               </p>
             )}
@@ -78,10 +78,10 @@ export default function ServiceTemplate({
                 <div className="w-12 h-1 bg-[#ffb916]"></div>
                 <span className="text-[#0A3A7A] font-bold tracking-widest uppercase text-sm">{philosophy.tagline || 'Our Philosophy'}</span>
               </div>
-              <h2 className="text-[22px] md:text-[50px] font-normal text-[#111] leading-[1.1]">
+              <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-normal text-[#111] leading-[1.1]">
                 {philosophy.title1} <span className="text-[#0A3A7A] font-bold">{philosophy.title2}</span>
               </h2>
-              <div className="text-[18px] text-gray-600 leading-[1.8] space-y-6">
+              <div className="text-[16px] leading-[26px] md:text-[18px] md:leading-[30px] text-gray-600 space-y-6">
                 {Array.isArray(philosophy.description)
                   ? philosophy.description.map((p, i) => <p key={i}>{p}</p>)
                   : <p>{philosophy.description}</p>}
@@ -124,10 +124,10 @@ export default function ServiceTemplate({
         <section id="capabilities" className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#f8fbff] relative">
           <div className="max-w-[1300px] mx-auto">
             <div className="text-center max-w-4xl mx-auto mb-20" data-aos="fade-up">
-              <h2 className="text-[22px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
+              <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-bold text-[#0A3A7A] mb-6">
                 {ecosystem.title1} <span className="text-[#ffb916]">{ecosystem.title2}</span>
               </h2>
-              <p className="text-[18px] text-gray-600 leading-[1.8]">
+              <p className="text-[16px] leading-[26px] md:text-[18px] md:leading-[30px] text-gray-600">
                 {ecosystem.description}
               </p>
             </div>
@@ -139,7 +139,7 @@ export default function ServiceTemplate({
                   <div className="mb-8 w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-50 to-white flex items-center justify-center text-[#0A3A7A] group-hover:scale-110 group-hover:text-[#ffb916] transition-all shadow-sm relative z-10">
                     {card.icon}
                   </div>
-                  <h3 className="text-[22px] font-bold text-gray-900 mb-4 relative z-10">{card.title}</h3>
+                  <h3 className="text-[22px] md:text-[26px] font-bold text-gray-900 mb-4 relative z-10">{card.title}</h3>
                   <p className="text-[16px] text-gray-600 leading-[1.8] mb-8 relative z-10">
                     {card.description}
                   </p>
@@ -166,15 +166,15 @@ export default function ServiceTemplate({
           <div className="max-w-[1300px] mx-auto relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-24">
               <div className="lg:col-span-5" data-aos="fade-right">
-                <h2 className="text-[22px] md:text-[46px] font-bold text-white leading-[1.1] mb-6">
+                <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-bold text-white mb-6">
                   {security.title1.split('<br/>').map((line, i) => <React.Fragment key={i}>{line}<br /></React.Fragment>)}
                   <span className="text-[#00A2FF]">{security.title2}</span>
                 </h2>
-                <p className="text-[18px] text-gray-400 leading-[1.8] mb-10">
+                <p className="text-[16px] leading-[26px] md:text-[18px] md:leading-[30px] text-gray-400 mb-10">
                   {security.description}
                 </p>
                 {security.button && (
-                  <Link href={security.button.href} className="inline-flex items-center justify-center px-8 py-4 bg-[#ffb916] border-2 border-[#ffb916] cursor-pointer text-white font-bold transition-all group hover:bg-transparent hover:border-[#154EA1] hover:text-[#154EA1]">
+                  <Link href={security.button.href} className="inline-flex items-center justify-center px-8 py-4 bg-[#ffb916] border-2 border-[#ffb916] cursor-pointer text-white font-bold transition-all group hover:bg-transparent hover:border-[#154EA1] hover:text-[#154EA1] transform hover:-translate-y-1 hover:shadow-lg">
                     {security.button.text}
                     <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                   </Link>
@@ -185,7 +185,7 @@ export default function ServiceTemplate({
                 {security.cards.map((card, i) => (
                   <div key={i} className="p-8 border border-white/10 bg-white/5 hover:bg-white/10 transition-colors backdrop-blur-md rounded-2xl" data-aos="fade-up" data-aos-delay={(i + 1) * 100}>
                     <div className="mb-6">{card.icon}</div>
-                    <h3 className="text-[22px] font-bold text-white mb-4">{card.title}</h3>
+                    <h3 className="text-[22px] md:text-[26px] font-bold text-white mb-4">{card.title}</h3>
                     <p className="text-[15px] text-gray-400 leading-[1.6]">
                       {card.description}
                     </p>
@@ -201,10 +201,10 @@ export default function ServiceTemplate({
       {expertise && (
         <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-white">
           <div className="max-w-[1300px] mx-auto text-center mb-20" data-aos="fade-up">
-            <h2 className="text-[22px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
+            <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-bold text-[#0A3A7A] mb-6">
               {expertise.title}
             </h2>
-            <p className="text-[18px] text-gray-600 max-w-2xl mx-auto">
+            <p className="text-[16px] leading-[26px] md:text-[18px] md:leading-[30px] text-gray-600 max-w-2xl mx-auto">
               {expertise.description}
             </p>
           </div>
@@ -216,7 +216,7 @@ export default function ServiceTemplate({
                   <img src={card.image} alt={card.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-[#0A3A7A]/10 group-hover:bg-transparent transition-colors duration-500"></div>
                 </div>
-                <h3 className="text-[24px] font-bold text-gray-900 mb-4 group-hover:text-[#ffb916] transition-colors">{card.title}</h3>
+                <h3 className="text-[22px] md:text-[26px] font-bold text-gray-900 mb-4 group-hover:text-[#ffb916] transition-colors">{card.title}</h3>
                 <p className="text-[16px] text-gray-600">{card.description}</p>
               </div>
             ))}
@@ -237,7 +237,7 @@ export default function ServiceTemplate({
               }
            `}</style>
           <div className="max-w-[1300px] mx-auto relative z-10">
-            <h2 className="text-[22px] md:text-[50px] font-normal text-white text-center mb-10" data-aos="fade-up">
+            <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-normal text-white text-center mb-10" data-aos="fade-up">
               {process.title1} <span className="font-bold text-[#ffb916]">{process.title2}</span>
             </h2>
 
@@ -253,7 +253,7 @@ export default function ServiceTemplate({
                     <div className="text-[80px] font-light leading-none mb-4 text-white/10 -mt-8 -ml-4 absolute -z-10 select-none">
                       {(index + 1).toString().padStart(2, '0')}
                     </div>
-                    <h3 className="text-[24px] font-bold text-[#ffb916] mb-4">{step.title}</h3>
+                    <h3 className="text-[22px] md:text-[26px] font-bold text-[#ffb916] mb-4">{step.title}</h3>
                     <p className="text-[16px] text-gray-300 leading-[1.8]">{step.description}</p>
                   </div>
                 ))}
@@ -268,10 +268,10 @@ export default function ServiceTemplate({
         <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-white border-t border-gray-100">
           <div className="max-w-[1300px] mx-auto">
             <div className="text-center mb-16" data-aos="fade-up">
-              <h2 className="text-[22px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
+              <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-bold text-[#0A3A7A] mb-6">
                 {benefits.title1} <span className="text-[#ffb916]">{benefits.title2}</span>
               </h2>
-              <p className="text-[18px] text-gray-600 max-w-3xl mx-auto">{benefits.description}</p>
+              <p className="text-[16px] leading-[26px] md:text-[18px] md:leading-[30px] text-gray-600 max-w-3xl mx-auto">{benefits.description}</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -280,7 +280,7 @@ export default function ServiceTemplate({
                   <div className="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-[#0A3A7A] mb-6 group-hover:scale-110 group-hover:text-[#ffb916] transition-all">
                     {card.icon}
                   </div>
-                  <h3 className="text-[20px] font-bold text-gray-900 mb-4">{card.title}</h3>
+                  <h3 className="text-[20px] md:text-[24px] font-bold text-gray-900 mb-4">{card.title}</h3>
                   <p className="text-gray-600 leading-relaxed text-[15px]">{card.description}</p>
                 </div>
               ))}
@@ -294,7 +294,7 @@ export default function ServiceTemplate({
         <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#f8fbff]">
           <div className="max-w-[1000px] mx-auto">
             <div className="text-center mb-16" data-aos="fade-up">
-              <h2 className="text-[22px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
+              <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-bold text-[#0A3A7A] mb-6">
                 Frequently Asked <span className="text-[#ffb916]">Questions</span>
               </h2>
             </div>
@@ -302,7 +302,7 @@ export default function ServiceTemplate({
             <div className="space-y-6">
               {faq.questions.map((q, idx) => (
                 <details key={idx} className="group bg-white rounded-xl shadow-sm border border-gray-100 [&_summary::-webkit-details-marker]:hidden" data-aos="fade-up" data-aos-delay={idx * 50}>
-                  <summary className="flex cursor-pointer items-center justify-between p-6 text-gray-900 font-bold text-[18px]">
+                  <summary className="flex cursor-pointer items-center justify-between p-6 text-gray-900 font-bold text-[16px] md:text-[18px]">
                     {q.question}
                     <span className="relative ml-4 flex h-6 w-6 shrink-0 items-center justify-center">
                       <span className="absolute h-0.5 w-4 bg-[#ffb916] transition-transform duration-300 group-open:rotate-180"></span>
@@ -327,10 +327,10 @@ export default function ServiceTemplate({
 
           <div className="max-w-[1000px] mx-auto text-center relative z-10" data-aos="zoom-in">
             <h4 className="text-[#ffb916] font-bold tracking-widest uppercase mb-6">{cta.subtitle}</h4>
-            <h2 className="text-[20px] md:text-[64px] font-normal text-white mb-8 leading-[1.1] tracking-tight">
+            <h2 className="text-[28px] leading-[36px] md:text-[56px] md:leading-[64px] font-normal text-white mb-8 tracking-tight">
               {cta.title1} <span className="font-bold text-[#ffb916]">{cta.title2}</span>
             </h2>
-            <p className="text-blue-100 mb-12 text-[15px] md:text-[22px] max-w-2xl mx-auto leading-relaxed">
+            <p className="text-blue-100 mb-12 text-[16px] leading-[26px] md:text-[22px] md:leading-[32px] max-w-2xl mx-auto">
               {cta.description}
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6" data-aos="fade-up" data-aos-delay="200">
@@ -340,7 +340,7 @@ export default function ServiceTemplate({
                 </Link>
               )}
               {(cta.button2 || cta.secondaryButton) && (
-                <Link href={cta.button2?.href || cta.secondaryButton?.href || "/contact-us"} className="px-10 py-4 bg-transparent border border-white/30 text-white font-bold rounded hover:bg-white/10 transition-colors duration-300">
+                <Link href={cta.button2?.href || cta.secondaryButton?.href || "/contact-us"} className="px-10 py-4 bg-transparent border border-white/30 text-white font-bold rounded transition-all duration-300 transform hover:-translate-y-1 hover:bg-white/10 hover:shadow-lg">
                   {cta.button2?.text || cta.secondaryButton?.text}
                 </Link>
               )}

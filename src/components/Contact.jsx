@@ -9,7 +9,7 @@ export default function Contact({ title, subtitle }) {
 
           {/* Left Side: Content */}
           <div className="lg:col-span-4 flex flex-col pt-0 lg:pt-8" data-aos="fade-right">
-            <h2 className="text-[20px] md:text-[44px] leading-[1.25] font-normal text-[#212529] mb-4 md:mb-6">
+            <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-normal text-[#212529] mb-4 md:mb-6">
               {title || (
                 <>
                   Technology to <br />
@@ -18,7 +18,7 @@ export default function Contact({ title, subtitle }) {
               )}
             </h2>
 
-            <p className="text-[#212529] text-[14px] md:text-[20px] leading-[28px] md:leading-[34px] font-normal mb-8 lg:mb-0">
+            <p className="text-[#212529] text-[16px] leading-[26px] md:text-[20px] md:leading-[34px] font-normal mb-8 lg:mb-0">
               {subtitle || "Let's make things happen! Drop us a line, and we'll reach out to you promptly"}
             </p>
           </div>

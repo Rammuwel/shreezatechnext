@@ -48,19 +48,16 @@ export default function Discover() {
 
           {/* Right Side: Content */}
           <div className="flex flex-col justify-center" data-aos="fade-left" data-aos-delay="200">
-            <h2 className="text-[22px] md:text-[42px] leading-[1.25] font-normal text-[#212529] mb-8">
-              Get to know about <br className="hidden lg:block" />
-              Shreezatech's <br className="hidden lg:block" />
-              Comprehensive World <br className="hidden lg:block" />
-              of Offerings
+            <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-normal text-[#212529] mb-8">
+              Why <span className="font-bold text-[#0A3A7A]">Shreeza Tech?</span>
             </h2>
             
-            <p className="text-[#212529] text-[15px] md:text-[20px] leading-[34px] font-normal mb-8">
-              Welcome to the forefront of financial innovation, where technology converges with lending expertise to create an unparalleled digital lending experience. Our Fintech solutions are poised to reshape the way lenders empower their borrowers, forging a new era of seamless and efficient lending.
+            <p className="text-[#212529] text-[16px] leading-[26px] md:text-[20px] md:leading-[34px] font-normal mb-8">
+              We combine deep industry expertise with cutting-edge technology to build solutions that drive measurable business results.
             </p>
             
-            <p className="text-gray-700 text-[14px] md:text-[18px] leading-[30px] font-normal">
-              Introducing <strong>Shreezatech Cloud Solutions</strong> - A comprehensive suite of enterprise management tools designed to streamline operations, mitigate risk, and accelerate growth for forward-thinking financial institutions.
+            <p className="text-gray-700 text-[16px] leading-[26px] md:text-[18px] md:leading-[30px] font-normal">
+              Whether you need to streamline operations with AI, modernize legacy systems, or launch a breakthrough digital product, our team of seasoned engineers and strategists is dedicated to delivering excellence at every step of your digital journey.
             </p>
           </div>
           

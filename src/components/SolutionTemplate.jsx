@@ -42,18 +42,18 @@ export default function SolutionTemplate({
         <div className="max-w-[1300px] mx-auto px-6 relative z-10 w-full pt-32 lg:pt-48 pb-24 flex flex-col lg:flex-row items-center gap-10 md:gap-16">
           <div className="lg:w-3/5 text-left" data-aos="fade-right">
 
-            <h1 className="text-[26px] leading-[1.2] md:text-[50px] lg:text-[75px] md:leading-[1.05] font-normal mb-6 md:mb-8 text-white tracking-tight text-balance">
+            <h1 className="text-[36px] leading-[44px] md:text-[56px] lg:text-[75px] md:leading-[64px] font-normal mb-6 md:mb-8 text-white tracking-tight text-balance">
               {hero.title1} <br />
               <span className={`text-transparent bg-clip-text font-bold ${hero.title2Gradient || 'bg-gradient-to-r from-[#ffb916] to-[#00f2fe]'}`}>
                 {hero.title2}
               </span>
             </h1>
-            <p className="text-[14px] leading-[1.6] md:text-[20px] lg:text-[24px] font-light text-gray-300 mb-8 md:mb-12 max-w-2xl md:leading-relaxed text-balance">
+            <p className="text-[16px] leading-[26px] md:text-[20px] lg:text-[24px] font-light text-gray-300 mb-8 md:mb-12 max-w-2xl md:leading-relaxed text-balance">
               {hero.description}
             </p>
             <div className="flex flex-wrap gap-6">
               {hero.primaryButton && (
-                <Link href={hero.primaryButton.href} className="inline-flex items-center justify-center gap-2 bg-[#ffb916] text-[#0A3A7A] px-8 py-4 rounded-full font-bold hover:bg-white transition-all duration-300 transform hover:-translate-y-1">
+                <Link href={hero.primaryButton.href} className="inline-flex items-center justify-center gap-2 bg-[#ffb916] text-[#0A3A7A] px-8 py-4 rounded-full font-bold hover:bg-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
                   {hero.primaryButton.text} <ArrowRight size={20} />
                 </Link>
               )}
@@ -92,11 +92,11 @@ export default function SolutionTemplate({
                 <h4 className="text-[#0A3A7A] font-bold tracking-widest uppercase mb-4 text-sm flex items-center gap-3">
                   <span className="w-8 h-[2px] bg-[#0A3A7A]"></span> The Challenge
                 </h4>
-                <h2 className="text-[22px] md:text-[46px] leading-[1.2] font-light mb-6 text-[#212529]">
+                <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-light mb-6 text-[#212529]">
                   {challenge.title1} <span className="font-bold text-[#0A3A7A] block">{challenge.title2}</span>
                 </h2>
 
-                <div className="text-gray-600 text-[18px] leading-[1.8] space-y-6 border-l-4 border-[#ffb916] pl-6 py-2">
+                <div className="text-[16px] leading-[26px] md:text-[18px] md:leading-[30px] text-gray-600 space-y-6 border-l-4 border-[#ffb916] pl-6 py-2">
                   {challenge.description.map((p, i) => <p key={i}>{p}</p>)}
                 </div>
               </div>
@@ -165,7 +165,7 @@ export default function SolutionTemplate({
         <section className="py-10 md:py-16 px-6 lg:px-12 bg-white border-b border-gray-100">
           <div className="max-w-[1300px] mx-auto">
             <div className="text-center mb-12" data-aos="fade-up">
-              <h2 className="text-[22px] md:text-[42px] font-bold text-[#0A3A7A] leading-[1.1] mb-4">
+              <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-bold text-[#0A3A7A] mb-4">
                 {roi.title1} <span className="text-[#ffb916]">{roi.title2}</span>
               </h2>
             </div>
@@ -190,7 +190,7 @@ export default function SolutionTemplate({
             {/* Unified Header & Tab Toggle */}
             <div className="text-center mb-16" data-aos="fade-up">
               <h4 className="text-[#0A3A7A] font-bold tracking-widest uppercase mb-4 text-sm">Capabilities & Architecture</h4>
-              <h2 className="text-[22px] md:text-[50px] font-bold text-[#111] leading-[1.1] mb-10">
+              <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-bold text-[#111] mb-10">
                 {features?.title1 || architecture?.title} <span className="text-[#ffb916]">{features?.title2 || ''}</span>
               </h2>
 
@@ -224,8 +224,8 @@ export default function SolutionTemplate({
                         <div className="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center text-[#0A3A7A] mb-6 group-hover:bg-[#ffb916] group-hover:text-white transition-colors">
                           {card.icon}
                         </div>
-                        <h3 className="text-[22px] font-bold text-gray-900 mb-3">{card.title}</h3>
-                        <p className="text-gray-600 text-[15px] leading-relaxed">{card.description}</p>
+                        <h3 className="text-[22px] md:text-[26px] font-bold text-gray-900 mb-3">{card.title}</h3>
+                        <p className="text-gray-600 text-[16px] leading-[26px]">{card.description}</p>
                       </div>
                     </div>
                   </div>
@@ -248,7 +248,7 @@ export default function SolutionTemplate({
                       <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-[#ffb916] mb-6">
                         {layer.icon}
                       </div>
-                      <h3 className="text-[24px] font-bold text-white mb-4">{layer.title}</h3>
+                      <h3 className="text-[22px] md:text-[26px] font-bold text-white mb-4">{layer.title}</h3>
                       <ul className="space-y-3">
                         {layer.items.map((item, i) => (
                           <li key={i} className="flex items-center text-gray-300 font-medium text-sm">
@@ -273,7 +273,7 @@ export default function SolutionTemplate({
         <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#020012] text-white relative overflow-hidden">
           <div className="max-w-[1300px] mx-auto relative z-10 text-center">
             <h4 className="text-[#ffb916] font-bold tracking-widest uppercase mb-4 text-sm">Our Process</h4>
-            <h2 className="text-[22px] md:text-[50px] font-bold text-white leading-[1.1] mb-16">
+            <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-bold text-white mb-16">
               {process.title}
             </h2>
 
@@ -281,7 +281,7 @@ export default function SolutionTemplate({
               {process.steps?.map((step, idx) => (
                 <div key={idx} className="relative p-6 border border-white/10 rounded-3xl hover:shadow-[0_20px_50px_rgba(255,185,22,0.1)] transition-all bg-white/5 backdrop-blur-sm text-left group">
                   <div className="text-[60px] font-bold text-white/5 absolute right-4 top-4 group-hover:text-[#ffb916]/20 transition-colors">0{idx + 1}</div>
-                  <h3 className="text-[20px] font-bold text-white mb-3 relative z-10">{step.title}</h3>
+                  <h3 className="text-[20px] md:text-[24px] font-bold text-white mb-3 relative z-10">{step.title}</h3>
                   <p className="text-gray-400 text-sm relative z-10">{step.description}</p>
                 </div>
               ))}
@@ -300,10 +300,10 @@ export default function SolutionTemplate({
                 <h4 className="text-[#0A3A7A] font-bold tracking-widest uppercase mb-4 text-sm flex items-center gap-3">
                   <span className="w-8 h-[2px] bg-[#0A3A7A]"></span> Future Ready
                 </h4>
-                <h2 className="text-[22px] md:text-[50px] font-normal leading-[1.1] mb-6 text-[#212529]">
+                <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-normal mb-6 text-[#212529]">
                   {aiFuture.title1} <span className="font-bold text-[#0A3A7A] block">{aiFuture.title2}</span>
                 </h2>
-                <p className="text-gray-600 text-[18px] leading-[1.8] mb-8">{aiFuture.description}</p>
+                <p className="text-gray-600 text-[16px] leading-[26px] md:text-[18px] md:leading-[30px] mb-8">{aiFuture.description}</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {aiFuture.features?.map((f, i) => (
                     <div key={i} className="flex items-center gap-3">
@@ -347,7 +347,7 @@ export default function SolutionTemplate({
           <div className="max-w-[1300px] mx-auto px-6 lg:px-12 mb-12 flex justify-between items-end">
             <div>
               <h4 className="text-[#ffb916] font-bold tracking-widest uppercase mb-4 text-sm">Success Stories</h4>
-              <h2 className="text-[22px] md:text-[50px] font-normal leading-[1.1]">
+              <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-normal">
                 {caseStudies.title}
               </h2>
             </div>
@@ -372,7 +372,7 @@ export default function SolutionTemplate({
 
                     <div className="absolute bottom-0 left-0 w-full p-8">
                       <div className="text-[#ffb916] font-bold text-sm mb-3 uppercase tracking-wider">{study.industry}</div>
-                      <h3 className="text-[24px] font-bold text-white mb-4 line-clamp-2">{study.title}</h3>
+                      <h3 className="text-[22px] md:text-[26px] font-bold text-white mb-4 line-clamp-2">{study.title}</h3>
                       <div className="flex gap-6 border-t border-white/20 pt-4 mt-4">
                         {study.stats.map((stat, i) => (
                           <div key={i}>
@@ -409,7 +409,7 @@ export default function SolutionTemplate({
         <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-white">
           <div className="max-w-[900px] mx-auto">
             <div className="text-center mb-16" data-aos="fade-up">
-              <h2 className="text-[22px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
+              <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-bold text-[#0A3A7A] mb-6">
                 Technical <span className="text-[#ffb916]">FAQ</span>
               </h2>
             </div>
@@ -417,7 +417,7 @@ export default function SolutionTemplate({
             <div className="space-y-4">
               {faq.questions.map((q, idx) => (
                 <details key={idx} className="group bg-white rounded-xl shadow-[0_5px_20px_rgba(0,0,0,0.03)] border border-gray-100 [&_summary::-webkit-details-marker]:hidden" data-aos="fade-up" data-aos-delay={idx * 50}>
-                  <summary className="flex cursor-pointer items-center justify-between p-6 text-gray-900 font-bold text-[18px]">
+                  <summary className="flex cursor-pointer items-center justify-between p-6 text-gray-900 font-bold text-[16px] md:text-[18px]">
                     {q.question}
                     <span className="relative ml-4 flex h-6 w-6 shrink-0 items-center justify-center bg-gray-50 rounded-full group-open:bg-[#ffb916]/10 transition-colors">
                       <span className="absolute h-0.5 w-3 bg-gray-500 group-open:bg-[#ffb916] transition-transform duration-300 group-open:rotate-180"></span>
@@ -442,10 +442,10 @@ export default function SolutionTemplate({
 
           <div className="max-w-[1000px] mx-auto text-center relative z-10" data-aos="zoom-in">
             <h4 className="text-[#ffb916] font-bold tracking-widest uppercase mb-6">{cta.subtitle}</h4>
-            <h2 className="text-[20px] md:text-[64px] font-normal text-white mb-8 leading-[1.1] tracking-tight">
+            <h2 className="text-[28px] leading-[36px] md:text-[56px] md:leading-[64px] font-normal text-white mb-8 tracking-tight">
               {cta.title1} <span className="font-bold text-[#ffb916]">{cta.title2}</span>
             </h2>
-            <p className="text-blue-100 mb-12 text-[15px] md:text-[22px] max-w-2xl mx-auto leading-relaxed">
+            <p className="text-blue-100 mb-12 text-[16px] leading-[26px] md:text-[22px] md:leading-[32px] max-w-2xl mx-auto">
               {cta.description}
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
@@ -455,7 +455,7 @@ export default function SolutionTemplate({
                 </Link>
               )}
               {cta.button2 && (
-                <Link href={cta.button2.href} className="w-full sm:w-auto px-12 py-5 border border-white/30 text-white font-bold text-[18px] hover:bg-white/10 transition-colors rounded-sm">
+                <Link href={cta.button2.href} className="w-full sm:w-auto px-12 py-5 border border-white/30 text-white font-bold text-[18px] hover:bg-white/10 transition-all rounded-sm transform hover:-translate-y-1 hover:shadow-lg">
                   {cta.button2.text}
                 </Link>
               )}

@@ -12,7 +12,7 @@ export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <section className="min-h-[750px] md:h-[85vh] w-full relative overflow-hidden bg-[#040026]">
+    <section className="h-[650px] md:h-[750px] lg:h-[85vh] lg:min-h-[800px] w-full relative overflow-hidden bg-[#040026]">
       <style>{`
         .mySwiper .swiper-pagination-bullet {
           width: 24px;
@@ -62,13 +62,13 @@ export default function Hero() {
             <img src="/images/hero-slide-1.jpg" alt="Digital Innovation" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-[#040026]/70"></div>
           </div>
-          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-64 pb-48 md:pb-56 w-full">
+          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-24 pb-24 md:pt-32 md:pb-48 w-full">
             <div className="max-w-4xl">
-              <h1 className="text-[20px] md:text-[40px] leading-[36px] md:leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
+              <h1 className="text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
                 Tech Consulting & <br />
                 <span className="text-[#ffb916]">Software Solutions</span>
               </h1>
-              <p className="text-[20px] leading-[34px] font-normal text-gray-300 max-w-2xl mb-10 text-balance" data-swiper-parallax="-200">
+              <p className="text-[16px] md:text-[20px] leading-[26px] md:leading-[34px] font-normal text-gray-300 max-w-2xl mb-10 text-balance" data-swiper-parallax="-200">
                 We build enterprise software, AI-powered platforms, and scalable cloud infrastructure that transform businesses worldwide.
               </p>
               <div data-swiper-parallax="-100">
@@ -84,13 +84,13 @@ export default function Hero() {
             <img src="/images/hero-slide-2.jpg" alt="Deep Domain Solutions" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-[#040026]/60"></div>
           </div>
-          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-64 pb-48 md:pb-56 w-full">
+          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-24 pb-24 md:pt-32 md:pb-48 w-full">
             <div className="max-w-4xl">
-              <h1 className="text-[22px] md:text-[24px] leading-[1.3] md:text-[40px] md:leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
+              <h1 className="text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
                 Deep-Domain Solutions <br />
                 <span className="text-[#ffb916]">for Every Industry</span>
               </h1>
-              <p className="text-[20px] leading-[34px] font-normal text-gray-300 max-w-2xl mb-10 text-balance" data-swiper-parallax="-200">
+              <p className="text-[16px] md:text-[20px] leading-[26px] md:leading-[34px] font-normal text-gray-300 max-w-2xl mb-10 text-balance" data-swiper-parallax="-200">
                 Delivering highly specialized, HIPAA-compliant and secure software platforms for Healthcare, Finance, Education, and Real Estate.
               </p>
               <div data-swiper-parallax="-100">
@@ -106,13 +106,13 @@ export default function Hero() {
             <img src="/images/hero-slide-3.jpg" alt="Cloud and AI" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-[#040026]/70"></div>
           </div>
-          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-64 pb-48 md:pb-56 w-full">
+          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-24 pb-24 md:pt-32 md:pb-48 w-full">
             <div className="max-w-4xl">
-              <h1 className="text-[22px] md:text-[24px] leading-[1.3] md:text-[40px] md:leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
+              <h1 className="text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
                 Scalable Digital Products <br />
                 <span className="text-[#ffb916]">for Enterprises</span>
               </h1>
-              <p className="text-[20px] leading-[34px] font-normal text-gray-300 max-w-2xl mb-10 text-balance" data-swiper-parallax="-200">
+              <p className="text-[16px] md:text-[20px] leading-[26px] md:leading-[34px] font-normal text-gray-300 max-w-2xl mb-10 text-balance" data-swiper-parallax="-200">
                 From custom web and mobile applications to complete digital transformation, we engineer scalable solutions from idea to launch.
               </p>
               <div data-swiper-parallax="-100">
@@ -128,13 +128,13 @@ export default function Hero() {
             <img src="/images/hero-slide-4.jpg" alt="Technical Excellence" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-[#040026]/70"></div>
           </div>
-          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-64 pb-48 md:pb-56 w-full">
+          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-24 pb-24 md:pt-32 md:pb-48 w-full">
             <div className="max-w-4xl">
-              <h1 className="text-[22px] md:text-[24px] leading-[1.3] md:text-[40px] md:leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
+              <h1 className="text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
                 The New Age of <br />
                 <span className="text-[#ffb916]">Cloud & AI Engineering</span>
               </h1>
-              <p className="text-[20px] leading-[34px] font-normal text-gray-300 max-w-2xl mb-10 text-balance" data-swiper-parallax="-200">
+              <p className="text-[16px] md:text-[20px] leading-[26px] md:leading-[34px] font-normal text-gray-300 max-w-2xl mb-10 text-balance" data-swiper-parallax="-200">
                 Leveraging advanced LLMs, intelligent automation, and robust AWS/Azure cloud infrastructure to drive real business outcomes.
               </p>
               <div data-swiper-parallax="-100">

@@ -23,21 +23,21 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 transition-all duration-300" data-aos="fade-down">
-      <div className="max-w-[1400px] mx-auto px-2 md:px-6 flex justify-between items-center h-16 md:h-20">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 flex justify-between items-center h-16 md:h-20">
 
         {/* Left Side: Logo + Brand Name */}
-        <Link href="/" className="flex items-center gap-[4px] shrink-0 scale-[0.75] md:scale-100 origin-left transition-transform duration-300">
-          <Image src="/logo.png" alt="Shreezatech" width={56} height={56} className="h-[56px] w-auto object-contain drop-shadow-sm" priority />
+        <Link href="/" className="flex items-center gap-1.5 md:gap-[4px] shrink-0 transition-transform duration-300">
+          <Image src="/logo.png" alt="Shreezatech" width={56} height={56} className="h-[40px] md:h-[56px] w-auto object-contain drop-shadow-sm" priority />
           <div className="flex flex-col justify-center">
             <span
-              className="text-[28px] font-semibold tracking-[0.03em] leading-none uppercase"
+              className="text-[20px] md:text-[28px] font-semibold tracking-[0.03em] leading-none uppercase"
               style={{ fontFamily: 'var(--font-family-logo-main)' }}
             >
               <span style={{ color: 'var(--color-logo-primary-blue)' }}>SHREEZA</span>
               <span style={{ color: 'var(--color-logo-accent-orange)' }}>TECH</span>
             </span>
             <span
-              className="text-[13px] font-normal tracking-[0.04em] leading-tight mt-0"
+              className="text-[9px] md:text-[13px] font-normal tracking-[0.04em] leading-tight mt-0"
               style={{ fontFamily: 'var(--font-family-logo-tag)', color: 'var(--color-logo-text-subtitle)' }}
             >
               Consulting & Software Solutions

@@ -50,7 +50,7 @@ export default function OurSolutions() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16" data-aos="fade-up">
           <div className="max-w-2xl">
             <div className="inline-block px-4 py-1.5 rounded-full border border-[#ffb916]/30 bg-[#ffb916]/10 text-[#ffb916] text-sm font-medium mb-4">Industry Solutions</div>
-            <h2 className="text-[22px] md:text-[44px] font-light leading-[1.2] text-white">
+            <h2 className="text-[28px] md:text-[44px] leading-[36px] md:leading-[52px] font-light text-white">
               Tailored for <span className="font-semibold text-[#ffb916]">Your Industry</span>
             </h2>
           </div>
