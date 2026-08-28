@@ -12,7 +12,7 @@ export default function Insights() {
         
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16" data-aos="fade-up">
-          <h2 className="text-[36px] md:text-[44px] font-normal text-white">
+          <h2 className="text-[22px] md:text-[44px] font-normal text-white">
             Insights Hub
           </h2>
           <Link href="/blogs" className="group flex items-center gap-3 text-white font-medium hover:text-[#00A2FF] transition-colors mt-6 md:mt-0">

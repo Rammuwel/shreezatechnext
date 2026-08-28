@@ -64,7 +64,7 @@ export default function Hero() {
           </div>
           <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-64 pb-48 md:pb-56 w-full">
             <div className="max-w-4xl">
-              <h1 className="text-[26px] md:text-[40px] leading-[36px] md:leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
+              <h1 className="text-[20px] md:text-[40px] leading-[36px] md:leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
                 Tech Consulting & <br />
                 <span className="text-[#ffb916]">Software Solutions</span>
               </h1>
@@ -86,7 +86,7 @@ export default function Hero() {
           </div>
           <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-64 pb-48 md:pb-56 w-full">
             <div className="max-w-4xl">
-              <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
+              <h1 className="text-[22px] md:text-[24px] leading-[1.3] md:text-[40px] md:leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
                 Deep-Domain Solutions <br />
                 <span className="text-[#ffb916]">for Every Industry</span>
               </h1>
@@ -108,7 +108,7 @@ export default function Hero() {
           </div>
           <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-64 pb-48 md:pb-56 w-full">
             <div className="max-w-4xl">
-              <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
+              <h1 className="text-[22px] md:text-[24px] leading-[1.3] md:text-[40px] md:leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
                 Scalable Digital Products <br />
                 <span className="text-[#ffb916]">for Enterprises</span>
               </h1>
@@ -130,7 +130,7 @@ export default function Hero() {
           </div>
           <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-64 pb-48 md:pb-56 w-full">
             <div className="max-w-4xl">
-              <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
+              <h1 className="text-[22px] md:text-[24px] leading-[1.3] md:text-[40px] md:leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
                 The New Age of <br />
                 <span className="text-[#ffb916]">Cloud & AI Engineering</span>
               </h1>

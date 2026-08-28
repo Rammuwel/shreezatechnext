@@ -42,13 +42,13 @@ export default function SolutionTemplate({
         <div className="max-w-[1300px] mx-auto px-6 relative z-10 w-full pt-32 lg:pt-48 pb-24 flex flex-col lg:flex-row items-center gap-10 md:gap-16">
           <div className="lg:w-3/5 text-left" data-aos="fade-right">
 
-            <h1 className="text-[50px] md:text-[70px] lg:text-[85px] leading-[1.05] font-normal mb-8 text-white tracking-tight">
+            <h1 className="text-[26px] leading-[1.2] md:text-[50px] lg:text-[75px] md:leading-[1.05] font-normal mb-6 md:mb-8 text-white tracking-tight text-balance">
               {hero.title1} <br />
               <span className={`text-transparent bg-clip-text font-bold ${hero.title2Gradient || 'bg-gradient-to-r from-[#ffb916] to-[#00f2fe]'}`}>
                 {hero.title2}
               </span>
             </h1>
-            <p className="text-[20px] md:text-[24px] font-light text-gray-300 mb-12 max-w-2xl leading-relaxed">
+            <p className="text-[14px] leading-[1.6] md:text-[20px] lg:text-[24px] font-light text-gray-300 mb-8 md:mb-12 max-w-2xl md:leading-relaxed text-balance">
               {hero.description}
             </p>
             <div className="flex flex-wrap gap-6">
@@ -92,7 +92,7 @@ export default function SolutionTemplate({
                 <h4 className="text-[#0A3A7A] font-bold tracking-widest uppercase mb-4 text-sm flex items-center gap-3">
                   <span className="w-8 h-[2px] bg-[#0A3A7A]"></span> The Challenge
                 </h4>
-                <h2 className="text-[36px] md:text-[46px] leading-[1.2] font-light mb-6 text-[#212529]">
+                <h2 className="text-[22px] md:text-[46px] leading-[1.2] font-light mb-6 text-[#212529]">
                   {challenge.title1} <span className="font-bold text-[#0A3A7A] block">{challenge.title2}</span>
                 </h2>
 
@@ -165,7 +165,7 @@ export default function SolutionTemplate({
         <section className="py-10 md:py-16 px-6 lg:px-12 bg-white border-b border-gray-100">
           <div className="max-w-[1300px] mx-auto">
             <div className="text-center mb-12" data-aos="fade-up">
-              <h2 className="text-[36px] md:text-[42px] font-bold text-[#0A3A7A] leading-[1.1] mb-4">
+              <h2 className="text-[22px] md:text-[42px] font-bold text-[#0A3A7A] leading-[1.1] mb-4">
                 {roi.title1} <span className="text-[#ffb916]">{roi.title2}</span>
               </h2>
             </div>
@@ -190,7 +190,7 @@ export default function SolutionTemplate({
             {/* Unified Header & Tab Toggle */}
             <div className="text-center mb-16" data-aos="fade-up">
               <h4 className="text-[#0A3A7A] font-bold tracking-widest uppercase mb-4 text-sm">Capabilities & Architecture</h4>
-              <h2 className="text-[36px] md:text-[50px] font-bold text-[#111] leading-[1.1] mb-10">
+              <h2 className="text-[22px] md:text-[50px] font-bold text-[#111] leading-[1.1] mb-10">
                 {features?.title1 || architecture?.title} <span className="text-[#ffb916]">{features?.title2 || ''}</span>
               </h2>
 
@@ -273,7 +273,7 @@ export default function SolutionTemplate({
         <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#020012] text-white relative overflow-hidden">
           <div className="max-w-[1300px] mx-auto relative z-10 text-center">
             <h4 className="text-[#ffb916] font-bold tracking-widest uppercase mb-4 text-sm">Our Process</h4>
-            <h2 className="text-[36px] md:text-[50px] font-bold text-white leading-[1.1] mb-16">
+            <h2 className="text-[22px] md:text-[50px] font-bold text-white leading-[1.1] mb-16">
               {process.title}
             </h2>
 
@@ -300,7 +300,7 @@ export default function SolutionTemplate({
                 <h4 className="text-[#0A3A7A] font-bold tracking-widest uppercase mb-4 text-sm flex items-center gap-3">
                   <span className="w-8 h-[2px] bg-[#0A3A7A]"></span> Future Ready
                 </h4>
-                <h2 className="text-[36px] md:text-[50px] font-normal leading-[1.1] mb-6 text-[#212529]">
+                <h2 className="text-[22px] md:text-[50px] font-normal leading-[1.1] mb-6 text-[#212529]">
                   {aiFuture.title1} <span className="font-bold text-[#0A3A7A] block">{aiFuture.title2}</span>
                 </h2>
                 <p className="text-gray-600 text-[18px] leading-[1.8] mb-8">{aiFuture.description}</p>
@@ -347,7 +347,7 @@ export default function SolutionTemplate({
           <div className="max-w-[1300px] mx-auto px-6 lg:px-12 mb-12 flex justify-between items-end">
             <div>
               <h4 className="text-[#ffb916] font-bold tracking-widest uppercase mb-4 text-sm">Success Stories</h4>
-              <h2 className="text-[36px] md:text-[50px] font-normal leading-[1.1]">
+              <h2 className="text-[22px] md:text-[50px] font-normal leading-[1.1]">
                 {caseStudies.title}
               </h2>
             </div>
@@ -409,7 +409,7 @@ export default function SolutionTemplate({
         <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-white">
           <div className="max-w-[900px] mx-auto">
             <div className="text-center mb-16" data-aos="fade-up">
-              <h2 className="text-[36px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
+              <h2 className="text-[22px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
                 Technical <span className="text-[#ffb916]">FAQ</span>
               </h2>
             </div>
@@ -442,10 +442,10 @@ export default function SolutionTemplate({
 
           <div className="max-w-[1000px] mx-auto text-center relative z-10" data-aos="zoom-in">
             <h4 className="text-[#ffb916] font-bold tracking-widest uppercase mb-6">{cta.subtitle}</h4>
-            <h2 className="text-[40px] md:text-[64px] font-normal text-white mb-8 leading-[1.1] tracking-tight">
+            <h2 className="text-[20px] md:text-[64px] font-normal text-white mb-8 leading-[1.1] tracking-tight">
               {cta.title1} <span className="font-bold text-[#ffb916]">{cta.title2}</span>
             </h2>
-            <p className="text-blue-100 mb-12 text-[18px] md:text-[22px] max-w-2xl mx-auto leading-relaxed">
+            <p className="text-blue-100 mb-12 text-[15px] md:text-[22px] max-w-2xl mx-auto leading-relaxed">
               {cta.description}
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6">

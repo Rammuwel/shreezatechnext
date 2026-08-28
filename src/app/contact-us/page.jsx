@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import { ChevronDown, Mail, Phone, MapPin } from 'lucide-react';
+import ContactForm from '@/components/ContactForm';
 
 export default function ContactUsPage() {
   return (
@@ -84,102 +85,9 @@ export default function ContactUsPage() {
             {/* Right Side: Contact Form (Matching Home Page) */}
             <div className="lg:col-span-7 bg-transparent lg:py-6" data-aos="fade-left" data-aos-delay="200">
               <h3 className="text-[24px] text-[#212529] font-medium mb-6 lg:hidden">Send us a message</h3>
-              <form className="flex flex-col gap-4 md:gap-5">
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
-                  <input
-                    type="text"
-                    placeholder="First Name"
-                    className="w-full bg-[#EEEEEE] border-none outline-none px-4 md:px-6 py-3.5 md:py-4 text-[14px] md:text-base text-[#212529] placeholder-gray-500"
-                    required
-                  />
-                  <input
-                    type="text"
-                    placeholder="Last Name"
-                    className="w-full bg-[#EEEEEE] border-none outline-none px-4 md:px-6 py-3.5 md:py-4 text-[14px] md:text-base text-[#212529] placeholder-gray-500"
-                    required
-                  />
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
-                  <div className="flex bg-[#EEEEEE]">
-                    <div className="px-2 md:px-4 py-3.5 md:py-4 border-r border-[#DDDDDD] text-[14px] md:text-base text-[#212529] flex items-center justify-center bg-[#E5E5E5] cursor-pointer whitespace-nowrap">
-                      +91 <span className="ml-1 text-[8px] md:text-[10px]">▼</span>
-                    </div>
-                    <input
-                      type="tel"
-                      placeholder="Phone No"
-                      className="w-full bg-transparent border-none outline-none px-2 md:px-4 py-3.5 md:py-4 text-[14px] md:text-base text-[#212529] placeholder-gray-500 min-w-0"
-                      required
-                    />
-                  </div>
-                  <input
-                    type="email"
-                    placeholder="Business Email"
-                    className="w-full bg-[#EEEEEE] border-none outline-none px-4 md:px-6 py-3.5 md:py-4 text-[14px] md:text-base text-[#212529] placeholder-gray-500"
-                    required
-                  />
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
-                  <input
-                    type="text"
-                    placeholder="Job Title"
-                    className="w-full bg-[#EEEEEE] border-none outline-none px-4 md:px-6 py-3.5 md:py-4 text-[14px] md:text-base text-[#212529] placeholder-gray-500"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Company Name"
-                    className="w-full bg-[#EEEEEE] border-none outline-none px-4 md:px-6 py-3.5 md:py-4 text-[14px] md:text-base text-[#212529] placeholder-gray-500"
-                  />
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
-                  <input
-                    type="text"
-                    placeholder="Company Website"
-                    className="w-full bg-[#EEEEEE] border-none outline-none px-4 md:px-6 py-3.5 md:py-4 text-[14px] md:text-base text-[#212529] placeholder-gray-500"
-                  />
-                  <input
-                    type="text"
-                    placeholder="City"
-                    className="w-full bg-[#EEEEEE] border-none outline-none px-4 md:px-6 py-3.5 md:py-4 text-[14px] md:text-base text-[#212529] placeholder-gray-500"
-                  />
-                </div>
-
-                <div className="relative">
-                  <select
-                    defaultValue=""
-                    className="w-full bg-[#EEEEEE] border-none outline-none px-4 md:px-6 py-3.5 md:py-4 text-[14px] md:text-base text-gray-500 appearance-none cursor-pointer"
-                    required
-                  >
-                    <option value="" disabled>Select a Service</option>
-                    <option value="software">Custom Software Development</option>
-                    <option value="cloud">Cloud & Infrastructure</option>
-                    <option value="ai">AI & Data Analytics</option>
-                    <option value="consulting">IT Consulting</option>
-                    <option value="other">Other Inquiry</option>
-                  </select>
-                  <div className="absolute inset-y-0 right-0 flex items-center px-4 md:px-6 pointer-events-none text-[#212529]">
-                    <ChevronDown size={20} strokeWidth={1.5} />
-                  </div>
-                </div>
-
-                <textarea
-                  placeholder="Message"
-                  rows="4"
-                  className="w-full bg-[#EEEEEE] border-none outline-none px-4 md:px-6 py-3.5 md:py-4 text-[14px] md:text-base text-[#212529] placeholder-gray-500 resize-none"
-                  required
-                ></textarea>
-
-                <div className="flex justify-end mt-2 md:mt-4">
-                  <button type="button" className="px-10 py-3.5 bg-[#D4AF37] text-white hover:bg-[#0A3A7A] font-medium transition-all rounded w-full md:w-auto text-[15px] md:text-base">
-                    Submit Message
-                  </button>
-                </div>
-
-              </form>
+              <ContactForm />
             </div>
+
           </div>
         </div>
       </section>

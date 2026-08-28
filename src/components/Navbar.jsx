@@ -23,7 +23,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 transition-all duration-300" data-aos="fade-down">
-      <div className="max-w-[1400px] mx-auto px-6 flex justify-between items-center h-20">
+      <div className="max-w-[1400px] mx-auto px-2 md:px-6 flex justify-between items-center h-16 md:h-20">
 
         {/* Left Side: Logo + Brand Name */}
         <Link href="/" className="flex items-center gap-[4px] shrink-0 scale-[0.75] md:scale-100 origin-left transition-transform duration-300">
@@ -235,7 +235,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="lg:hidden p-2 text-gray-600 hover:text-[#2F65E0] transition-colors"
+            className="lg:hidden p-0 text-gray-600 hover:text-[#2F65E0] transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -245,7 +245,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-20 left-0 w-full bg-white shadow-xl border-t border-gray-100 flex flex-col p-6 z-50 max-h-[85vh] overflow-y-auto">
+        <div className="lg:hidden absolute top-16 left-0 w-full bg-white shadow-xl border-t border-gray-100 flex flex-col p-6 z-50 max-h-[85vh] overflow-y-auto">
           <Link href="/" className="py-3 border-b border-gray-50 text-gray-800 font-medium" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
           
           <div className="border-b border-gray-50">

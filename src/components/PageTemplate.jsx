@@ -19,7 +19,7 @@ export default function PageTemplate({ title, breadcrumbText }) {
         </div>
 
         <div className="max-w-[1300px] mx-auto relative z-10 w-full text-center mt-12">
-          <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance">
+          <h1 className="text-[22px] md:text-[24px] leading-[1.3] md:text-[40px] md:leading-[56px] font-normal mb-6 text-white text-balance">
             {title}
           </h1>
           <p className="text-[20px] leading-[34px] font-normal text-gray-300 max-w-2xl mx-auto text-balance">

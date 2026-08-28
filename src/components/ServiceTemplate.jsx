@@ -34,14 +34,14 @@ export default function ServiceTemplate({
         <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center pt-32 md:pt-48 relative z-10 w-full">
           <div className="max-w-4xl" data-aos="fade-right">
 
-            <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance">
+            <h1 className="text-[24px] leading-[1.3] md:text-[40px] md:leading-[56px] font-normal mb-4 md:mb-6 text-white text-balance">
               {hero.slides?.[0]?.title1 || hero.title1} <br />
               <span className={hero.slides?.[0]?.title2Gradient || hero.title2Gradient || "text-[#ffb916] font-normal"}>
                 {hero.slides?.[0]?.title2 || hero.title2}
               </span>
             </h1>
             {(hero.slides?.[0]?.description || hero.description) && (
-              <p className="text-[20px] leading-[34px] font-normal text-gray-300 max-w-2xl mb-10 text-balance">
+              <p className="text-[14px] leading-[1.6] md:text-[20px] md:leading-[34px] font-normal text-gray-300 max-w-2xl mb-8 md:mb-10 text-balance">
                 {hero.slides?.[0]?.description || hero.description}
               </p>
             )}
@@ -78,7 +78,7 @@ export default function ServiceTemplate({
                 <div className="w-12 h-1 bg-[#ffb916]"></div>
                 <span className="text-[#0A3A7A] font-bold tracking-widest uppercase text-sm">{philosophy.tagline || 'Our Philosophy'}</span>
               </div>
-              <h2 className="text-[36px] md:text-[50px] font-normal text-[#111] leading-[1.1]">
+              <h2 className="text-[22px] md:text-[50px] font-normal text-[#111] leading-[1.1]">
                 {philosophy.title1} <span className="text-[#0A3A7A] font-bold">{philosophy.title2}</span>
               </h2>
               <div className="text-[18px] text-gray-600 leading-[1.8] space-y-6">
@@ -124,7 +124,7 @@ export default function ServiceTemplate({
         <section id="capabilities" className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#f8fbff] relative">
           <div className="max-w-[1300px] mx-auto">
             <div className="text-center max-w-4xl mx-auto mb-20" data-aos="fade-up">
-              <h2 className="text-[36px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
+              <h2 className="text-[22px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
                 {ecosystem.title1} <span className="text-[#ffb916]">{ecosystem.title2}</span>
               </h2>
               <p className="text-[18px] text-gray-600 leading-[1.8]">
@@ -166,7 +166,7 @@ export default function ServiceTemplate({
           <div className="max-w-[1300px] mx-auto relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-24">
               <div className="lg:col-span-5" data-aos="fade-right">
-                <h2 className="text-[36px] md:text-[46px] font-bold text-white leading-[1.1] mb-6">
+                <h2 className="text-[22px] md:text-[46px] font-bold text-white leading-[1.1] mb-6">
                   {security.title1.split('<br/>').map((line, i) => <React.Fragment key={i}>{line}<br /></React.Fragment>)}
                   <span className="text-[#00A2FF]">{security.title2}</span>
                 </h2>
@@ -201,7 +201,7 @@ export default function ServiceTemplate({
       {expertise && (
         <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-white">
           <div className="max-w-[1300px] mx-auto text-center mb-20" data-aos="fade-up">
-            <h2 className="text-[36px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
+            <h2 className="text-[22px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
               {expertise.title}
             </h2>
             <p className="text-[18px] text-gray-600 max-w-2xl mx-auto">
@@ -237,7 +237,7 @@ export default function ServiceTemplate({
               }
            `}</style>
           <div className="max-w-[1300px] mx-auto relative z-10">
-            <h2 className="text-[36px] md:text-[50px] font-normal text-white text-center mb-10" data-aos="fade-up">
+            <h2 className="text-[22px] md:text-[50px] font-normal text-white text-center mb-10" data-aos="fade-up">
               {process.title1} <span className="font-bold text-[#ffb916]">{process.title2}</span>
             </h2>
 
@@ -268,7 +268,7 @@ export default function ServiceTemplate({
         <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-white border-t border-gray-100">
           <div className="max-w-[1300px] mx-auto">
             <div className="text-center mb-16" data-aos="fade-up">
-              <h2 className="text-[36px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
+              <h2 className="text-[22px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
                 {benefits.title1} <span className="text-[#ffb916]">{benefits.title2}</span>
               </h2>
               <p className="text-[18px] text-gray-600 max-w-3xl mx-auto">{benefits.description}</p>
@@ -294,7 +294,7 @@ export default function ServiceTemplate({
         <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#f8fbff]">
           <div className="max-w-[1000px] mx-auto">
             <div className="text-center mb-16" data-aos="fade-up">
-              <h2 className="text-[36px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
+              <h2 className="text-[22px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
                 Frequently Asked <span className="text-[#ffb916]">Questions</span>
               </h2>
             </div>
@@ -327,10 +327,10 @@ export default function ServiceTemplate({
 
           <div className="max-w-[1000px] mx-auto text-center relative z-10" data-aos="zoom-in">
             <h4 className="text-[#ffb916] font-bold tracking-widest uppercase mb-6">{cta.subtitle}</h4>
-            <h2 className="text-[40px] md:text-[64px] font-normal text-white mb-8 leading-[1.1] tracking-tight">
+            <h2 className="text-[20px] md:text-[64px] font-normal text-white mb-8 leading-[1.1] tracking-tight">
               {cta.title1} <span className="font-bold text-[#ffb916]">{cta.title2}</span>
             </h2>
-            <p className="text-blue-100 mb-12 text-[18px] md:text-[22px] max-w-2xl mx-auto leading-relaxed">
+            <p className="text-blue-100 mb-12 text-[15px] md:text-[22px] max-w-2xl mx-auto leading-relaxed">
               {cta.description}
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6" data-aos="fade-up" data-aos-delay="200">
