@@ -91,7 +91,7 @@
   --motion-normal: 400ms;
 }
 
-body {
+html, body {
   background-color: var(--color-bg-deep);
   color: var(--color-text-primary);
   font-family: var(--font-family-primary);
