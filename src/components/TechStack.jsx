@@ -1,137 +1,92 @@
 "use client";
-import React, { useState } from 'react';
+import React from 'react';
+
+const techRow1 = [
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg"
+];
+
+const techRow2 = [
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original-wordmark.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original-wordmark.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain-wordmark.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
+   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+];
 
 export default function TechStack() {
-  const [activeTab, setActiveTab] = useState('Frontend');
-
-  const categories = [
-    'Frontend',
-    'Backend',
-    'Mobile App Development',
-    'Database',
-    'Cloud & DevOps'
-  ];
-
-  const technologies = {
-    'Frontend': [
-      { name: 'React', icon: 'react/react-original.svg' },
-      { name: 'Next.js', icon: 'nextjs/nextjs-original.svg', invertDark: true },
-      { name: 'Vue.js', icon: 'vuejs/vuejs-original.svg' },
-      { name: 'Angular', icon: 'angularjs/angularjs-original.svg' },
-      { name: 'TypeScript', icon: 'typescript/typescript-original.svg' },
-      { name: 'Svelte', icon: 'svelte/svelte-original.svg' },
-      { name: 'Tailwind CSS', icon: 'tailwindcss/tailwindcss-original.svg' },
-      { name: 'HTML5', icon: 'html5/html5-original.svg' },
-      { name: 'CSS3', icon: 'css3/css3-original.svg' },
-      { name: 'JavaScript', icon: 'javascript/javascript-original.svg' }
-    ],
-    'Backend': [
-      { name: 'Node.js', icon: 'nodejs/nodejs-original.svg' },
-      { name: 'Laravel', icon: 'laravel/laravel-original.svg' },
-      { name: 'Python', icon: 'python/python-original.svg' },
-      { name: 'Django', icon: 'django/django-plain.svg', invertDark: true },
-      { name: 'PHP', icon: 'php/php-original.svg' },
-      { name: 'Express.js', icon: 'express/express-original.svg', invertDark: true },
-      { name: 'Java', icon: 'java/java-original.svg' },
-      { name: '.NET', icon: 'dot-net/dot-net-original.svg' },
-      { name: 'Spring Boot', icon: 'spring/spring-original.svg' },
-      { name: 'Go', icon: 'go/go-original.svg' },
-      { name: 'Ruby on Rails', icon: 'rails/rails-plain.svg' },
-      { name: 'NestJS', icon: 'nestjs/nestjs-original.svg' },
-      { name: 'GraphQL', icon: 'graphql/graphql-plain.svg' }
-    ],
-    'Mobile App Development': [
-      { name: 'Flutter', icon: 'flutter/flutter-original.svg' },
-      { name: 'React Native', icon: 'react/react-original.svg' },
-      { name: 'Android', icon: 'android/android-original.svg' },
-      { name: 'iOS', icon: 'apple/apple-original.svg', invertDark: true },
-      { name: 'Swift', icon: 'swift/swift-original.svg' },
-      { name: 'Kotlin', icon: 'kotlin/kotlin-original.svg' },
-      { name: 'Firebase', icon: 'firebase/firebase-plain.svg' }
-    ],
-    'Database': [
-      { name: 'MySQL', icon: 'mysql/mysql-original.svg' },
-      { name: 'PostgreSQL', icon: 'postgresql/postgresql-original.svg' },
-      { name: 'MongoDB', icon: 'mongodb/mongodb-original.svg' },
-      { name: 'Firebase', icon: 'firebase/firebase-plain.svg' },
-      { name: 'Redis', icon: 'redis/redis-original.svg' },
-      { name: 'SQL Server', icon: 'microsoftsqlserver/microsoftsqlserver-plain.svg' },
-      { name: 'SQLite', icon: 'sqlite/sqlite-original.svg' }
-    ],
-    'Cloud & DevOps': [
-      { name: 'AWS', icon: 'amazonwebservices/amazonwebservices-original-wordmark.svg', invertDark: true },
-      { name: 'Azure', icon: 'azure/azure-original.svg' },
-      { name: 'Google Cloud', icon: 'googlecloud/googlecloud-original.svg' },
-      { name: 'Docker', icon: 'docker/docker-original.svg' },
-      { name: 'Kubernetes', icon: 'kubernetes/kubernetes-plain.svg' },
-      { name: 'GitLab', icon: 'gitlab/gitlab-original.svg' },
-      { name: 'Jenkins', icon: 'jenkins/jenkins-original.svg' },
-      { name: 'Terraform', icon: 'terraform/terraform-original.svg' },
-      { name: 'GitHub', icon: 'github/github-original.svg', invertDark: true }
-    ]
-  };
-
-  return (
-    <section className="py-24 bg-[#040026] text-white overflow-hidden relative">
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#0A3A7A] rounded-full mix-blend-screen filter blur-[150px] opacity-40"></div>
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#ffb916] rounded-full mix-blend-screen filter blur-[150px] opacity-10"></div>
-      
-      <div className="max-w-[1300px] mx-auto relative z-10 px-6">
-        <div className="text-center mb-16" data-aos="fade-up">
-          <h4 className="text-sm font-semibold text-[#ffb916] uppercase tracking-widest mb-4">Our Technology Stack</h4>
-          <h2 className="text-[36px] md:text-[42px] font-bold text-white mb-6">Powered by Enterprise Technologies</h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-             We leverage a massive ecosystem of modern frameworks, specialized tools, and legacy heavyweights to build future-proof digital platforms.
-          </p>
-        </div>
-
-        {/* Custom Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-16">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActiveTab(cat)}
-              className={`px-6 py-3 rounded-full text-sm md:text-base font-semibold transition-all duration-300 border ${
-                activeTab === cat 
-                  ? 'bg-[#ffb916] text-[#040026] border-[#ffb916] shadow-[0_0_20px_rgba(212,175,55,0.4)]' 
-                  : 'bg-transparent text-gray-400 border-gray-700 hover:border-[#ffb916] hover:text-white'
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-
-        {/* Tab Content (Grid of Cards with Real Logos) */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
-          {technologies[activeTab].map((tech, index) => (
-            <div 
-              key={tech.name}
-              className="flex flex-col items-center justify-center gap-4 p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 hover:border-[#ffb916]/50 transition-all duration-300 hover:-translate-y-2 group"
-              style={{ animation: `fadeIn 0.5s ease forwards ${index * 0.05}s`, opacity: 0 }}
-            >
-              <div className="h-16 w-16 flex items-center justify-center relative">
-                {/* Fallback glow effect */}
-                <div className="absolute inset-0 bg-white/20 rounded-full filter blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                <img 
-                  src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${tech.icon}`} 
-                  alt={tech.name}
-                  className={`max-h-full max-w-full relative z-10 transition-transform duration-300 group-hover:scale-110 ${tech.invertDark ? 'brightness-0 invert' : ''}`}
-                />
-              </div>
-              <span className="text-sm font-bold text-gray-300 group-hover:text-white transition-colors text-center">{tech.name}</span>
+   return (
+      <section className="relative z-30 bg-white py-16 md:py-32 border-t border-gray-100">
+         <div className="max-w-[1300px] mx-auto px-6 lg:px-12">
+            {/* Technologies Grid */}
+            <div className="text-center mb-16 max-w-3xl mx-auto" data-aos="fade-up">
+               <h2 className="text-[24px] md:text-[40px] font-light leading-[1.2] text-[#111] mb-4">
+                  Technologies <span className="font-semibold text-[#0A3A7A]">We Master</span>
+               </h2>
+               <p className="text-[16px] text-gray-500 font-light leading-[1.6]">
+                  Leveraging modern, scalable, and secure technologies to build the future of your enterprise.
+               </p>
             </div>
-          ))}
-        </div>
 
-        <style>{`
-          @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-          }
-        `}</style>
-      </div>
-    </section>
-  );
+            <div className="relative w-full overflow-hidden flex flex-col gap-12 py-4">
+               {/* Left and Right Fade overlays for seamless entry/exit */}
+               <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+               <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+
+               {/* Row 1 - Scrolling Left */}
+               <div className="flex w-max animate-marquee-left hover:[animation-play-state:paused]">
+                  <div className="flex items-center justify-center gap-16 px-8">
+                     {techRow1.map((img, idx) => (
+                        <div key={idx} className="w-[80px] md:w-[100px] h-12 relative transition-transform duration-300 hover:scale-110 flex-shrink-0 cursor-pointer">
+                           <img src={img} alt="Technology Logo" className="w-full h-full object-contain" />
+                        </div>
+                     ))}
+                  </div>
+                  <div className="flex items-center justify-center gap-16 px-8">
+                     {techRow1.map((img, idx) => (
+                        <div key={idx + 12} className="w-[80px] md:w-[100px] h-12 relative transition-transform duration-300 hover:scale-110 flex-shrink-0 cursor-pointer">
+                           <img src={img} alt="Technology Logo" className="w-full h-full object-contain" />
+                        </div>
+                     ))}
+                  </div>
+               </div>
+
+               {/* Row 2 - Scrolling Right */}
+               <div className="flex w-max animate-marquee-right hover:[animation-play-state:paused]">
+                  <div className="flex items-center justify-center gap-16 px-8">
+                     {techRow2.map((img, idx) => (
+                        <div key={idx} className="w-[80px] md:w-[100px] h-12 relative transition-transform duration-300 hover:scale-110 flex-shrink-0 cursor-pointer">
+                           <img src={img} alt="Technology Logo" className="w-full h-full object-contain" />
+                        </div>
+                     ))}
+                  </div>
+                  <div className="flex items-center justify-center gap-16 px-8">
+                     {techRow2.map((img, idx) => (
+                        <div key={idx + 12} className="w-[80px] md:w-[100px] h-12 relative transition-transform duration-300 hover:scale-110 flex-shrink-0 cursor-pointer">
+                           <img src={img} alt="Technology Logo" className="w-full h-full object-contain" />
+                        </div>
+                     ))}
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   );
 }
-

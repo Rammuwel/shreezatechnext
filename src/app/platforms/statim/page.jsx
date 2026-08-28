@@ -51,7 +51,7 @@ export default function StatimPage() {
       </div>
 
       {/* Comprehensive Suite Section */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-white">
         <div className="max-w-[1300px] mx-auto">
           
           <h2 className="text-[32px] md:text-[44px] font-medium text-[#111] mb-16">
@@ -85,7 +85,7 @@ export default function StatimPage() {
       </section>
 
       {/* Robust Modules Section (Dark) */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-[#0c0904]">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#0c0904]">
         <div className="max-w-[1400px] mx-auto">
           
           <h2 className="text-[32px] md:text-[44px] font-medium text-white leading-tight mb-4 max-w-3xl">
@@ -183,7 +183,7 @@ export default function StatimPage() {
       </section>
 
       {/* Low-Code Agility Section */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-gradient-to-br from-[#fbfdfc] to-[#f4ebe1]">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-gradient-to-br from-[#fbfdfc] to-[#f4ebe1]">
         <div className="max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 relative">
           
           <div className="w-full">
@@ -257,7 +257,7 @@ export default function StatimPage() {
       </section>
 
       {/* Capabilities Section */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-white">
         <div className="max-w-[1300px] mx-auto">
           
           <h2 className="text-[32px] md:text-[44px] font-medium text-[#111] leading-tight mb-4 text-center">
@@ -294,7 +294,7 @@ export default function StatimPage() {
       </section>
 
       {/* Seamless Digital Journeys */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white border-t border-gray-100">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-white border-t border-gray-100">
         <div className="max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
           
           <div className="w-full">
@@ -361,7 +361,7 @@ export default function StatimPage() {
       </section>
 
       {/* Strong Foundations of Trust */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-[#0c0904]">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#0c0904]">
         <div className="max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
           
           <div className="w-full">
@@ -396,7 +396,7 @@ export default function StatimPage() {
       </section>
 
       {/* Why Choose STATIM */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-[#f8fbfa]">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#f8fbfa]">
         <div className="max-w-[1400px] mx-auto overflow-hidden">
           
           <h2 className="text-[32px] md:text-[44px] font-medium text-[#111] mb-16 text-center md:text-left">
@@ -431,7 +431,7 @@ export default function StatimPage() {
       </section>
 
       {/* Journeying Together */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white text-center">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-white text-center">
         <div className="max-w-[1000px] mx-auto">
           
           <h2 className="text-[40px] md:text-[56px] font-medium mb-6">
@@ -464,7 +464,7 @@ export default function StatimPage() {
       </section>
 
       {/* Let's Talk Section */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-[#faf9f8]">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#faf9f8]">
         <div className="max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8">
           
           <div className="lg:col-span-5">

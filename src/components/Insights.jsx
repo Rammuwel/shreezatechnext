@@ -7,7 +7,7 @@ export default function Insights() {
   // Use the last 3 blogs from data.js as the latest insights
   const insightsData = blogs.slice(-3);
   return (
-    <section id="insights" className="py-24 bg-[#040026] relative">
+    <section id="insights" className="py-10 md:py-20 lg:py-24 bg-[#040026] relative">
       <div className="max-w-[1300px] mx-auto px-6 relative z-10">
         
         {/* Header */}

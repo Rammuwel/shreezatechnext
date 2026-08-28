@@ -51,7 +51,7 @@ export default function MigotoAIPage() {
   return (
     <div className="min-h-screen font-sans bg-white pt-20">
 {/* Hero Section */}
-      <section className="relative bg-[#162142] overflow-hidden py-24 lg:py-32">
+      <section className="relative bg-[#162142] overflow-hidden py-10 md:py-20 lg:py-32">
         <div className="absolute inset-0 z-0">
           <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Abstract Data" className="w-full h-full object-cover opacity-20 mix-blend-screen" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#162142] via-[#162142]/90 to-[#162142]/40"></div>
@@ -74,7 +74,7 @@ export default function MigotoAIPage() {
       </section>
 
       {/* Intro Section */}
-      <section className="py-20 px-6 lg:px-12 bg-white">
+      <section className="py-12 md:py-20 px-6 lg:px-12 bg-white">
         <div className="max-w-[1300px] mx-auto flex flex-col lg:flex-row items-center gap-12">
           <div className="w-full lg:w-1/2">
             <h2 className="text-[32px] md:text-[40px] font-medium text-[#111] leading-[1.2] mb-6 tracking-tight">
@@ -153,7 +153,7 @@ export default function MigotoAIPage() {
       </section>
 
       {/* Advantage Section */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white relative">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-white relative">
         <div className="max-w-[1300px] mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-[32px] md:text-[40px] font-medium text-[#111] leading-[1.2]">
@@ -189,7 +189,7 @@ export default function MigotoAIPage() {
                         <div className="w-full h-8 bg-indigo-400 rounded flex items-center px-2"><div className="w-3 h-3 bg-white rounded-full"></div></div>
                         <div className="w-full h-12 bg-indigo-300 rounded mt-auto"></div>
                      </div>
-                     <div className="w-2/3 grid grid-cols-2 grid-rows-3 gap-3">
+                     <div className="w-2/3 grid grid-cols-1 md:grid-cols-2 grid-rows-3 gap-3">
                         <div className="bg-indigo-100 rounded-full h-8 w-8"></div>
                         <div className="bg-indigo-100 rounded-full h-8 w-8"></div>
                         <div className="bg-indigo-100 rounded-full h-8 w-8"></div>
@@ -317,7 +317,7 @@ export default function MigotoAIPage() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-[#0a122a]">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#0a122a]">
         <div className="max-w-[1300px] mx-auto">
           <h2 className="text-[32px] md:text-[40px] font-medium text-white text-center mb-20">
             How does <span className="text-[#849bf3] font-bold">MIGOTO AI™</span> work?
@@ -364,7 +364,7 @@ export default function MigotoAIPage() {
       </section>
 
       {/* Industry Impact Section */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-white">
         <div className="max-w-[1100px] mx-auto text-center mb-16">
           <h2 className="text-[32px] md:text-[40px] font-medium text-[#111] leading-[1.2]">
             Industry-Wide Impact:<br/>
@@ -429,7 +429,7 @@ export default function MigotoAIPage() {
       </section>
 
       {/* Key Benefits Section */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-white">
         <div className="max-w-[1300px] mx-auto text-center">
           <h2 className="text-[32px] md:text-[40px] font-medium text-[#111] leading-[1.2] mb-16 tracking-tight">
             Key Benefits of Intelligent <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent font-bold">MIGOTO AI™</span> for Modern<br/>Workforce Training
@@ -487,7 +487,7 @@ export default function MigotoAIPage() {
       </section>
 
       {/* Video CTA Section */}
-      <section className="py-20 px-6 lg:px-12 bg-white pb-32">
+      <section className="py-12 md:py-20 px-6 lg:px-12 bg-white pb-32">
         <div className="max-w-[1300px] mx-auto relative rounded-[40px] overflow-hidden flex items-center justify-center min-h-[500px]">
           {/* Video Background */}
           <video 
@@ -504,7 +504,7 @@ export default function MigotoAIPage() {
           <div className="absolute inset-0 bg-[#060c1d]/80 z-10 backdrop-blur-sm"></div>
           
           {/* Content */}
-          <div className="relative z-20 text-center flex flex-col items-center px-6 max-w-4xl mx-auto py-20">
+          <div className="relative z-20 text-center flex flex-col items-center px-6 max-w-4xl mx-auto py-12 md:py-20">
              <h2 className="text-[36px] md:text-[48px] font-medium text-white leading-[1.2] mb-12 tracking-tight">
                Experience the impact of realistic, adaptive<br/>training at scale with MIGOTO AI™
              </h2>
@@ -519,7 +519,7 @@ export default function MigotoAIPage() {
       <Clients />
 
       {/* Testimonial Section */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-white">
         <div className="max-w-[1100px] mx-auto bg-[#233559] rounded-[40px] p-10 lg:p-20 relative overflow-hidden text-center text-white">
           <div className="absolute inset-0 z-0 opacity-10" style={{backgroundImage: 'url("https://www.transparenttextures.com/patterns/cubes.png")'}}></div>
           
@@ -527,13 +527,13 @@ export default function MigotoAIPage() {
             <h2 className="text-[32px] md:text-[40px] font-medium mb-12">Look what our customers are saying about us!</h2>
             
             <div className="relative max-w-4xl mx-auto">
-              <div className="absolute top-0 left-0 transform -translate-x-full -translate-y-4 text-white/20 text-8xl font-serif">"</div>
+              <div className="absolute top-0 left-0 transform -translate-x-full -translate-y-4 text-white/20 text-5xl md:text-8xl font-serif">"</div>
               
               <p className="text-[16px] md:text-[18px] leading-[1.8] font-light mb-12">
                 We would like to sincerely thank NOVAC for the insightful and thorough overview you provided during the implementation & training session on the NOVAC LMS. Your invaluable guidance ensured a smooth onboarding experience, and the training on every aspect of the system has given us a much clearer understanding of its functionalities and potential. We look forward to applying this knowledge in practice and maximizing the platform's capabilities. Thank you once again—we look forward to working more with the NOVAC LMS platform.
               </p>
               
-              <div className="absolute bottom-0 right-0 transform translate-x-12 translate-y-8 text-white/20 text-8xl font-serif">"</div>
+              <div className="absolute bottom-0 right-0 transform translate-x-12 translate-y-8 text-white/20 text-5xl md:text-8xl font-serif">"</div>
             </div>
             
             <div className="flex flex-col items-center gap-2 mb-10">
@@ -561,7 +561,7 @@ export default function MigotoAIPage() {
       <Insights />
 
       {/* FAQ Section */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-white">
         <div className="max-w-[1000px] mx-auto">
           <h2 className="text-[32px] md:text-[40px] font-medium text-[#111] text-center mb-16 tracking-tight">
             Frequently asked questions

@@ -2,35 +2,7 @@
 import React from 'react';
 import Contact from '../../components/Contact';
 
-const techRow1 = [
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg"
-];
-
-const techRow2 = [
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original-wordmark.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original-wordmark.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain-wordmark.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
-   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
-];
+import TechStack from '../../components/TechStack';
 
 export default function AboutUsPage() {
    return (
@@ -42,7 +14,7 @@ export default function AboutUsPage() {
                <div className="absolute inset-0 bg-gradient-to-r from-[#040026] via-[#040026]/70 to-[#040026]/20"></div>
             </div>
 
-            <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 w-full">
+            <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center pt-24 md:pt-32 relative z-10 w-full">
                <div className="max-w-4xl">
                   <h1 className="text-[32px] md:text-[40px] leading-[42px] md:leading-[56px] font-normal mb-6 text-white text-balance">
                      Scale up to New Heights <br />
@@ -56,7 +28,7 @@ export default function AboutUsPage() {
          </section>
 
          {/* Introduction & Core Expertise Section */}
-         <section className="relative z-30 bg-white py-24 md:py-32">
+         <section className="relative z-30 bg-white py-10 md:py-20 lg:py-24 md:py-32">
             <div className="max-w-[1300px] mx-auto px-6 lg:px-12">
 
                <div className="flex flex-col lg:flex-row gap-10 lg:gap-24 mb-16 md:mb-24">
@@ -95,7 +67,7 @@ export default function AboutUsPage() {
                         </p>
                      </div>
                      <div className="absolute right-0 bottom-0 opacity-5 group-hover:opacity-10 transition-opacity duration-500 translate-x-1/4 translate-y-1/4">
-                        <svg className="w-64 h-64 text-[#0A3A7A]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" /></svg>
+                        <svg className="w-full md:w-64 h-64 text-[#0A3A7A]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" /></svg>
                      </div>
                   </div>
 
@@ -144,7 +116,7 @@ export default function AboutUsPage() {
          </section>
 
          {/* Values Section (Formerly Mantra) */}
-         <section className="relative z-30 bg-[#040026] py-16 md:py-32">
+         <section className="relative z-30 bg-[#040026] py-10 md:py-16 md:py-32">
             <div className="max-w-[1300px] mx-auto px-6 lg:px-12">
                <div className="text-center mb-12 md:mb-20 max-w-3xl mx-auto" data-aos="fade-up">
                   <h2 className="text-[32px] md:text-[48px] font-light text-white leading-[1.2] mb-6">
@@ -179,7 +151,7 @@ export default function AboutUsPage() {
          </section>
 
          {/* Diversity Section */}
-         <section className="relative z-30 bg-gray-50 py-24 md:py-32">
+         <section className="relative z-30 bg-gray-50 py-10 md:py-20 lg:py-24 md:py-32">
             <div className="max-w-[1300px] mx-auto px-6 lg:px-12">
                <div className="flex flex-col lg:flex-row gap-16 items-center">
                   <div className="w-full lg:w-1/2" data-aos="fade-right">
@@ -210,7 +182,7 @@ export default function AboutUsPage() {
          </section>
 
          {/* Minds Behind Shreeza Section */}
-         <section className="relative z-30 bg-[#040026] py-24 md:py-32 overflow-hidden">
+         <section className="relative z-30 bg-[#040026] py-10 md:py-20 lg:py-24 md:py-32 overflow-hidden">
             <div className="max-w-[1300px] mx-auto px-6 lg:px-12">
                <div className="text-center mb-16 max-w-3xl mx-auto" data-aos="fade-up">
                   <h2 className="text-[32px] md:text-[44px] font-light leading-[1.2] text-white">
@@ -289,64 +261,10 @@ export default function AboutUsPage() {
          </section>
 
          {/* Technologies Section */}
-         <section className="relative z-30 bg-white py-24 md:py-32 border-t border-gray-100">
-            <div className="max-w-[1300px] mx-auto px-6 lg:px-12">
-               {/* Technologies Grid */}
-               <div className="text-center mb-16 max-w-3xl mx-auto" data-aos="fade-up">
-                  <h2 className="text-[32px] md:text-[40px] font-light leading-[1.2] text-[#111] mb-4">
-                     Technologies <span className="font-semibold text-[#0A3A7A]">We Master</span>
-                  </h2>
-                  <p className="text-[16px] text-gray-500 font-light leading-[1.6]">
-                     Leveraging modern, scalable, and secure technologies to build the future of your enterprise.
-                  </p>
-               </div>
-
-               <div className="relative w-full overflow-hidden flex flex-col gap-12 py-4">
-                  {/* Left and Right Fade overlays for seamless entry/exit */}
-                  <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-                  <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
-
-                  {/* Row 1 - Scrolling Left */}
-                  <div className="flex w-max animate-marquee-left">
-                     <div className="flex items-center justify-center gap-16 px-8">
-                        {techRow1.map((img, idx) => (
-                           <div key={idx} className="w-[80px] md:w-[100px] h-12 relative transition-transform duration-300 hover:scale-110 flex-shrink-0 cursor-pointer">
-                              <img src={img} alt="Technology Logo" className="w-full h-full object-contain" />
-                           </div>
-                        ))}
-                     </div>
-                     <div className="flex items-center justify-center gap-16 px-8">
-                        {techRow1.map((img, idx) => (
-                           <div key={idx + 12} className="w-[80px] md:w-[100px] h-12 relative transition-transform duration-300 hover:scale-110 flex-shrink-0 cursor-pointer">
-                              <img src={img} alt="Technology Logo" className="w-full h-full object-contain" />
-                           </div>
-                        ))}
-                     </div>
-                  </div>
-
-                  {/* Row 2 - Scrolling Right */}
-                  <div className="flex w-max animate-marquee-right">
-                     <div className="flex items-center justify-center gap-16 px-8">
-                        {techRow2.map((img, idx) => (
-                           <div key={idx} className="w-[80px] md:w-[100px] h-12 relative transition-transform duration-300 hover:scale-110 flex-shrink-0 cursor-pointer">
-                              <img src={img} alt="Technology Logo" className="w-full h-full object-contain" />
-                           </div>
-                        ))}
-                     </div>
-                     <div className="flex items-center justify-center gap-16 px-8">
-                        {techRow2.map((img, idx) => (
-                           <div key={idx + 12} className="w-[80px] md:w-[100px] h-12 relative transition-transform duration-300 hover:scale-110 flex-shrink-0 cursor-pointer">
-                              <img src={img} alt="Technology Logo" className="w-full h-full object-contain" />
-                           </div>
-                        ))}
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
+         <TechStack />
 
          {/* Careers Section */}
-         <section className="relative z-30 bg-[#040026] py-24 md:py-32 overflow-hidden">
+         <section className="relative z-30 bg-[#040026] py-10 md:py-20 lg:py-24 md:py-32 overflow-hidden">
             <div className="max-w-[1300px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center gap-16">
                <div className="w-full md:w-1/2" data-aos="fade-right">
                   <h2 className="text-[32px] md:text-[56px] font-light text-white mb-6 leading-[1.1]">
@@ -361,7 +279,7 @@ export default function AboutUsPage() {
                   </a>
                </div>
 
-               <div className="w-full md:w-1/2 grid grid-cols-2 gap-4 h-[300px] md:h-[500px] mt-8 md:mt-0" data-aos="fade-left" data-aos-delay="200">
+               <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4 h-[300px] md:h-[500px] mt-8 md:mt-0" data-aos="fade-left" data-aos-delay="200">
                   <div className="rounded-2xl overflow-hidden border border-white/10 h-full translate-y-4 md:translate-y-8">
                      <img src="/images/about_careers_one_1786878027023.jpg" alt="Team Discussion" className="w-full h-full object-cover" />
                   </div>

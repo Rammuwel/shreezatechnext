@@ -27,7 +27,7 @@ const benefitsData = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 relative bg-[#040026] text-white">
+    <section id="services" className="py-10 md:py-20 lg:py-24 relative bg-[#040026] text-white">
       <div className="max-w-[1300px] mx-auto px-6 relative z-10">
         
         {/* Section Heading */}

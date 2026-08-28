@@ -82,7 +82,7 @@ export default function LocateUsPage() {
         </div>
         
         <div className="max-w-[1300px] w-full mx-auto px-6 lg:px-12 relative z-10">
-          <h1 className="text-4xl md:text-6xl font-light text-white mb-4 leading-tight">
+          <h1 className="text-3xl md:text-4xl md:text-6xl font-light text-white mb-4 leading-tight">
             <span className="text-[#3b82f6]">Navigating</span> Our <br/> Presence
           </h1>
           <p className="text-lg md:text-xl text-gray-300 font-light max-w-xl">
@@ -101,7 +101,7 @@ export default function LocateUsPage() {
       </div>
 
       {/* Content Section */}
-      <section className="py-16 md:py-24 bg-white relative">
+      <section className="py-10 md:py-20 lg:py-24 bg-white relative">
         <div className="max-w-[1300px] mx-auto px-6 lg:px-12">
           
           {/* Tabs */}

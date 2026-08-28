@@ -30,7 +30,7 @@ export default function CareersPage() {
       <section className="relative bg-[#0b061e] pt-32 pb-24 overflow-hidden min-h-[600px] flex flex-col items-center justify-center">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#10092c] z-0"></div>
         <div className="relative z-10 text-center max-w-[900px] px-6">
-          <h1 className="text-4xl md:text-6xl text-white font-light mb-6">
+          <h1 className="text-3xl md:text-4xl md:text-6xl text-white font-light mb-6">
             Let's <span className="text-blue-500 font-medium">Grow</span> Together
           </h1>
           <p className="text-gray-300 text-lg md:text-xl font-light mb-10">
@@ -55,7 +55,7 @@ export default function CareersPage() {
       </section>
 
       {/* Indulge and Grow */}
-      <section className="py-24 bg-white">
+      <section className="py-10 md:py-20 lg:py-24 bg-white">
         <div className="max-w-[1300px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center gap-16">
           <div className="md:w-1/2">
             <h2 className="text-3xl md:text-5xl font-light text-black leading-tight mb-6">
@@ -72,7 +72,7 @@ export default function CareersPage() {
       </section>
 
       {/* Open Positions */}
-      <section className="py-24 bg-[#0b0c10]">
+      <section className="py-10 md:py-20 lg:py-24 bg-[#0b0c10]">
         <div className="max-w-[1300px] mx-auto px-6 lg:px-12">
           
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-6">
@@ -131,7 +131,7 @@ export default function CareersPage() {
       </section>
 
       {/* Partake in Our Culture */}
-      <section className="py-24 bg-white">
+      <section className="py-10 md:py-20 lg:py-24 bg-white">
         <div className="max-w-[1300px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center gap-16">
           <div className="md:w-1/2 bg-gray-100 overflow-hidden">
              <img src="https://cdn.novactech.com/uploads/culture1_7bc2916077.webp" alt="Culture" className="w-full h-auto" />
@@ -154,7 +154,7 @@ export default function CareersPage() {
       </section>
 
       {/* Diversity and Inclusion */}
-      <section className="py-24 bg-white border-t border-gray-100">
+      <section className="py-10 md:py-20 lg:py-24 bg-white border-t border-gray-100">
         <div className="max-w-[1300px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row-reverse items-center gap-16">
           <div className="md:w-1/2 bg-gray-100 overflow-hidden">
              <img src="https://cdn.novactech.com/uploads/culture2_31bcb1ef42.webp" alt="Diversity" className="w-full h-auto" />
@@ -179,7 +179,7 @@ export default function CareersPage() {
       </section>
       
       {/* Fun@Work */}
-      <section className="py-24 bg-[#0a071f]">
+      <section className="py-10 md:py-20 lg:py-24 bg-[#0a071f]">
         <div className="max-w-[1300px] mx-auto px-6 lg:px-12">
           <div className="flex flex-col md:flex-row gap-10 mb-16">
              <div className="md:w-1/3">
@@ -197,7 +197,7 @@ export default function CareersPage() {
              </div>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-4 gap-4">
              <img src="https://cdn.novactech.com/uploads/fun_work1_e5475a6085.webp" alt="Fun" className="w-full h-[200px] object-cover rounded" />
              <img src="https://cdn.novactech.com/uploads/fun_work2_ad1846e576.webp" alt="Fun" className="w-full h-[200px] object-cover rounded" />
              <img src="https://cdn.novactech.com/uploads/fun_work3_4b5d4fc3dd.webp" alt="Fun" className="w-full h-[200px] object-cover rounded" />

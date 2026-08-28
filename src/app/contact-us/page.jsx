@@ -12,7 +12,7 @@ export default function ContactUsPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#040026] via-[#040026]/70 to-[#040026]/20"></div>
         </div>
 
-        <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 w-full">
+        <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center pt-24 md:pt-32 relative z-10 w-full">
           <div className="max-w-4xl">
             <h1 className="text-[32px] md:text-[40px] leading-[42px] md:leading-[56px] font-normal mb-6 text-white text-balance">
               Let's build the <br />
@@ -26,15 +26,15 @@ export default function ContactUsPage() {
       </section>
 
       {/* Main Content Section */}
-      <section className="relative z-30 bg-white py-16 md:py-32">
+      <section className="relative z-30 bg-white py-10 md:py-16 md:py-32">
         <div className="max-w-[1300px] mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20">
 
             {/* Left Side: Contact Information */}
             <div className="lg:col-span-5 flex flex-col p-8 md:p-12 bg-[#040026] rounded-[2rem] relative overflow-hidden" data-aos="fade-right">
                {/* Background Glow Effects */}
-               <div className="absolute top-0 right-0 w-64 h-64 bg-[#D4AF37] opacity-10 blur-[80px] rounded-full"></div>
-               <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#0A3A7A] opacity-40 blur-[80px] rounded-full"></div>
+               <div className="absolute top-0 right-0 w-full md:w-64 h-64 bg-[#D4AF37] opacity-10 blur-[80px] rounded-full"></div>
+               <div className="absolute bottom-0 left-0 w-full md:w-64 h-64 bg-[#0A3A7A] opacity-40 blur-[80px] rounded-full"></div>
                
                <div className="relative z-10 flex flex-col h-full">
                   <h2 className="text-[32px] md:text-[44px] leading-[1.2] font-light text-white mb-6">
@@ -86,7 +86,7 @@ export default function ContactUsPage() {
               <h3 className="text-[24px] text-[#212529] font-medium mb-6 lg:hidden">Send us a message</h3>
               <form className="flex flex-col gap-4 md:gap-5">
 
-                <div className="grid grid-cols-2 gap-3 md:gap-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
                   <input
                     type="text"
                     placeholder="First Name"
@@ -101,7 +101,7 @@ export default function ContactUsPage() {
                   />
                 </div>
 
-                <div className="grid grid-cols-2 gap-3 md:gap-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
                   <div className="flex bg-[#EEEEEE]">
                     <div className="px-2 md:px-4 py-3.5 md:py-4 border-r border-[#DDDDDD] text-[14px] md:text-base text-[#212529] flex items-center justify-center bg-[#E5E5E5] cursor-pointer whitespace-nowrap">
                       +91 <span className="ml-1 text-[8px] md:text-[10px]">▼</span>
@@ -121,7 +121,7 @@ export default function ContactUsPage() {
                   />
                 </div>
 
-                <div className="grid grid-cols-2 gap-3 md:gap-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
                   <input
                     type="text"
                     placeholder="Job Title"
@@ -134,7 +134,7 @@ export default function ContactUsPage() {
                   />
                 </div>
 
-                <div className="grid grid-cols-2 gap-3 md:gap-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
                   <input
                     type="text"
                     placeholder="Company Website"
@@ -185,7 +185,7 @@ export default function ContactUsPage() {
       </section>
 
       {/* Global Locations Map Placeholder */}
-      <section className="relative z-30 bg-[#040026] py-16 md:py-24 border-t border-white/5">
+      <section className="relative z-30 bg-[#040026] py-10 md:py-20 lg:py-24 border-t border-white/5">
         <div className="max-w-[1300px] mx-auto px-6 lg:px-12 text-center" data-aos="fade-up">
           <h2 className="text-[32px] md:text-[40px] font-light leading-[1.2] text-white mb-4">
             Our <span className="font-semibold text-[#D4AF37]">Global Presence</span>

@@ -8,7 +8,7 @@ const clients = [
 
 export default function Clients() {
   return (
-    <section id="portfolio" className="py-24 bg-white border-t border-gray-100">
+    <section id="portfolio" className="py-10 md:py-20 lg:py-24 bg-white border-t border-gray-100">
       <div className="max-w-[1300px] mx-auto px-6 text-center">
         <h2 className="text-[40px] leading-[56px] font-normal mb-6 text-[#212529]">
           Journeying <span className="text-[#0A3A7A]">Together</span>
@@ -17,7 +17,7 @@ export default function Clients() {
           Discover our varied client base, showcasing our prowess in delivering customized products &amp; solutions across industries. Experience excellence in every partnership.
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center justify-items-center">
           {clients.map((client, idx) => (
             <div 
               key={idx} 

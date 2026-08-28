@@ -53,7 +53,7 @@ export default function AxlePage() {
       </section>
 
       {/* Logo Banner */}
-      <section className="py-16 bg-white border-b border-gray-100">
+      <section className="py-10 md:py-16 bg-white border-b border-gray-100">
         <div className="max-w-[1300px] mx-auto px-6 lg:px-12">
           <h3 className="text-center text-[22px] md:text-[28px] font-medium text-[#111] mb-12">
             Shaping Engaging Digital Learning Experiences for 200+ Global Businesses
@@ -79,7 +79,7 @@ export default function AxlePage() {
       </section>
 
       {/* About Section */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-[#281604] overflow-hidden relative">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#281604] overflow-hidden relative">
         <div className="max-w-[1300px] mx-auto flex flex-col lg:flex-row items-center gap-16">
           
           {/* Left Image Area */}
@@ -117,7 +117,7 @@ export default function AxlePage() {
       </section>
 
       {/* Versatile LMS Platforms */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-white">
         <div className="max-w-[1300px] mx-auto text-center">
           
           <h2 className="text-[32px] md:text-[44px] font-medium text-[#111] leading-tight mb-4">
@@ -217,7 +217,7 @@ export default function AxlePage() {
       </section>
 
       {/* Not sure where to begin? CTA */}
-      <section className="py-20 px-6 lg:px-12 bg-white">
+      <section className="py-12 md:py-20 px-6 lg:px-12 bg-white">
         <div className="max-w-[1300px] mx-auto bg-[#382010] rounded-3xl overflow-hidden relative flex flex-col md:flex-row items-center">
           <div className="w-full md:w-5/12 h-[300px] md:h-[400px] relative">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#382010] z-10 hidden md:block"></div>
@@ -238,7 +238,7 @@ export default function AxlePage() {
       </section>
 
       {/* How AXLE LMS Leads */}
-      <section className="py-20 px-6 lg:px-12 bg-white text-center">
+      <section className="py-12 md:py-20 px-6 lg:px-12 bg-white text-center">
         <div className="max-w-[1300px] mx-auto">
           <h2 className="text-[32px] md:text-[40px] font-medium text-[#111] mb-4">
             How AXLE LMS® Leads Among <span className="text-[#f58634]">LMS Providers</span>
@@ -279,7 +279,7 @@ export default function AxlePage() {
       </section>
 
       {/* Benefits */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-[#fffdfa] border-y border-gray-100">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#fffdfa] border-y border-gray-100">
         <div className="max-w-[1300px] mx-auto text-center mb-16">
           <h2 className="text-[32px] md:text-[40px] font-medium text-[#111] mb-4">
             The Benefits of Our LMS Platform
@@ -339,7 +339,7 @@ export default function AxlePage() {
       </section>
 
       {/* Smart Integrations */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white text-center">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-white text-center">
         <div className="max-w-[1300px] mx-auto">
           <h2 className="text-[32px] md:text-[44px] font-medium text-[#111] mb-4">
             <span className="text-[#f58634]">Smart Integrations</span> For Smart Learning
@@ -348,7 +348,7 @@ export default function AxlePage() {
             No more fragmented training ecosystems! Integrate AXLE LMS® securely and seamlessly with your existing tools and tech stack.
           </p>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {/* Mock logos for integrations */}
             {Array.from({length: 24}).map((_, i) => (
               <div key={i} className="h-[80px] bg-white border border-gray-100 rounded-lg shadow-sm flex items-center justify-center p-4 hover:shadow-md transition-shadow">
@@ -360,7 +360,7 @@ export default function AxlePage() {
       </section>
 
       {/* Industries */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-[#fffdfa] border-t border-gray-100">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#fffdfa] border-t border-gray-100">
         <div className="max-w-[1300px] mx-auto">
           <h2 className="text-[32px] md:text-[44px] font-medium text-center mb-16">
             <span className="text-[#f58634]">Industries Our LMS Platform</span> Serves
@@ -395,7 +395,7 @@ export default function AxlePage() {
       </section>
 
       {/* The Novac Advantage */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-[#fcf9f5]">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#fcf9f5]">
         <div className="max-w-[1300px] mx-auto">
           <h2 className="text-[32px] md:text-[44px] font-medium text-center mb-16">
             The <span className="text-[#f58634]">Novac Advantage</span>
@@ -443,12 +443,12 @@ export default function AxlePage() {
       </section>
 
       {/* Unified Platform CTA */}
-      <section className="py-20 px-6 lg:px-12 bg-[#fcf9f5]">
+      <section className="py-12 md:py-20 px-6 lg:px-12 bg-[#fcf9f5]">
         <div className="max-w-[1300px] mx-auto bg-[#382010] rounded-[40px] overflow-hidden relative">
           <div className="absolute inset-0 bg-black/40 z-10"></div>
           <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Background" className="absolute inset-0 w-full h-full object-cover object-top" />
           
-          <div className="relative z-20 py-24 md:py-32 px-8 flex flex-col items-center text-center">
+          <div className="relative z-20 py-10 md:py-20 lg:py-24 md:py-32 px-8 flex flex-col items-center text-center">
             <h2 className="text-[32px] md:text-[48px] font-medium text-white max-w-3xl leading-[1.2] mb-10">
               Experience a unified LMS platform built to support continuous learning at every level
             </h2>
@@ -471,7 +471,7 @@ export default function AxlePage() {
           <div className="text-center mb-16">
              <p className="text-[18px] text-gray-600">Join leading organizations that believe that the key to successful businesses is in great training.</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center justify-items-center opacity-80 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center justify-items-center opacity-80 mb-12">
             <div className="h-12 w-full bg-white rounded border border-gray-100 flex items-center justify-center p-2"><span className="text-xs font-bold text-red-600">ADITYA BIRLA</span></div>
             <div className="h-12 w-full bg-white rounded border border-gray-100 flex items-center justify-center p-2"><span className="text-xs font-bold text-purple-600">AMARA RAJA</span></div>
             <div className="h-12 w-full bg-white rounded border border-gray-100 flex items-center justify-center p-2"><span className="text-xs font-bold text-gray-600">Ascent</span></div>
@@ -499,12 +499,12 @@ export default function AxlePage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 px-6 lg:px-12 bg-[#fcf9f5]">
+      <section className="py-12 md:py-20 px-6 lg:px-12 bg-[#fcf9f5]">
         <div className="max-w-[1300px] mx-auto bg-[#1a0f08] rounded-[40px] overflow-hidden relative">
           <div className="absolute inset-0 bg-black/40 z-10"></div>
           <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Background" className="absolute inset-0 w-full h-full object-cover object-top opacity-30" />
           
-          <div className="relative z-20 py-24 md:py-32 px-8 flex flex-col items-center text-center">
+          <div className="relative z-20 py-10 md:py-20 lg:py-24 md:py-32 px-8 flex flex-col items-center text-center">
             {/* Quote marks */}
             <div className="absolute left-10 top-1/2 -translate-y-1/2 opacity-20 hidden md:block">
               <svg className="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
@@ -547,7 +547,7 @@ export default function AxlePage() {
       </section>
 
       {/* Content Offerings */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-[#281604]">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#281604]">
         <div className="max-w-[1300px] mx-auto">
           <h2 className="text-[32px] md:text-[44px] font-medium text-center text-white mb-16">
             Here For An <span className="text-[#f58634]">LMS Software</span>?<br/>We've Got The Content To Make It Work.
@@ -592,7 +592,7 @@ export default function AxlePage() {
       </section>
 
       {/* Brochure */}
-      <section className="py-20 lg:py-24 px-6 lg:px-12 bg-[#fffdfa]">
+      <section className="py-12 md:py-20 lg:py-24 px-6 lg:px-12 bg-[#fffdfa]">
         <div className="max-w-[1300px] mx-auto bg-gradient-to-r from-[#281604] via-[#4a2810] to-[#281604] rounded-3xl overflow-hidden relative flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 p-12 md:p-20 relative z-20">
             <h2 className="text-[32px] md:text-[44px] font-medium text-white leading-tight mb-4">
@@ -627,7 +627,7 @@ export default function AxlePage() {
       </section>
 
       {/* Contact Form */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-white">
         <div className="max-w-[1300px] mx-auto flex flex-col lg:flex-row gap-16">
           <div className="w-full lg:w-[45%]">
             <h2 className="text-[40px] md:text-[56px] font-medium text-[#111] leading-[1.1] mb-6">
@@ -695,7 +695,7 @@ export default function AxlePage() {
       </section>
 
       {/* Insights Section */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-[#fcf9f5]">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#fcf9f5]">
         <div className="max-w-[1300px] mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end md:items-center mb-12 gap-4">
             <h2 className="text-[32px] md:text-[44px] font-medium text-[#f58634] leading-[1.2]">
@@ -753,7 +753,7 @@ export default function AxlePage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-[#fcf9f5]">
+      <section className="py-12 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#fcf9f5]">
         <div className="max-w-[900px] mx-auto">
           <h2 className="text-[32px] md:text-[44px] font-medium text-center text-[#111] mb-12">
             Frequently asked questions

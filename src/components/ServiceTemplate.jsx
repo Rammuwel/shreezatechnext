@@ -25,13 +25,13 @@ export default function ServiceTemplate({
     <div className="font-sans text-gray-800 selection:bg-[#ffb916] selection:text-white">
 
       {/* 1. HERO SECTION */}
-      <section className="h-[50vh] min-h-[400px] w-full relative overflow-hidden bg-[#040026] flex items-center border-b border-[#ffffff10]">
+      <section className="min-h-[450px] md:min-h-[600px] lg:h-[70vh] w-full relative overflow-hidden bg-[#040026] flex items-center">
         <div className="absolute inset-0 z-0">
           <img src={hero.slides?.[0]?.image || hero.bgImage} alt="Hero Background" className="w-full h-full object-cover opacity-50 mix-blend-overlay" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#040026] via-[#040026]/80 to-transparent"></div>
         </div>
 
-        <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 w-full">
+        <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center pt-32 md:pt-48 relative z-10 w-full">
           <div className="max-w-4xl" data-aos="fade-right">
 
             <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance">
@@ -51,9 +51,9 @@ export default function ServiceTemplate({
       </section>
 
       {/* 2. BREADCRUMB */}
-      <div className="w-full bg-white relative z-20">
-        <div className="max-w-[1300px] mx-auto flex flex-col md:flex-row justify-between items-center py-4 px-6 lg:px-12 gap-4">
-          <nav aria-label="Breadcrumb" className="flex items-center text-[13px] text-gray-500 font-medium">
+      <div className="w-full bg-white relative z-20 border-0 border-transparent outline-none shadow-none">
+        <div className="max-w-[1300px] mx-auto flex flex-col justify-start items-start md:flex-row md:justify-between md:items-center py-4 px-6 lg:px-12 gap-4">
+          <nav aria-label="Breadcrumb" className="flex flex-wrap items-center justify-start text-[13px] text-gray-500 font-medium">
             <Link href="/" className="hover:text-[#0A3A7A] transition-colors focus-visible:outline-none rounded px-1 -ml-1 flex items-center">
               <HomeIcon size={14} />
             </Link>
@@ -69,10 +69,10 @@ export default function ServiceTemplate({
 
       {/* 3. CORE PHILOSOPHY / FUTURE-PROOF SECTION */}
       {philosophy && (
-        <section className="py-24 lg:py-32 px-6 lg:px-12 bg-white relative overflow-hidden">
+        <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-white relative overflow-hidden">
           <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-50 rounded-full mix-blend-multiply filter blur-[100px] opacity-60 -z-10"></div>
 
-          <div className="max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
+          <div className="max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-24 items-center">
             <div className="lg:col-span-6 space-y-8" data-aos="fade-right">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-1 bg-[#ffb916]"></div>
@@ -121,7 +121,7 @@ export default function ServiceTemplate({
 
       {/* 4. UNIFIED DEVELOPMENT APPROACH (CARDS) */}
       {ecosystem && (
-        <section id="capabilities" className="py-24 lg:py-32 px-6 lg:px-12 bg-[#f8fbff] relative">
+        <section id="capabilities" className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#f8fbff] relative">
           <div className="max-w-[1300px] mx-auto">
             <div className="text-center max-w-4xl mx-auto mb-20" data-aos="fade-up">
               <h2 className="text-[36px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
@@ -159,12 +159,12 @@ export default function ServiceTemplate({
 
       {/* 5. SECURITY & COMPLIANCE */}
       {security && (
-        <section className="py-24 lg:py-32 px-6 lg:px-12 bg-[#040026] text-white relative overflow-hidden">
+        <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#040026] text-white relative overflow-hidden">
           <div className="absolute -top-[200px] -right-[200px] w-[600px] h-[600px] bg-[#0A3A7A] rounded-full mix-blend-screen filter blur-[150px] opacity-60"></div>
           <div className="absolute -bottom-[200px] -left-[200px] w-[600px] h-[600px] bg-[#ffb916] rounded-full mix-blend-screen filter blur-[150px] opacity-10"></div>
 
           <div className="max-w-[1300px] mx-auto relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-24">
               <div className="lg:col-span-5" data-aos="fade-right">
                 <h2 className="text-[36px] md:text-[46px] font-bold text-white leading-[1.1] mb-6">
                   {security.title1.split('<br/>').map((line, i) => <React.Fragment key={i}>{line}<br /></React.Fragment>)}
@@ -199,7 +199,7 @@ export default function ServiceTemplate({
 
       {/* 6. SOLUTIONS FOCUS */}
       {expertise && (
-        <section className="py-24 lg:py-32 px-6 lg:px-12 bg-white">
+        <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-white">
           <div className="max-w-[1300px] mx-auto text-center mb-20" data-aos="fade-up">
             <h2 className="text-[36px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
               {expertise.title}
@@ -265,7 +265,7 @@ export default function ServiceTemplate({
 
       {/* 8. BUSINESS BENEFITS GRID */}
       {benefits && (
-        <section className="py-24 lg:py-32 px-6 lg:px-12 bg-white border-t border-gray-100">
+        <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-white border-t border-gray-100">
           <div className="max-w-[1300px] mx-auto">
             <div className="text-center mb-16" data-aos="fade-up">
               <h2 className="text-[36px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
@@ -291,7 +291,7 @@ export default function ServiceTemplate({
 
       {/* 9. FAQ SECTION */}
       {faq && (
-        <section className="py-24 lg:py-32 px-6 lg:px-12 bg-[#f8fbff]">
+        <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#f8fbff]">
           <div className="max-w-[1000px] mx-auto">
             <div className="text-center mb-16" data-aos="fade-up">
               <h2 className="text-[36px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
@@ -321,7 +321,7 @@ export default function ServiceTemplate({
 
       {/* 10. GRAND CTA SECTION */}
       {cta && (
-        <section className="bg-[#0A3A7A] py-24 lg:py-32 px-6 relative overflow-hidden">
+        <section className="bg-[#0A3A7A] py-10 md:py-20 lg:py-32 px-6 relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80')] opacity-10 object-cover mix-blend-overlay"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#040026] to-transparent opacity-80"></div>
 
@@ -333,18 +333,18 @@ export default function ServiceTemplate({
             <p className="text-blue-100 mb-12 text-[18px] md:text-[22px] max-w-2xl mx-auto leading-relaxed">
               {cta.description}
             </p>
-              <div className="flex flex-col sm:flex-row justify-center items-center gap-6" data-aos="fade-up" data-aos-delay="200">
-                {(cta.button1 || cta.primaryButton) && (
-                  <Link href={cta.button1?.href || cta.primaryButton?.href || "/contact-us"} className="px-10 py-4 bg-white text-[#0A3A7A] font-bold rounded shadow-[0_10px_30px_rgba(0,0,0,0.1)] hover:shadow-[0_15px_40px_rgba(0,0,0,0.2)] hover:-translate-y-1 transition-all duration-300">
-                    {cta.button1?.text || cta.primaryButton?.text}
-                  </Link>
-                )}
-                {(cta.button2 || cta.secondaryButton) && (
-                  <Link href={cta.button2?.href || cta.secondaryButton?.href || "/contact-us"} className="px-10 py-4 bg-transparent border border-white/30 text-white font-bold rounded hover:bg-white/10 transition-colors duration-300">
-                    {cta.button2?.text || cta.secondaryButton?.text}
-                  </Link>
-                )}
-              </div>
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-6" data-aos="fade-up" data-aos-delay="200">
+              {(cta.button1 || cta.primaryButton) && (
+                <Link href={cta.button1?.href || cta.primaryButton?.href || "/contact-us"} className="px-10 py-4 bg-white text-[#0A3A7A] font-bold rounded shadow-[0_10px_30px_rgba(0,0,0,0.1)] hover:shadow-[0_15px_40px_rgba(0,0,0,0.2)] hover:-translate-y-1 transition-all duration-300">
+                  {cta.button1?.text || cta.primaryButton?.text}
+                </Link>
+              )}
+              {(cta.button2 || cta.secondaryButton) && (
+                <Link href={cta.button2?.href || cta.secondaryButton?.href || "/contact-us"} className="px-10 py-4 bg-transparent border border-white/30 text-white font-bold rounded hover:bg-white/10 transition-colors duration-300">
+                  {cta.button2?.text || cta.secondaryButton?.text}
+                </Link>
+              )}
+            </div>
           </div>
         </section>
       )}

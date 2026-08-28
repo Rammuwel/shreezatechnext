@@ -23,10 +23,10 @@ export default function AnnualReportsPage() {
 
   return (
     <PageTemplate title="Annual Reports">
-      <section className="py-24 bg-white min-h-[70vh]">
+      <section className="py-10 md:py-20 lg:py-24 bg-white min-h-[70vh]">
         <div className="max-w-[1000px] mx-auto px-6 lg:px-12">
           
-          <h1 className="text-4xl md:text-5xl font-light text-center text-black mb-16">
+          <h1 className="text-3xl md:text-4xl md:text-5xl font-light text-center text-black mb-16">
             Annual Reports
           </h1>
           

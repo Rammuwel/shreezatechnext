@@ -54,7 +54,7 @@ function AnimatedCounter({ end, suffix }) {
 
 export default function About() {
   return (
-    <section id="about" className="py-20 relative bg-white text-[#212529]">
+    <section id="about" className="py-12 md:py-20 relative bg-white text-[#212529]">
       <div className="max-w-[1300px] mx-auto px-6 relative z-10">
         {/* Top Heading */}
         <div className="w-full mb-12" data-aos="fade-up">
@@ -96,18 +96,21 @@ export default function About() {
         </div>
 
         {/* Stats Section integrated immediately below */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-10">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mt-12 md:mt-20 pt-10">
           {statsData.map((stat, idx) => (
             <div
               key={idx}
-              className="text-center px-4"
+              className="text-center px-2 md:px-4"
               data-aos="fade-up"
               data-aos-delay={idx * 100}
             >
-              <h3 className="text-4xl md:text-5xl font-extrabold text-[#0A3A7A] mb-2 tabular-nums">
+              <h3 
+                className="font-normal text-[#0A3A7A] mb-1 md:mb-2 tabular-nums tracking-normal leading-none"
+                style={{ fontSize: 'clamp(32px, 4vw, 48px)' }}
+              >
                 <AnimatedCounter end={stat.value} suffix={stat.suffix} />
               </h3>
-              <p className="text-gray-500 font-medium text-lg">{stat.label}</p>
+              <p className="text-gray-500 font-medium text-sm md:text-lg leading-tight md:leading-normal">{stat.label}</p>
             </div>
           ))}
         </div>

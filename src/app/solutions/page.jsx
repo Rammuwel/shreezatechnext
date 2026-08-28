@@ -92,7 +92,7 @@ export default function SolutionsPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#040026] via-[#040026]/90 to-transparent"></div>
         </div>
 
-        <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 w-full" data-aos="fade-right">
+        <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center pt-24 md:pt-32 relative z-10 w-full" data-aos="fade-right">
           <div className="max-w-4xl">
             <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance">
               Industry-Specific <br />
@@ -106,7 +106,7 @@ export default function SolutionsPage() {
       </section>
 
       {/* 2. Solutions Grid */}
-      <section className="py-24 px-6 bg-gray-50 border-t border-gray-200">
+      <section className="py-10 md:py-20 lg:py-24 px-6 bg-gray-50 border-t border-gray-200">
         <div className="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {solutions.map((solution, index) => (
             <div
@@ -148,18 +148,18 @@ export default function SolutionsPage() {
       </section>
 
       {/* 3. Enterprise Value Proposition (Asymmetrical Split Layout) */}
-      <section className="py-24 px-6 bg-white relative z-30">
+      <section className="py-10 md:py-20 lg:py-24 px-6 bg-[#040026] relative z-30">
         <div className="max-w-[1300px] mx-auto relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20">
             {/* Left Side: Sticky Title */}
             <div className="lg:col-span-4" data-aos="fade-right">
               <div className="sticky top-32">
-                <h2 className="text-[36px] md:text-[46px] font-normal leading-[1.2] text-[#040026] mb-6">
+                <h2 className="text-[32px] md:text-[46px] font-normal leading-[1.2] text-white mb-6">
                   Why Enterprise <br />
-                  <span className="font-bold text-[#0A3A7A]">Leaders Choose Us</span>
+                  <span className="font-bold text-[#ffb916]">Leaders Choose Us</span>
                 </h2>
                 <div className="w-16 h-1 bg-[#ffb916] mb-6"></div>
-                <p className="text-gray-600 text-lg leading-relaxed">
+                <p className="text-gray-400 text-lg leading-relaxed">
                   We don't just write code; we engineer scalable business advantages tailored to your specific market challenges.
                 </p>
               </div>
@@ -167,33 +167,33 @@ export default function SolutionsPage() {
 
             {/* Right Side: Feature Grid */}
             <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <div className="p-8 bg-gray-50 border border-gray-100 rounded-2xl hover:bg-white hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
-                <div className="w-14 h-14 bg-white shadow-sm rounded-full flex items-center justify-center mb-6">
-                  <ShieldCheck className="text-[#0A3A7A]" size={28} />
+              <div className="p-8 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                <div className="w-14 h-14 bg-white/10 shadow-sm rounded-full flex items-center justify-center mb-6">
+                  <ShieldCheck className="text-[#ffb916]" size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-[#040026] mb-3">Regulatory Compliance</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">Our architectures strictly adhere to HIPAA, GDPR, SOC2, and PCI-DSS, ensuring your data is legally protected globally.</p>
+                <h3 className="text-xl font-bold text-white mb-3">Regulatory Compliance</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">Our architectures strictly adhere to HIPAA, GDPR, SOC2, and PCI-DSS, ensuring your data is legally protected globally.</p>
               </div>
-              <div className="p-8 bg-gray-50 border border-gray-100 rounded-2xl hover:bg-white hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
-                <div className="w-14 h-14 bg-white shadow-sm rounded-full flex items-center justify-center mb-6">
-                  <Zap className="text-[#0A3A7A]" size={28} />
+              <div className="p-8 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                <div className="w-14 h-14 bg-white/10 shadow-sm rounded-full flex items-center justify-center mb-6">
+                  <Zap className="text-[#ffb916]" size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-[#040026] mb-3">Zero-Downtime Scale</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">We utilize Kubernetes and serverless microservices to auto-scale during massive traffic spikes, preventing lost revenue.</p>
+                <h3 className="text-xl font-bold text-white mb-3">Zero-Downtime Scale</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">We utilize Kubernetes and serverless microservices to auto-scale during massive traffic spikes, preventing lost revenue.</p>
               </div>
-              <div className="p-8 bg-gray-50 border border-gray-100 rounded-2xl hover:bg-white hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
-                <div className="w-14 h-14 bg-white shadow-sm rounded-full flex items-center justify-center mb-6">
-                  <Target className="text-[#0A3A7A]" size={28} />
+              <div className="p-8 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                <div className="w-14 h-14 bg-white/10 shadow-sm rounded-full flex items-center justify-center mb-6">
+                  <Target className="text-[#ffb916]" size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-[#040026] mb-3">Bespoke Logic</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">Off-the-shelf software forces you to change your business. We build custom logic that exactly matches your workflows.</p>
+                <h3 className="text-xl font-bold text-white mb-3">Bespoke Logic</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">Off-the-shelf software forces you to change your business. We build custom logic that exactly matches your workflows.</p>
               </div>
-              <div className="p-8 bg-gray-50 border border-gray-100 rounded-2xl hover:bg-white hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
-                <div className="w-14 h-14 bg-white shadow-sm rounded-full flex items-center justify-center mb-6">
-                  <BarChart2 className="text-[#0A3A7A]" size={28} />
+              <div className="p-8 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                <div className="w-14 h-14 bg-white/10 shadow-sm rounded-full flex items-center justify-center mb-6">
+                  <BarChart2 className="text-[#ffb916]" size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-[#040026] mb-3">Measurable ROI</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">Every solution is designed with clear KPIs in mind—whether it's reducing OpEx by 30% or increasing conversions by 3x.</p>
+                <h3 className="text-xl font-bold text-white mb-3">Measurable ROI</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">Every solution is designed with clear KPIs in mind—whether it's reducing OpEx by 30% or increasing conversions by 3x.</p>
               </div>
             </div>
           </div>
@@ -204,7 +204,7 @@ export default function SolutionsPage() {
       <TechStack />
 
       {/* 5. CTA Section (Full Width Premium Layout) */}
-      <section className="bg-gradient-to-br from-[#081229] to-[#040026] py-24 px-6 border-t border-white/10 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-[#081229] to-[#040026] py-10 md:py-20 lg:py-24 px-6 border-t border-white/10 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop')] opacity-5 object-cover mix-blend-overlay"></div>
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#ffb916] rounded-full mix-blend-screen filter blur-[150px] opacity-20"></div>
 

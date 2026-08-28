@@ -17,14 +17,14 @@ export default function CSRPage() {
         </div>
         
         <div className="max-w-[1300px] w-full mx-auto px-6 lg:px-12 relative z-10">
-          <h1 className="text-4xl md:text-6xl font-light text-white mb-4 leading-tight max-w-3xl">
+          <h1 className="text-3xl md:text-4xl md:text-6xl font-light text-white mb-4 leading-tight max-w-3xl">
             <span className="text-[#3b82f6]">Creating</span> Social Impact Initiatives for a Lasting Change
           </h1>
         </div>
       </section>
 
       {/* Our Commitment */}
-      <section className="py-24 bg-white relative z-20">
+      <section className="py-10 md:py-20 lg:py-24 bg-white relative z-20">
         <div className="max-w-[1000px] mx-auto px-6 lg:px-12 text-center">
           <h2 className="text-3xl md:text-[40px] font-medium text-[#113264] mb-8 leading-tight">
             Our commitment to building brighter futures
@@ -55,7 +55,7 @@ export default function CSRPage() {
       </section>
       
       {/* Glimpse into our CSR Initiatives */}
-      <section className="py-24 bg-[#f8f9fc] relative z-20 border-t border-gray-100">
+      <section className="py-10 md:py-20 lg:py-24 bg-[#f8f9fc] relative z-20 border-t border-gray-100">
         <div className="max-w-[1000px] mx-auto px-6 lg:px-12 text-center">
           <h2 className="text-3xl md:text-[40px] font-medium text-[#113264] mb-12 leading-tight">
             Glimpse into our CSR Initiatives

@@ -24,7 +24,7 @@ export default function BlogsPage() {
     <div className="min-h-screen bg-white font-sans">
       
       {/* NovacTech Style Hero Section */}
-      <section className="bg-white py-16 px-6 border-b border-gray-100">
+      <section className="bg-white py-10 md:py-16 px-6 border-b border-gray-100">
         <div className="max-w-[1300px] mx-auto">
           
           {/* Breadcrumbs */}
@@ -34,7 +34,7 @@ export default function BlogsPage() {
             <span className="text-[#040026]">Blogs</span>
           </nav>
 
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#040026] mb-12">ShreezaTech Blog</h1>
+          <h1 className="text-3xl md:text-4xl md:text-5xl font-extrabold text-[#040026] mb-12">ShreezaTech Blog</h1>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             
@@ -98,7 +98,7 @@ export default function BlogsPage() {
       </section>
 
       {/* Category Filter & Grid Section */}
-      <section className="py-20 px-6 bg-gray-50">
+      <section className="py-12 md:py-20 px-6 bg-gray-50">
         <div className="max-w-[1300px] mx-auto">
           
           <h3 className="text-2xl font-extrabold text-[#040026] mb-8">Recent Articles by Topic</h3>
@@ -170,7 +170,7 @@ export default function BlogsPage() {
               ))}
             </div>
           ) : (
-            <div className="text-center py-20 bg-white rounded-2xl border border-gray-100">
+            <div className="text-center py-12 md:py-20 bg-white rounded-2xl border border-gray-100">
               <p className="text-gray-500 font-medium">No results found for {activeCategory}.</p>
             </div>
           )}

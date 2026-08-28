@@ -94,7 +94,7 @@ export default function ServicesPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#040026] via-[#040026]/95 to-transparent"></div>
         </div>
 
-        <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 w-full" data-aos="fade-right">
+        <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center pt-24 md:pt-32 relative z-10 w-full" data-aos="fade-right">
           <div className="max-w-4xl">
             <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance">
               Comprehensive <br />
@@ -108,7 +108,7 @@ export default function ServicesPage() {
       </section>
 
       {/* 2. Intro & Why Choose Us Section (matching About.jsx styling) */}
-      <section className="py-24 px-6 bg-white relative">
+      <section className="py-10 md:py-20 lg:py-24 px-6 bg-white relative">
         <div className="max-w-[1300px] mx-auto relative z-10">
           <div className="w-full mb-12 text-center" data-aos="fade-up">
             <h2 className="text-[38px] md:text-[46px] leading-[1.2] font-normal text-[#212529] max-w-4xl mx-auto">
@@ -170,7 +170,7 @@ export default function ServicesPage() {
       </section>
 
       {/* 3. Core Services Grid (Updated with Homepage Colors) */}
-      <section id="core-services" className="py-24 px-6 bg-gray-50 border-t border-gray-200">
+      <section id="core-services" className="py-10 md:py-20 lg:py-24 px-6 bg-gray-50 border-t border-gray-200">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-[36px] md:text-[42px] font-bold text-[#0A3A7A] mb-4">Our Core Competencies</h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">Specialized engineering practices tailored to modern digital demands.</p>
@@ -217,7 +217,7 @@ export default function ServicesPage() {
       </section>
 
       {/* 4. Our Process Section (Updated styling) */}
-      <section className="py-24 px-6 bg-[#040026] text-white relative overflow-hidden">
+      <section className="py-10 md:py-20 lg:py-24 px-6 bg-[#040026] text-white relative overflow-hidden">
         <div className="max-w-[1300px] mx-auto relative z-10">
           <div className="text-center mb-20" data-aos="fade-up">
             <h2 className="text-[36px] md:text-[42px] font-bold text-white mb-4">How We Deliver Excellence</h2>
@@ -231,7 +231,7 @@ export default function ServicesPage() {
                 <div className="w-16 h-16 bg-[#040026] border border-[#ffb916]/50 rounded flex items-center justify-center mb-6 relative z-10">
                   {step.icon}
                 </div>
-                <div className="text-white/10 font-black text-5xl absolute top-4 right-6 -z-10">{step.number}</div>
+                <div className="text-white/10 font-black text-3xl md:text-5xl absolute top-4 right-6 -z-10">{step.number}</div>
 
                 <h3 className="text-xl font-bold text-white mb-4">{step.title}</h3>
                 <p className="text-gray-400 leading-relaxed text-sm">
@@ -247,11 +247,11 @@ export default function ServicesPage() {
       <TechStack />
 
       {/* 6. CTA Section matching Homepage dark style */}
-      <section className="bg-[#0A3A7A] py-20 px-6 relative overflow-hidden">
+      <section className="bg-[#0A3A7A] py-12 md:py-20 px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/chatgpt-3.png')] opacity-10 object-cover mix-blend-overlay"></div>
 
         <div className="max-w-[1000px] mx-auto text-center relative z-10" data-aos="zoom-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8 tracking-tight">Ready to accelerate your digital transformation?</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8 tracking-tight">Ready to accelerate your digital transformation?</h2>
           <p className="text-blue-100 mb-10 text-xl max-w-2xl mx-auto leading-relaxed">
             Let's collaborate to build scalable solutions that perfectly align with your strategic business goals.
           </p>

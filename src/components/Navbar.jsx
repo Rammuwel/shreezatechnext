@@ -3,10 +3,11 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Phone, BarChart2, Umbrella, Monitor, Box, Bot, Code, Smartphone, PenTool, Wifi, Cpu, Stethoscope, Landmark, GraduationCap, Building, Factory, ShoppingCart, Menu, X } from 'lucide-react';
+import { Phone, BarChart2, Umbrella, Monitor, Box, Bot, Code, Smartphone, PenTool, Wifi, Cpu, Stethoscope, Landmark, GraduationCap, Building, Factory, ShoppingCart, Menu, X, ChevronDown } from 'lucide-react';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openMobileDropdown, setOpenMobileDropdown] = useState(null);
   const pathname = usePathname();
 
   const isActive = (path) => {
@@ -21,11 +22,11 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white border-b border-gray-100" data-aos="fade-down">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 transition-all duration-300" data-aos="fade-down">
       <div className="max-w-[1400px] mx-auto px-6 flex justify-between items-center h-20">
 
         {/* Left Side: Logo + Brand Name */}
-        <Link href="/" className="flex items-center gap-[4px] shrink-0">
+        <Link href="/" className="flex items-center gap-[4px] shrink-0 scale-[0.75] md:scale-100 origin-left transition-transform duration-300">
           <Image src="/logo.png" alt="Shreezatech" width={56} height={56} className="h-[56px] w-auto object-contain drop-shadow-sm" priority />
           <div className="flex flex-col justify-center">
             <span
@@ -67,7 +68,7 @@ export default function Navbar() {
                   </div>
 
                   {/* Right Column Grid */}
-                  <div className="col-span-8 grid grid-cols-2 gap-x-16 gap-y-10">
+                  <div className="col-span-8 grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
                     <Link href="/services/web-development" className="group/item cursor-pointer block">
                       <div className="flex items-center gap-3 mb-3">
                         <Code className="text-[#154EA1]" size={22} />
@@ -149,7 +150,7 @@ export default function Navbar() {
                   </div>
 
                   {/* Right Column Grid */}
-                  <div className="col-span-8 grid grid-cols-2 gap-x-16 gap-y-10">
+                  <div className="col-span-8 grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
                     <Link href="/solutions/healthcare" className="group/item cursor-pointer block">
                       <div className="flex items-center gap-3 mb-3">
                         <Stethoscope className="text-[#154EA1]" size={22} />
@@ -244,12 +245,47 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-20 left-0 w-full bg-white shadow-xl border-t border-gray-100 flex flex-col p-6 z-50">
-          <Link href="/" className="py-3 border-b border-gray-50 text-[#2F65E0] font-medium" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-          <Link href="/services" className="py-3 border-b border-gray-50 text-gray-600 font-medium" onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
-          <Link href="/solutions" className="py-3 border-b border-gray-50 text-gray-600 font-medium" onClick={() => setIsMobileMenuOpen(false)}>Solutions</Link>
-          <Link href="/about-us" className="py-3 border-b border-gray-50 text-gray-600 font-medium" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
-          <Link href="/contact-us" className="py-3 border-b border-gray-50 text-gray-600 font-medium" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
+        <div className="lg:hidden absolute top-20 left-0 w-full bg-white shadow-xl border-t border-gray-100 flex flex-col p-6 z-50 max-h-[85vh] overflow-y-auto">
+          <Link href="/" className="py-3 border-b border-gray-50 text-gray-800 font-medium" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+          
+          <div className="border-b border-gray-50">
+            <button className="w-full py-3 flex justify-between items-center text-gray-800 font-medium" onClick={() => setOpenMobileDropdown(openMobileDropdown === 'services' ? null : 'services')}>
+              Services
+              <ChevronDown size={18} className={`text-gray-500 transition-transform duration-300 ${openMobileDropdown === 'services' ? 'rotate-180' : ''}`} />
+            </button>
+            {openMobileDropdown === 'services' && (
+              <div className="flex flex-col pl-4 pb-3 space-y-3">
+                <Link href="/services" className="text-[#154EA1] font-medium text-[15px]" onClick={() => setIsMobileMenuOpen(false)}>All Services</Link>
+                <Link href="/services/web-development" className="text-gray-500 text-[15px]" onClick={() => setIsMobileMenuOpen(false)}>Web Development</Link>
+                <Link href="/services/mobile-app-development" className="text-gray-500 text-[15px]" onClick={() => setIsMobileMenuOpen(false)}>Mobile Apps</Link>
+                <Link href="/services/ai-and-automation" className="text-gray-500 text-[15px]" onClick={() => setIsMobileMenuOpen(false)}>AI & Automation</Link>
+                <Link href="/services/ux-ui-design" className="text-gray-500 text-[15px]" onClick={() => setIsMobileMenuOpen(false)}>UI/UX Design</Link>
+                <Link href="/services/iot" className="text-gray-500 text-[15px]" onClick={() => setIsMobileMenuOpen(false)}>Internet of Things (IoT)</Link>
+                <Link href="/services/robotics" className="text-gray-500 text-[15px]" onClick={() => setIsMobileMenuOpen(false)}>Robotics</Link>
+              </div>
+            )}
+          </div>
+
+          <div className="border-b border-gray-50">
+            <button className="w-full py-3 flex justify-between items-center text-gray-800 font-medium" onClick={() => setOpenMobileDropdown(openMobileDropdown === 'solutions' ? null : 'solutions')}>
+              Solutions
+              <ChevronDown size={18} className={`text-gray-500 transition-transform duration-300 ${openMobileDropdown === 'solutions' ? 'rotate-180' : ''}`} />
+            </button>
+            {openMobileDropdown === 'solutions' && (
+              <div className="flex flex-col pl-4 pb-3 space-y-3">
+                <Link href="/solutions" className="text-[#154EA1] font-medium text-[15px]" onClick={() => setIsMobileMenuOpen(false)}>All Solutions</Link>
+                <Link href="/solutions/healthcare" className="text-gray-500 text-[15px]" onClick={() => setIsMobileMenuOpen(false)}>Healthcare</Link>
+                <Link href="/solutions/finance" className="text-gray-500 text-[15px]" onClick={() => setIsMobileMenuOpen(false)}>Finance</Link>
+                <Link href="/solutions/education" className="text-gray-500 text-[15px]" onClick={() => setIsMobileMenuOpen(false)}>Education</Link>
+                <Link href="/solutions/real-estate" className="text-gray-500 text-[15px]" onClick={() => setIsMobileMenuOpen(false)}>Real Estate</Link>
+                <Link href="/solutions/manufacturing" className="text-gray-500 text-[15px]" onClick={() => setIsMobileMenuOpen(false)}>Manufacturing</Link>
+                <Link href="/solutions/retail" className="text-gray-500 text-[15px]" onClick={() => setIsMobileMenuOpen(false)}>Retail & E-commerce</Link>
+              </div>
+            )}
+          </div>
+
+          <Link href="/about-us" className="py-3 border-b border-gray-50 text-gray-800 font-medium" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
+          <Link href="/contact-us" className="py-3 border-b border-gray-50 text-gray-800 font-medium" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
           <Link href="#demo" className="mt-6 text-center px-7 py-3 bg-[#ffb916] border-2 border-[#ffb916] cursor-pointer text-white font-medium transition-all rounded shadow-sm hover:bg-transparent hover:border-[#154EA1] hover:text-[#154EA1]" onClick={() => setIsMobileMenuOpen(false)}>
             Book a Demo
           </Link>

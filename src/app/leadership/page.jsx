@@ -117,7 +117,7 @@ export default function LeadershipPage() {
       {/* Hero Banner */}
       <section className="relative w-full h-[500px] flex items-center bg-[#13072e] overflow-hidden bg-gradient-to-tr from-[#0a071f] via-[#151142] to-[#201c64]">
         <div className="max-w-[1300px] w-full mx-auto px-6 lg:px-12 relative z-10">
-          <h1 className="text-4xl md:text-6xl font-light text-white mb-6 leading-tight">
+          <h1 className="text-3xl md:text-4xl md:text-6xl font-light text-white mb-6 leading-tight">
             Meet Our <br /> <span className="text-[#3b82f6]">Leadership</span> Team
           </h1>
           <p className="text-lg md:text-[21px] text-gray-300 font-light max-w-2xl leading-relaxed">
@@ -127,7 +127,7 @@ export default function LeadershipPage() {
       </section>
 
       {/* Intro Section */}
-      <section className="py-20 bg-white">
+      <section className="py-12 md:py-20 bg-white">
         <div className="max-w-[1100px] mx-auto px-6 lg:px-12 text-center">
           <p className="text-[18px] md:text-[22px] text-gray-800 font-light leading-[1.8]">
             We are fortunate to have a leadership team of seasoned industry experts who have come together to shape a young company. With their years of experience and hard work, they have set the tone for our continued growth and success. They have cultivated our culture of excellence and determination and inspired us to learn, grow, and reach new heights. With them at the helm, we are confident of achieving our goals and thriving as a company.

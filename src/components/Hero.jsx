@@ -28,13 +28,20 @@ export default function Hero() {
           background: #ffffff;
         }
         .mySwiper .swiper-pagination {
-          bottom: 175px !important;
+          bottom: 30px !important;
           left: 50% !important;
           transform: translateX(-50%) !important;
           width: 90% !important;
           max-width: 1000px !important;
-          text-align: right !important;
-          padding-right: 90px !important; /* Space for the fraction */
+          text-align: center !important;
+          padding-right: 0 !important;
+        }
+        @media (min-width: 768px) {
+          .mySwiper .swiper-pagination {
+            bottom: 175px !important;
+            text-align: right !important;
+            padding-right: 90px !important; /* Space for the fraction */
+          }
         }
       `}</style>
       <Swiper
@@ -55,9 +62,9 @@ export default function Hero() {
             <img src="/images/hero-slide-1.jpg" alt="Digital Innovation" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-[#040026]/70"></div>
           </div>
-          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-16 pb-64 md:pb-72 w-full">
+          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-64 pb-48 md:pb-56 w-full">
             <div className="max-w-4xl">
-              <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
+              <h1 className="text-[26px] md:text-[40px] leading-[36px] md:leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
                 Tech Consulting & <br />
                 <span className="text-[#ffb916]">Software Solutions</span>
               </h1>
@@ -77,7 +84,7 @@ export default function Hero() {
             <img src="/images/hero-slide-2.jpg" alt="Deep Domain Solutions" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-[#040026]/60"></div>
           </div>
-          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-16 pb-64 md:pb-72 w-full">
+          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-64 pb-48 md:pb-56 w-full">
             <div className="max-w-4xl">
               <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
                 Deep-Domain Solutions <br />
@@ -99,7 +106,7 @@ export default function Hero() {
             <img src="/images/hero-slide-3.jpg" alt="Cloud and AI" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-[#040026]/70"></div>
           </div>
-          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-16 pb-64 md:pb-72 w-full">
+          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-64 pb-48 md:pb-56 w-full">
             <div className="max-w-4xl">
               <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
                 Scalable Digital Products <br />
@@ -121,7 +128,7 @@ export default function Hero() {
             <img src="/images/hero-slide-4.jpg" alt="Technical Excellence" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-[#040026]/70"></div>
           </div>
-          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-16 pb-64 md:pb-72 w-full">
+          <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-64 pb-48 md:pb-56 w-full">
             <div className="max-w-4xl">
               <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance" data-swiper-parallax="-300">
                 The New Age of <br />

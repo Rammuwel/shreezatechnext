@@ -3,7 +3,7 @@ import { ChevronDown } from 'lucide-react';
 
 export default function Contact({ title, subtitle }) {
   return (
-    <section id="contact" className="py-16 md:py-24 bg-white relative">
+    <section id="contact" className="py-10 md:py-20 lg:py-24 bg-white relative">
       <div className="max-w-[1300px] mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20">
 
@@ -27,7 +27,7 @@ export default function Contact({ title, subtitle }) {
           <div className="lg:col-span-8" data-aos="fade-left">
             <form className="flex flex-col gap-4 md:gap-5">
               
-              <div className="grid grid-cols-2 gap-3 md:gap-5">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
                 <input 
                   type="text" 
                   placeholder="First Name" 
@@ -40,7 +40,7 @@ export default function Contact({ title, subtitle }) {
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-3 md:gap-5">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
                 <div className="flex bg-[#EEEEEE]">
                   <div className="px-2 md:px-4 py-3.5 md:py-4 border-r border-[#DDDDDD] text-[14px] md:text-base text-gray-600 flex items-center justify-center bg-[#E5E5E5] cursor-pointer whitespace-nowrap">
                     +91 <span className="ml-1 text-[8px] md:text-[10px]">▼</span>
@@ -58,7 +58,7 @@ export default function Contact({ title, subtitle }) {
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-3 md:gap-5">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
                 <input 
                   type="text" 
                   placeholder="Job Title" 
@@ -71,7 +71,7 @@ export default function Contact({ title, subtitle }) {
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-3 md:gap-5">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
                 <input 
                   type="text" 
                   placeholder="Company Website" 

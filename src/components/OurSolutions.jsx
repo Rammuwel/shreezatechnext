@@ -44,7 +44,7 @@ const solutions = [
 
 export default function OurSolutions() {
   return (
-    <section id="our-solutions" className="py-24 bg-[#020012] relative border-t border-white/5">
+    <section id="our-solutions" className="py-10 md:py-20 lg:py-24 bg-[#020012] relative border-t border-white/5">
       <div className="max-w-[1300px] mx-auto px-6 relative z-10">
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16" data-aos="fade-up">

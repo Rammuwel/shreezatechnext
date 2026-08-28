@@ -28,7 +28,7 @@ export default function SolutionTemplate({
     <div className="font-sans text-gray-800 selection:bg-[#ffb916] selection:text-white ">
 
       {/* 1. GLASSMORPHISM HERO SECTION */}
-      <section className="relative min-h-[40vh] flex items-center justify-center overflow-hidden bg-[#040026]">
+      <section className="relative min-h-[450px] md:min-h-[600px] lg:h-[70vh] flex items-center justify-center overflow-hidden bg-[#040026]">
         {/* Background Video or Image Layer */}
         <div className="absolute inset-0 z-0">
           <img src={hero.bgImage} alt="Hero Background" className="w-full h-full object-cover opacity-40 scale-105 animate-[pulse_20s_ease-in-out_infinite_alternate]" />
@@ -39,7 +39,7 @@ export default function SolutionTemplate({
         <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-[#0A3A7A] rounded-full mix-blend-screen filter blur-[120px] opacity-50 z-0 animate-pulse"></div>
         <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-[#ffb916] rounded-full mix-blend-screen filter blur-[120px] opacity-20 z-0"></div>
 
-        <div className="max-w-[1300px] mx-auto px-6 relative z-10 w-full pt-12 pb-24 flex flex-col lg:flex-row items-center gap-16">
+        <div className="max-w-[1300px] mx-auto px-6 relative z-10 w-full pt-32 lg:pt-48 pb-24 flex flex-col lg:flex-row items-center gap-10 md:gap-16">
           <div className="lg:w-3/5 text-left" data-aos="fade-right">
 
             <h1 className="text-[50px] md:text-[70px] lg:text-[85px] leading-[1.05] font-normal mb-8 text-white tracking-tight">
@@ -65,9 +65,9 @@ export default function SolutionTemplate({
       </section>
 
       {/* 2. BREADCRUMB */}
-      <div className={`w-full ${challenge ? 'bg-[#f8fbff]' : 'bg-white'} relative z-20`}>
-        <div className="max-w-[1300px] mx-auto flex py-4 px-6 lg:px-12">
-          <nav aria-label="Breadcrumb" className="flex items-center text-[13px] text-gray-500 font-medium">
+      <div className={`w-full ${challenge ? 'bg-[#f8fbff]' : 'bg-white'} relative z-20 border-0 border-transparent outline-none shadow-none`}>
+        <div className="max-w-[1300px] mx-auto flex flex-col justify-start items-start md:flex-row md:justify-between md:items-center py-4 px-6 lg:px-12 gap-4">
+          <nav aria-label="Breadcrumb" className="flex flex-wrap items-center justify-start text-[13px] text-gray-500 font-medium">
             <Link href="/" className="hover:text-[#ffb916] transition-colors focus-visible:outline-none rounded px-1 -ml-1 flex items-center">
               <HomeIcon size={14} />
             </Link>
@@ -84,7 +84,7 @@ export default function SolutionTemplate({
       {/* 3. THE INDUSTRY CHALLENGE (PROFESSIONAL B2B LAYOUT) */}
       {challenge && (
         <section className="pt-16 pb-24 lg:pt-20 lg:pb-32 px-6 lg:px-12 text-[#212529] bg-[#f8fbff] relative overflow-hidden">
-          <div className="max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+          <div className="max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
             {/* Left Side: Content & Pain Points Grid */}
             <div className="flex flex-col justify-center order-2 lg:order-1" data-aos="fade-right">
@@ -162,7 +162,7 @@ export default function SolutionTemplate({
 
       {/* 3.5. QUANTIFIABLE IMPACT (ROI) */}
       {roi && (
-        <section className="py-16 px-6 lg:px-12 bg-white border-b border-gray-100">
+        <section className="py-10 md:py-16 px-6 lg:px-12 bg-white border-b border-gray-100">
           <div className="max-w-[1300px] mx-auto">
             <div className="text-center mb-12" data-aos="fade-up">
               <h2 className="text-[36px] md:text-[42px] font-bold text-[#0A3A7A] leading-[1.1] mb-4">
@@ -184,7 +184,7 @@ export default function SolutionTemplate({
 
       {/* 4. COMBINED CAPABILITIES & ARCHITECTURE TABS */}
       {(features || architecture) && (
-        <section className="py-24 lg:py-32 px-6 lg:px-12 bg-gray-50 border-t border-gray-200">
+        <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-gray-50 border-t border-gray-200">
           <div className="max-w-[1300px] mx-auto">
 
             {/* Unified Header & Tab Toggle */}
@@ -270,7 +270,7 @@ export default function SolutionTemplate({
 
       {/* 5.5. PROCESS SECTION */}
       {process && (
-        <section className="py-24 lg:py-32 px-6 lg:px-12 bg-[#020012] text-white relative overflow-hidden">
+        <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#020012] text-white relative overflow-hidden">
           <div className="max-w-[1300px] mx-auto relative z-10 text-center">
             <h4 className="text-[#ffb916] font-bold tracking-widest uppercase mb-4 text-sm">Our Process</h4>
             <h2 className="text-[36px] md:text-[50px] font-bold text-white leading-[1.1] mb-16">
@@ -293,7 +293,7 @@ export default function SolutionTemplate({
 
       {/* 6.5. AI & FUTURE INNOVATION */}
       {aiFuture && (
-        <section className="py-24 lg:py-32 px-6 lg:px-12 bg-white text-[#212529] relative overflow-hidden border-t border-gray-100">
+        <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-white text-[#212529] relative overflow-hidden border-t border-gray-100">
           <div className="max-w-[1300px] mx-auto relative z-10">
             <div className="flex flex-col lg:flex-row gap-12 items-center">
               <div className="lg:w-1/2">
@@ -304,7 +304,7 @@ export default function SolutionTemplate({
                   {aiFuture.title1} <span className="font-bold text-[#0A3A7A] block">{aiFuture.title2}</span>
                 </h2>
                 <p className="text-gray-600 text-[18px] leading-[1.8] mb-8">{aiFuture.description}</p>
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {aiFuture.features?.map((f, i) => (
                     <div key={i} className="flex items-center gap-3">
                       <CheckCircle2 className="text-[#ffb916]" size={20} />
@@ -343,7 +343,7 @@ export default function SolutionTemplate({
 
       {/* 7. CASE STUDIES SLIDER */}
       {caseStudies && (
-        <section className="py-24 lg:py-32 bg-[#020012] text-white overflow-hidden relative">
+        <section className="py-10 md:py-20 lg:py-32 bg-[#020012] text-white overflow-hidden relative">
           <div className="max-w-[1300px] mx-auto px-6 lg:px-12 mb-12 flex justify-between items-end">
             <div>
               <h4 className="text-[#ffb916] font-bold tracking-widest uppercase mb-4 text-sm">Success Stories</h4>
@@ -392,7 +392,7 @@ export default function SolutionTemplate({
 
       {/* 8. COMPLIANCE & INTEGRATIONS */}
       {compliance && (
-        <section className="py-20 bg-gray-50 border-y border-gray-200 overflow-hidden">
+        <section className="py-12 md:py-20 bg-gray-50 border-y border-gray-200 overflow-hidden">
           <div className="max-w-[1300px] mx-auto px-6 lg:px-12 text-center">
             <h4 className="text-gray-500 font-bold tracking-widest uppercase mb-10 text-sm">{compliance.title}</h4>
             <div className="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
@@ -406,7 +406,7 @@ export default function SolutionTemplate({
 
       {/* 9. INTERACTIVE FAQ */}
       {faq && (
-        <section className="py-24 lg:py-32 px-6 lg:px-12 bg-white">
+        <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-white">
           <div className="max-w-[900px] mx-auto">
             <div className="text-center mb-16" data-aos="fade-up">
               <h2 className="text-[36px] md:text-[46px] font-bold text-[#0A3A7A] leading-[1.1] mb-6">
@@ -436,7 +436,7 @@ export default function SolutionTemplate({
 
       {/* 10. GRAND CTA SECTION */}
       {cta && (
-        <section className="bg-[#0A3A7A] py-24 lg:py-32 px-6 relative overflow-hidden">
+        <section className="bg-[#0A3A7A] py-10 md:py-20 lg:py-32 px-6 relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80')] opacity-20 object-cover mix-blend-overlay"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#040026] to-transparent opacity-90"></div>
 
