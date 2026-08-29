@@ -48,7 +48,7 @@ export default function Discover() {
 
           {/* Right Side: Content */}
           <div className="flex flex-col justify-center" data-aos="fade-left" data-aos-delay="200">
-            <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-normal text-[#212529] mb-8">
+            <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-normal text-[#212529] mb-8">
               Why <span className="font-bold text-[#0A3A7A]">Shreeza Tech?</span>
             </h2>
             

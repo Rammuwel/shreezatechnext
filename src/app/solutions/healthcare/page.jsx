@@ -127,7 +127,7 @@ export default function HealthcareSolutionPage() {
         "AI-Assisted Diagnostics",
         "Smart Resource Allocation"
       ],
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80"
+      image: "/images/ai_doctors_hero.jpg"
     },
     roi: {
       title1: "Quantifiable",
@@ -143,25 +143,25 @@ export default function HealthcareSolutionPage() {
       title: "Data-Backed Client Outcomes",
       studies: [
         {
-          image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80",
+          image: "/images/chatgpt-1.png",
           industry: "Clinical Provider",
           title: "Modernizing Patient Intake Workflows for a Multi-Specialty Clinic",
           stats: [{ value: "50%", label: "Faster Intake" }, { value: "Zero", label: "Paper Forms" }]
         },
         {
-          image: "https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&q=80",
+          image: "/images/solutions-hero.jpg",
           industry: "Health Tech Vendor",
           title: "Developing a FHIR-Compliant API Gateway for Legacy EMR Data",
           stats: [{ value: "100%", label: "Data Sync" }, { value: "ONC", label: "Compliant" }]
         },
         {
-          image: "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&q=80",
+          image: "/images/about_hero_1786877430368.jpg",
           industry: "Population Health",
           title: "Building Real-Time Analytics Dashboards for Value-Based Care",
           stats: [{ value: "100k+", label: "Patients Tracked" }, { value: "15%", label: "Better Outcomes" }]
         },
         {
-          image: "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80",
+          image: "/images/digital_learning_hero_1787090023062.jpg",
           industry: "Hospital Network",
           title: "Implementing Automated Revenue Cycle Management & Billing",
           stats: [{ value: "30%", label: "Fewer Denials" }, { value: "Faster", label: "Settlements" }]

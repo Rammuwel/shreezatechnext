@@ -78,7 +78,7 @@ export default function LocateUsPage() {
         <div className="absolute top-0 right-0 w-[800px] h-full opacity-30 pointer-events-none">
           <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-500 rounded-full blur-[150px] mix-blend-screen"></div>
           {/* A wireframe globe could go here via an img tag, using a placeholder for now */}
-          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000" alt="Globe" className="w-full h-full object-cover mix-blend-screen opacity-50" />
+          <img src="/images/digital_learning_hero_1787090023062.jpg" alt="Globe" className="w-full h-full object-cover mix-blend-screen opacity-50" />
         </div>
         
         <div className="max-w-[1300px] w-full mx-auto px-6 lg:px-12 relative z-10">

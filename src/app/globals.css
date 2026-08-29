@@ -91,60 +91,62 @@
   --motion-normal: 400ms;
 }
 
-html, body {
-  background-color: var(--color-bg-deep);
-  color: var(--color-text-primary);
-  font-family: var(--font-family-primary);
-  font-size: 1.0625rem; /* ~17px body for readability */
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-}
+@layer base {
+  html, body {
+    background-color: var(--color-bg-deep);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-primary);
+    font-size: 1.0625rem; /* ~17px body for readability */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
 
-/* Heading Hierarchy */
-h1,
-.heading-1 {
-  font-family: var(--font-family-heading);
-  font-size: var(--font-size-5xl);
-  line-height: 1.15;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
+  /* Heading Hierarchy */
+  h1,
+  .heading-1 {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-5xl);
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
 
-h2,
-.heading-2 {
-  font-family: var(--font-family-heading);
-  font-size: var(--font-size-4xl);
-  line-height: 1.2;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
+  h2,
+  .heading-2 {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-4xl);
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
 
-h3,
-.heading-3 {
-  font-family: var(--font-family-heading);
-  font-size: var(--font-size-3xl);
-  line-height: 1.25;
-  font-weight: 600;
-}
+  h3,
+  .heading-3 {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-3xl);
+    line-height: 1.25;
+    font-weight: 600;
+  }
 
-h4,
-.heading-4 {
-  font-family: var(--font-family-heading);
-  font-size: var(--font-size-2xl);
-  line-height: 1.3;
-  font-weight: 600;
-}
+  h4,
+  .heading-4 {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-2xl);
+    line-height: 1.3;
+    font-weight: 600;
+  }
 
-h5,
-.heading-5 {
-  font-family: var(--font-family-heading);
-  font-size: var(--font-size-xl);
-  line-height: 1.4;
-  font-weight: 600;
+  h5,
+  .heading-5 {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-xl);
+    line-height: 1.4;
+    font-weight: 600;
+  }
 }
 
 /* Modern Hollow Text Effects */

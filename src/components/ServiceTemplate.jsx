@@ -34,7 +34,7 @@ export default function ServiceTemplate({
         <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center pt-32 md:pt-48 relative z-10 w-full">
           <div className="max-w-4xl" data-aos="fade-right">
 
-            <h1 className="text-[36px] leading-[44px] md:text-[56px] md:leading-[64px] font-normal mb-4 md:mb-6 text-white text-balance">
+            <h1 className="text-[24px] leading-[32px] md:text-[56px] md:leading-[64px] font-normal mb-4 md:mb-6 text-white text-balance">
               {hero.slides?.[0]?.title1 || hero.title1} <br />
               <span className={hero.slides?.[0]?.title2Gradient || hero.title2Gradient || "text-[#ffb916] font-normal"}>
                 {hero.slides?.[0]?.title2 || hero.title2}
@@ -78,7 +78,7 @@ export default function ServiceTemplate({
                 <div className="w-12 h-1 bg-[#ffb916]"></div>
                 <span className="text-[#0A3A7A] font-bold tracking-widest uppercase text-sm">{philosophy.tagline || 'Our Philosophy'}</span>
               </div>
-              <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-normal text-[#111] leading-[1.1]">
+              <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-normal text-[#111] leading-[1.1]">
                 {philosophy.title1} <span className="text-[#0A3A7A] font-bold">{philosophy.title2}</span>
               </h2>
               <div className="text-[16px] leading-[26px] md:text-[18px] md:leading-[30px] text-gray-600 space-y-6">
@@ -124,7 +124,7 @@ export default function ServiceTemplate({
         <section id="capabilities" className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#f8fbff] relative">
           <div className="max-w-[1300px] mx-auto">
             <div className="text-center max-w-4xl mx-auto mb-20" data-aos="fade-up">
-              <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-bold text-[#0A3A7A] mb-6">
+              <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-bold text-[#0A3A7A] mb-6">
                 {ecosystem.title1} <span className="text-[#ffb916]">{ecosystem.title2}</span>
               </h2>
               <p className="text-[16px] leading-[26px] md:text-[18px] md:leading-[30px] text-gray-600">
@@ -166,7 +166,7 @@ export default function ServiceTemplate({
           <div className="max-w-[1300px] mx-auto relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-24">
               <div className="lg:col-span-5" data-aos="fade-right">
-                <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-bold text-white mb-6">
+                <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-bold text-white mb-6">
                   {security.title1.split('<br/>').map((line, i) => <React.Fragment key={i}>{line}<br /></React.Fragment>)}
                   <span className="text-[#00A2FF]">{security.title2}</span>
                 </h2>
@@ -174,9 +174,9 @@ export default function ServiceTemplate({
                   {security.description}
                 </p>
                 {security.button && (
-                  <Link href={security.button.href} className="inline-flex items-center justify-center px-8 py-4 bg-[#ffb916] border-2 border-[#ffb916] cursor-pointer text-white font-bold transition-all group hover:bg-transparent hover:border-[#154EA1] hover:text-[#154EA1] transform hover:-translate-y-1 hover:shadow-lg">
-                    {security.button.text}
-                    <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                  <Link href={security.button.href} className="inline-flex items-center justify-center text-center w-full sm:w-auto px-4 py-3 md:px-8 md:py-4 text-sm md:text-base bg-[#ffb916] border-2 border-[#ffb916] cursor-pointer text-white font-bold transition-all group hover:bg-transparent hover:border-[#154EA1] hover:text-[#154EA1] transform hover:-translate-y-1 hover:shadow-lg">
+                    <span>{security.button.text}</span>
+                    <ChevronRight className="ml-2 shrink-0 group-hover:translate-x-1 transition-transform" size={20} />
                   </Link>
                 )}
               </div>
@@ -201,7 +201,7 @@ export default function ServiceTemplate({
       {expertise && (
         <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-white">
           <div className="max-w-[1300px] mx-auto text-center mb-20" data-aos="fade-up">
-            <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-bold text-[#0A3A7A] mb-6">
+            <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-bold text-[#0A3A7A] mb-6">
               {expertise.title}
             </h2>
             <p className="text-[16px] leading-[26px] md:text-[18px] md:leading-[30px] text-gray-600 max-w-2xl mx-auto">
@@ -237,7 +237,7 @@ export default function ServiceTemplate({
               }
            `}</style>
           <div className="max-w-[1300px] mx-auto relative z-10">
-            <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-normal text-white text-center mb-10" data-aos="fade-up">
+            <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-normal text-white text-center mb-10" data-aos="fade-up">
               {process.title1} <span className="font-bold text-[#ffb916]">{process.title2}</span>
             </h2>
 
@@ -268,7 +268,7 @@ export default function ServiceTemplate({
         <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-white border-t border-gray-100">
           <div className="max-w-[1300px] mx-auto">
             <div className="text-center mb-16" data-aos="fade-up">
-              <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-bold text-[#0A3A7A] mb-6">
+              <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-bold text-[#0A3A7A] mb-6">
                 {benefits.title1} <span className="text-[#ffb916]">{benefits.title2}</span>
               </h2>
               <p className="text-[16px] leading-[26px] md:text-[18px] md:leading-[30px] text-gray-600 max-w-3xl mx-auto">{benefits.description}</p>
@@ -294,7 +294,7 @@ export default function ServiceTemplate({
         <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#f8fbff]">
           <div className="max-w-[1000px] mx-auto">
             <div className="text-center mb-16" data-aos="fade-up">
-              <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-bold text-[#0A3A7A] mb-6">
+              <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-bold text-[#0A3A7A] mb-6">
                 Frequently Asked <span className="text-[#ffb916]">Questions</span>
               </h2>
             </div>
@@ -322,12 +322,12 @@ export default function ServiceTemplate({
       {/* 10. GRAND CTA SECTION */}
       {cta && (
         <section className="bg-[#0A3A7A] py-10 md:py-20 lg:py-32 px-6 relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80')] opacity-10 object-cover mix-blend-overlay"></div>
+          <div className="absolute inset-0 bg-[url('/images/services-hero.jpg')] opacity-10 object-cover mix-blend-overlay"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#040026] to-transparent opacity-80"></div>
 
           <div className="max-w-[1000px] mx-auto text-center relative z-10" data-aos="zoom-in">
             <h4 className="text-[#ffb916] font-bold tracking-widest uppercase mb-6">{cta.subtitle}</h4>
-            <h2 className="text-[28px] leading-[36px] md:text-[56px] md:leading-[64px] font-normal text-white mb-8 tracking-tight">
+            <h2 className="text-[24px] leading-[32px] md:text-[56px] md:leading-[64px] font-normal text-white mb-8 tracking-tight">
               {cta.title1} <span className="font-bold text-[#ffb916]">{cta.title2}</span>
             </h2>
             <p className="text-blue-100 mb-12 text-[16px] leading-[26px] md:text-[22px] md:leading-[32px] max-w-2xl mx-auto">
@@ -335,12 +335,12 @@ export default function ServiceTemplate({
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6" data-aos="fade-up" data-aos-delay="200">
               {(cta.button1 || cta.primaryButton) && (
-                <Link href={cta.button1?.href || cta.primaryButton?.href || "/contact-us"} className="px-10 py-4 bg-white text-[#0A3A7A] font-bold rounded shadow-[0_10px_30px_rgba(0,0,0,0.1)] hover:shadow-[0_15px_40px_rgba(0,0,0,0.2)] hover:-translate-y-1 transition-all duration-300">
+                <Link href={cta.button1?.href || cta.primaryButton?.href || "/contact-us"} className="inline-block text-center w-full sm:w-auto px-6 py-3 md:px-10 md:py-4 text-sm md:text-base bg-white text-[#0A3A7A] font-bold rounded shadow-[0_10px_30px_rgba(0,0,0,0.1)] hover:shadow-[0_15px_40px_rgba(0,0,0,0.2)] hover:-translate-y-1 transition-all duration-300">
                   {cta.button1?.text || cta.primaryButton?.text}
                 </Link>
               )}
               {(cta.button2 || cta.secondaryButton) && (
-                <Link href={cta.button2?.href || cta.secondaryButton?.href || "/contact-us"} className="px-10 py-4 bg-transparent border border-white/30 text-white font-bold rounded transition-all duration-300 transform hover:-translate-y-1 hover:bg-white/10 hover:shadow-lg">
+                <Link href={cta.button2?.href || cta.secondaryButton?.href || "/contact-us"} className="inline-block text-center w-full sm:w-auto px-6 py-3 md:px-10 md:py-4 text-sm md:text-base bg-transparent border border-white/30 text-white font-bold rounded transition-all duration-300 transform hover:-translate-y-1 hover:bg-white/10 hover:shadow-lg">
                   {cta.button2?.text || cta.secondaryButton?.text}
                 </Link>
               )}

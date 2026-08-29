@@ -9,7 +9,7 @@ export default function ContactUsPage() {
       {/* Hero Section */}
       <section className="h-[50vh] min-h-[400px] w-full relative overflow-hidden bg-[#081229] flex items-center border-b border-[#ffffff10]">
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2074&auto=format&fit=crop" alt="Contact Us Hero" className="w-full h-full object-cover opacity-40" />
+          <img src="/images/solutions-hero.jpg" alt="Contact Us Hero" className="w-full h-full object-cover opacity-40" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#040026] via-[#040026]/70 to-[#040026]/20"></div>
         </div>
 
@@ -103,7 +103,7 @@ export default function ContactUsPage() {
           </p>
 
           <div className="relative w-full h-[250px] md:h-[400px] rounded-3xl overflow-hidden border border-white/10" data-aos="fade-up" data-aos-delay="200">
-            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop" alt="Global Map" className="w-full h-full object-cover opacity-50" />
+            <img src="/images/about_hero_1786877430368.jpg" alt="Global Map" className="w-full h-full object-cover opacity-50" />
             <div className="absolute inset-0 bg-[#040026]/40 mix-blend-multiply"></div>
 
             {/* Location Pins */}

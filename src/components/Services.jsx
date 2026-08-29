@@ -32,7 +32,7 @@ export default function Services() {
         
         {/* Section Heading */}
         <div className="mb-20 max-w-4xl" data-aos="fade-up">
-          <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-normal text-white">
+          <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-normal text-white">
             Why Digital Transformation is a <br className="hidden md:block" /> Strategic Imperative for <span className="text-[#00A2FF]">Modern Enterprises</span>
           </h2>
         </div>

@@ -119,19 +119,19 @@ export default function DigitalLearningPage() {
       title: "Trusted by EdTech Innovators",
       studies: [
         {
-          image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80",
+          image: "/images/manufacturing_hero_1787089721945.jpg",
           industry: "Higher Education",
           title: "Building an Adaptive LMS for a Global University Network",
           stats: [{ value: "500K+", label: "Active Users" }, { value: "40%", label: "Completion Boost" }]
         },
         {
-          image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80",
+          image: "/images/retail_hero_1787089685944.jpg",
           industry: "Corporate Training",
           title: "Gamified Compliance & Security Training Platform for Fortune 500s",
           stats: [{ value: "95%", label: "Engagement" }, { value: "Zero", label: "Security Breaches" }]
         },
         {
-          image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80",
+          image: "/images/robotics_hero.jpg",
           industry: "K-12 EdTech",
           title: "Interactive WebGL Physics Simulator for Remote Classrooms",
           stats: [{ value: "10M+", label: "Simulations Run" }, { value: "60fps", label: "Performance" }]

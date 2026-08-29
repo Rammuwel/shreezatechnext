@@ -34,7 +34,7 @@ export default function AxlePage() {
           <div className="w-full lg:w-1/2 relative flex justify-center">
             {/* The circular crop with the image inside */}
             <div className="relative w-full max-w-[600px] aspect-square rounded-full overflow-hidden border-[12px] border-white shadow-xl bg-[#f7f0e9]">
-                 <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="LMS Training" className="w-full h-full object-cover" />
+                 <img src="/images/healthcare_cloud_challenge_1787226450306.jpg.0.3&auto=format&fit=crop&w=1000&q=80" alt="LMS Training" className="w-full h-full object-cover" />
                  {/* Floating screen representation */}
                  <div className="absolute top-[15%] left-[10%] right-[10%] bottom-[30%] bg-white rounded shadow-2xl overflow-hidden hidden md:flex flex-col">
                     {/* Mock dashboard header */}
@@ -44,7 +44,7 @@ export default function AxlePage() {
                       <div className="w-2 h-2 rounded-full bg-green-400"></div>
                     </div>
                     {/* Mock dashboard content */}
-                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dashboard" className="w-full h-full object-cover opacity-80" />
+                    <img src="/images/hero-slide-1.jpg.0.3&auto=format&fit=crop&w=800&q=80" alt="Dashboard" className="w-full h-full object-cover opacity-80" />
                  </div>
             </div>
           </div>
@@ -90,7 +90,7 @@ export default function AxlePage() {
              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] border-[1px] border-[#f58634]/60 rounded-full"></div>
              
              {/* People Image */}
-             <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Professionals" className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[450px] object-cover object-top z-10" style={{ maskImage: 'linear-gradient(to top, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%)', WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%)' }} />
+             <img src="/images/manufacturing_hero_1787089721945.jpg.0.3&auto=format&fit=crop&w=800&q=80" alt="Professionals" className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[450px] object-cover object-top z-10" style={{ maskImage: 'linear-gradient(to top, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%)', WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%)' }} />
              
              {/* Base glowing line */}
              <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-3/4 h-1.5 rounded-full bg-gradient-to-r from-transparent via-[#f58634] to-transparent blur-[3px] z-20"></div>
@@ -221,7 +221,7 @@ export default function AxlePage() {
         <div className="max-w-[1300px] mx-auto bg-[#382010] rounded-3xl overflow-hidden relative flex flex-col md:flex-row items-center">
           <div className="w-full md:w-5/12 h-[300px] md:h-[400px] relative">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#382010] z-10 hidden md:block"></div>
-            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Consultation" className="w-full h-full object-cover" />
+            <img src="/images/retail_hero_1787089685944.jpg.0.3&auto=format&fit=crop&w=1000&q=80" alt="Consultation" className="w-full h-full object-cover" />
           </div>
           <div className="w-full md:w-7/12 p-10 md:p-16 relative z-20">
             <h2 className="text-[32px] md:text-[44px] font-medium text-white leading-tight mb-4">
@@ -332,7 +332,7 @@ export default function AxlePage() {
           <div className="w-full relative h-[450px] md:h-[500px]">
             {/* The angled mask shape from the design */}
             <div className="absolute inset-0 bg-gray-200 rounded-tr-[100px] rounded-bl-[100px] overflow-hidden">
-               <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Learning" className="w-full h-full object-cover" />
+               <img src="/images/robotics_hero.jpg.0.3&auto=format&fit=crop&w=800&q=80" alt="Learning" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -446,7 +446,7 @@ export default function AxlePage() {
       <section className="py-12 md:py-20 px-6 lg:px-12 bg-[#fcf9f5]">
         <div className="max-w-[1300px] mx-auto bg-[#382010] rounded-[40px] overflow-hidden relative">
           <div className="absolute inset-0 bg-black/40 z-10"></div>
-          <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Background" className="absolute inset-0 w-full h-full object-cover object-top" />
+          <img src="/images/services-hero.jpg.0.3&auto=format&fit=crop&w=1200&q=80" alt="Background" className="absolute inset-0 w-full h-full object-cover object-top" />
           
           <div className="relative z-20 py-10 md:py-20 lg:py-24 md:py-32 px-8 flex flex-col items-center text-center">
             <h2 className="text-[32px] md:text-[48px] font-medium text-white max-w-3xl leading-[1.2] mb-10">
@@ -502,7 +502,7 @@ export default function AxlePage() {
       <section className="py-12 md:py-20 px-6 lg:px-12 bg-[#fcf9f5]">
         <div className="max-w-[1300px] mx-auto bg-[#1a0f08] rounded-[40px] overflow-hidden relative">
           <div className="absolute inset-0 bg-black/40 z-10"></div>
-          <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Background" className="absolute inset-0 w-full h-full object-cover object-top opacity-30" />
+          <img src="/images/ai_hero.jpg.0.3&auto=format&fit=crop&w=1200&q=80" alt="Background" className="absolute inset-0 w-full h-full object-cover object-top opacity-30" />
           
           <div className="relative z-20 py-10 md:py-20 lg:py-24 md:py-32 px-8 flex flex-col items-center text-center">
             {/* Quote marks */}
@@ -558,17 +558,17 @@ export default function AxlePage() {
               {
                 title: "Custom Content Development Services",
                 desc: "Create bespoke learning experiences tailored to your audience and organizational goals.",
-                image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                image: "/images/chatgpt-1.png.0.3&auto=format&fit=crop&w=400&q=80"
               },
               {
                 title: "Pre-Built Courses",
                 desc: "Fast-track learning with our 300+ diverse range of pre-built courses covering POSH, compliance, ISMS, and more.",
-                image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                image: "/images/solutions-hero.jpg.0.3&auto=format&fit=crop&w=400&q=80"
               },
               {
                 title: "Other eLearning Solutions",
                 desc: "End-to-end eLearning solutions, from ideation and planning to development and execution.",
-                image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                image: "/images/about_hero_1786877430368.jpg.0.3&auto=format&fit=crop&w=400&q=80"
               }
             ].map((card, i) => (
               <div key={i} className="bg-[#fff9f5] rounded-[24px] p-8 md:p-10 flex flex-col h-[400px] relative overflow-hidden">
@@ -613,7 +613,7 @@ export default function AxlePage() {
               </div>
               <div className="p-6">
                 <h3 className="text-[#f58634] font-bold text-[20px] leading-tight mb-4">Experience<br/><span className="text-[#333]">the Next Level of</span><br/>Digital Learning</h3>
-                <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Brochure Cover" className="w-full h-[150px] object-cover rounded mb-4" />
+                <img src="/images/digital_learning_hero_1787090023062.jpg.0.3&auto=format&fit=crop&w=300&q=80" alt="Brochure Cover" className="w-full h-[150px] object-cover rounded mb-4" />
               </div>
               <div className="mt-auto h-8 flex">
                  <div className="w-1/4 h-full bg-[#333]"></div>
@@ -711,7 +711,7 @@ export default function AxlePage() {
             {/* Main Featured Article */}
             <div className="w-full lg:w-1/2 relative rounded-[20px] overflow-hidden group cursor-pointer h-[400px] md:h-[500px]">
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10 transition-opacity group-hover:opacity-90"></div>
-              <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Main Insight" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <img src="/images/healthcare_cloud_challenge_1787226450306.jpg.0.3&auto=format&fit=crop&w=800&q=80" alt="Main Insight" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute bottom-0 left-0 w-full p-8 z-20">
                 <h3 className="text-[22px] md:text-[28px] font-bold text-white leading-[1.3]">
                   Beyond the Office: How AXLE LMS® Enhances Remote Learning Strategies
@@ -724,15 +724,15 @@ export default function AxlePage() {
               {[
                 {
                   title: "10 Common LMS Implementation Challenges & Solutions for Enterprises",
-                  img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                  img: "/images/hero-slide-1.jpg.0.3&auto=format&fit=crop&w=200&q=80"
                 },
                 {
                   title: "5 Effective Ways A LMS Platform Can Help Streamline The Employee Onboarding Process",
-                  img: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                  img: "/images/manufacturing_hero_1787089721945.jpg.0.3&auto=format&fit=crop&w=200&q=80"
                 },
                 {
                   title: "How an LMS Ensures High ROI on Training Investments",
-                  img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                  img: "/images/retail_hero_1787089685944.jpg.0.3&auto=format&fit=crop&w=200&q=80"
                 }
               ].map((article, i) => (
                 <div key={i} className="flex gap-6 items-center group cursor-pointer bg-white/50 hover:bg-white p-4 rounded-xl transition-colors border border-transparent hover:border-gray-200">

@@ -111,19 +111,19 @@ export default function FinancePage() {
       title: "Trusted by Financial Leaders",
       studies: [
         {
-          image: "https://images.unsplash.com/photo-1556761175-5973dc0f32d7?auto=format&fit=crop&q=80",
+          image: "/images/digital_learning_hero_1787090023062.jpg",
           industry: "Retail Banking",
           title: "Migrating a 20-Year Legacy Core to a Cloud-Native Microservices Architecture",
           stats: [ { value: "Zero", label: "Downtime" }, { value: "3M+", label: "Daily Transactions" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80",
+          image: "/images/healthcare_cloud_challenge_1787226450306.jpg",
           industry: "Wealth Management",
           title: "Building an AI-Driven Portfolio Advisory Dashboard for HNW Clients",
           stats: [ { value: "$10B+", label: "AUM Managed" }, { value: "Real-time", label: "Analytics" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80",
+          image: "/images/hero-slide-1.jpg",
           industry: "Global Payments",
           title: "Architecting a High-Frequency Cross-Border Settlement Gateway",
           stats: [ { value: "<10ms", label: "Latency" }, { value: "99.999%", label: "Uptime" } ]

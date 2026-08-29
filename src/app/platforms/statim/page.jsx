@@ -10,7 +10,7 @@ export default function StatimPage() {
       <section className="relative pt-32 pb-24 px-6 lg:px-12 min-h-[85vh] flex items-center bg-[#070b0d]">
         <div 
           className="absolute inset-0 bg-cover bg-right z-0 opacity-40" 
-          style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80")' }}
+          style={{ backgroundImage: 'url("/images/digital_learning_hero_1787090023062.jpg")' }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#070b0d] via-[#070b0d]/90 to-transparent z-0"></div>
 
@@ -63,7 +63,7 @@ export default function StatimPage() {
             {/* Slanted Image (Left) */}
             <div className="w-full lg:w-1/2 relative h-[500px]">
               <div className="absolute inset-0 w-full h-full" style={{ clipPath: 'polygon(20% 0, 100% 0, 80% 100%, 0% 100%)' }}>
-                <img src="https://images.unsplash.com/photo-1576267423445-b2e0073d3ebb?auto=format&fit=crop&q=80" alt="Family looking at laptop" className="w-full h-full object-cover" />
+                <img src="/images/healthcare_cloud_challenge_1787226450306.jpg" alt="Family looking at laptop" className="w-full h-full object-cover" />
               </div>
             </div>
 
@@ -248,7 +248,7 @@ export default function StatimPage() {
              <div className="relative w-full h-[80%] flex gap-2">
                 <div className="w-1/3 h-full bg-[#e3d6bc] transform origin-bottom-left -skew-x-[20deg] scale-y-[0.8] opacity-80"></div>
                 <div className="w-2/3 h-full overflow-hidden transform origin-bottom-right skew-x-[15deg]">
-                   <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80" alt="Business Man" className="w-[150%] max-w-none h-[120%] object-cover -translate-x-[20%] -skew-x-[15deg]" />
+                   <img src="/images/hero-slide-1.jpg" alt="Business Man" className="w-[150%] max-w-none h-[120%] object-cover -translate-x-[20%] -skew-x-[15deg]" />
                 </div>
              </div>
           </div>

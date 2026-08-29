@@ -11,7 +11,7 @@ export default function RetailSolutionPage() {
       parentHref: '/solutions'
     },
     hero: {
-      bgImage: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80",
+      bgImage: "/images/digital_learning_hero_1787090023062.jpg",
       badge: "Enterprise Retail Engineering",
       title1: "Omnichannel",
       title2: "Retail Experiences",
@@ -36,7 +36,7 @@ export default function RetailSolutionPage() {
         "Disjointed loyalty programs that only work online or only work in-store",
         "System crashes during massive high-traffic events like Black Friday"
       ],
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80",
+      image: "/images/healthcare_cloud_challenge_1787226450306.jpg",
       floatingStat: {
         value: "73%",
         label: "Of shoppers use multiple channels during their shopping journey"
@@ -117,25 +117,25 @@ export default function RetailSolutionPage() {
       title: "Trusted by Global Retailers",
       studies: [
         {
-          image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&q=80",
+          image: "/images/hero-slide-1.jpg",
           industry: "Global Fashion",
           title: "Migrating to a Headless Architecture for Global Scale",
           stats: [ { value: "100ms", label: "Page Loads" }, { value: "30%", label: "Sales Boost" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80",
+          image: "/images/manufacturing_hero_1787089721945.jpg",
           industry: "Electronics",
           title: "Building an Omnichannel BOPIS Ordering System",
           stats: [ { value: "200+", label: "Stores Sync" }, { value: "Real-time", label: "Inventory" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1542204165-65bf26472b9b?auto=format&fit=crop&q=80",
+          image: "/images/retail_hero_1787089685944.jpg",
           industry: "B2B Wholesale",
           title: "Complex B2B Purchasing Portal with Tiered Pricing Logic",
           stats: [ { value: "$50M", label: "Monthly GMV" }, { value: "Automated", label: "Invoicing" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?auto=format&fit=crop&q=80",
+          image: "/images/robotics_hero.jpg",
           industry: "Luxury Goods",
           title: "Augmented Reality (AR) Try-On App for High-End Retail",
           stats: [ { value: "40%", label: "Return Drop" }, { value: "High", label: "Engagement" } ]

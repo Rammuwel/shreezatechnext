@@ -117,19 +117,19 @@ export default function InsurtechPage() {
       title: "Trusted by Insurance Leaders",
       studies: [
         {
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80",
+          image: "/images/services-hero.jpg",
           industry: "Auto Insurance",
           title: "Building a Telematics Data Pipeline for Usage-Based Pricing",
           stats: [ { value: "10B+", label: "IoT Events/Day" }, { value: "Real-time", label: "Pricing" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80",
+          image: "/images/ai_hero.jpg",
           industry: "P&C Carrier",
           title: "Automating Property Claims with Computer Vision AI",
           stats: [ { value: "80%", label: "Faster Claims" }, { value: "30%", label: "Cost Drop" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1556740714-a8395b3bf30f?auto=format&fit=crop&q=80",
+          image: "/images/chatgpt-1.png",
           industry: "Life Insurance",
           title: "Modernizing a Legacy Policy Admin System to Cloud Microservices",
           stats: [ { value: "Zero", label: "Downtime" }, { value: "100%", label: "Cloud Native" } ]

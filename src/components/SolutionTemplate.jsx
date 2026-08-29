@@ -42,7 +42,7 @@ export default function SolutionTemplate({
         <div className="max-w-[1300px] mx-auto px-6 relative z-10 w-full pt-32 lg:pt-48 pb-24 flex flex-col lg:flex-row items-center gap-10 md:gap-16">
           <div className="lg:w-3/5 text-left" data-aos="fade-right">
 
-            <h1 className="text-[36px] leading-[44px] md:text-[56px] lg:text-[75px] md:leading-[64px] font-normal mb-6 md:mb-8 text-white tracking-tight text-balance">
+            <h1 className="text-[24px] leading-[32px] md:text-[56px] lg:text-[75px] md:leading-[64px] font-normal mb-6 md:mb-8 text-white tracking-tight text-balance">
               {hero.title1} <br />
               <span className={`text-transparent bg-clip-text font-bold ${hero.title2Gradient || 'bg-gradient-to-r from-[#ffb916] to-[#00f2fe]'}`}>
                 {hero.title2}
@@ -53,8 +53,8 @@ export default function SolutionTemplate({
             </p>
             <div className="flex flex-wrap gap-6">
               {hero.primaryButton && (
-                <Link href={hero.primaryButton.href} className="inline-flex items-center justify-center gap-2 bg-[#ffb916] text-[#0A3A7A] px-8 py-4 rounded-full font-bold hover:bg-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
-                  {hero.primaryButton.text} <ArrowRight size={20} />
+                <Link href={hero.primaryButton.href} className="inline-flex items-center justify-center gap-2 bg-[#ffb916] text-[#0A3A7A] px-4 py-3 md:px-8 md:py-4 rounded-full font-bold hover:bg-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg w-full sm:w-auto text-sm md:text-base text-center">
+                  <span>{hero.primaryButton.text}</span> <ArrowRight size={20} className="shrink-0" />
                 </Link>
               )}
             </div>
@@ -92,7 +92,7 @@ export default function SolutionTemplate({
                 <h4 className="text-[#0A3A7A] font-bold tracking-widest uppercase mb-4 text-sm flex items-center gap-3">
                   <span className="w-8 h-[2px] bg-[#0A3A7A]"></span> The Challenge
                 </h4>
-                <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-light mb-6 text-[#212529]">
+                <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-light mb-6 text-[#212529]">
                   {challenge.title1} <span className="font-bold text-[#0A3A7A] block">{challenge.title2}</span>
                 </h2>
 
@@ -165,7 +165,7 @@ export default function SolutionTemplate({
         <section className="py-10 md:py-16 px-6 lg:px-12 bg-white border-b border-gray-100">
           <div className="max-w-[1300px] mx-auto">
             <div className="text-center mb-12" data-aos="fade-up">
-              <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-bold text-[#0A3A7A] mb-4">
+              <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-bold text-[#0A3A7A] mb-4">
                 {roi.title1} <span className="text-[#ffb916]">{roi.title2}</span>
               </h2>
             </div>
@@ -190,24 +190,24 @@ export default function SolutionTemplate({
             {/* Unified Header & Tab Toggle */}
             <div className="text-center mb-16" data-aos="fade-up">
               <h4 className="text-[#0A3A7A] font-bold tracking-widest uppercase mb-4 text-sm">Capabilities & Architecture</h4>
-              <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-bold text-[#111] mb-10">
+              <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-bold text-[#111] mb-10">
                 {features?.title1 || architecture?.title} <span className="text-[#ffb916]">{features?.title2 || ''}</span>
               </h2>
 
               {/* Tab Toggle */}
               {features && architecture && (
-                <div className="inline-flex bg-white border border-gray-200 rounded-full p-1 shadow-sm mb-6">
+                <div className="flex w-full sm:w-auto sm:inline-flex bg-white border border-gray-200 rounded-full p-1 shadow-sm mb-6">
                   <button
                     onClick={() => setActiveTab('capabilities')}
-                    className={`px-8 py-3 rounded-full text-sm font-bold transition-all duration-300 ${activeTab === 'capabilities' ? 'bg-[#0A3A7A] text-white shadow-md' : 'text-gray-500 hover:text-[#0A3A7A]'}`}
+                    className={`flex-1 sm:flex-none px-2 py-3 md:px-8 md:py-3 rounded-full text-[11px] sm:text-xs md:text-sm font-bold transition-all duration-300 leading-tight ${activeTab === 'capabilities' ? 'bg-[#0A3A7A] text-white shadow-md' : 'text-gray-500 hover:text-[#0A3A7A]'}`}
                   >
-                    Business Capabilities
+                    Business<br className="sm:hidden" /> Capabilities
                   </button>
                   <button
                     onClick={() => setActiveTab('architecture')}
-                    className={`px-8 py-3 rounded-full text-sm font-bold transition-all duration-300 ${activeTab === 'architecture' ? 'bg-[#0A3A7A] text-white shadow-md' : 'text-gray-500 hover:text-[#0A3A7A]'}`}
+                    className={`flex-1 sm:flex-none px-2 py-3 md:px-8 md:py-3 rounded-full text-[11px] sm:text-xs md:text-sm font-bold transition-all duration-300 leading-tight ${activeTab === 'architecture' ? 'bg-[#0A3A7A] text-white shadow-md' : 'text-gray-500 hover:text-[#0A3A7A]'}`}
                   >
-                    Technical Architecture
+                    Technical<br className="sm:hidden" /> Architecture
                   </button>
                 </div>
               )}
@@ -273,7 +273,7 @@ export default function SolutionTemplate({
         <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-[#020012] text-white relative overflow-hidden">
           <div className="max-w-[1300px] mx-auto relative z-10 text-center">
             <h4 className="text-[#ffb916] font-bold tracking-widest uppercase mb-4 text-sm">Our Process</h4>
-            <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-bold text-white mb-16">
+            <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-bold text-white mb-16">
               {process.title}
             </h2>
 
@@ -296,11 +296,11 @@ export default function SolutionTemplate({
         <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-white text-[#212529] relative overflow-hidden border-t border-gray-100">
           <div className="max-w-[1300px] mx-auto relative z-10">
             <div className="flex flex-col lg:flex-row gap-12 items-center">
-              <div className="lg:w-1/2">
+              <div className="w-full lg:w-1/2">
                 <h4 className="text-[#0A3A7A] font-bold tracking-widest uppercase mb-4 text-sm flex items-center gap-3">
                   <span className="w-8 h-[2px] bg-[#0A3A7A]"></span> Future Ready
                 </h4>
-                <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-normal mb-6 text-[#212529]">
+                <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-normal mb-6 text-[#212529]">
                   {aiFuture.title1} <span className="font-bold text-[#0A3A7A] block">{aiFuture.title2}</span>
                 </h2>
                 <p className="text-gray-600 text-[16px] leading-[26px] md:text-[18px] md:leading-[30px] mb-8">{aiFuture.description}</p>
@@ -313,7 +313,7 @@ export default function SolutionTemplate({
                   ))}
                 </div>
               </div>
-              <div className="lg:w-1/2 relative">
+              <div className="w-full lg:w-1/2 relative">
                 <div className="aspect-square rounded-full bg-gradient-to-tr from-[#ffb916]/10 to-transparent absolute inset-0 blur-3xl -z-10"></div>
                 {/* Modern Layered Hologram Stack Effect (Static) */}
                 <div className="relative z-10 w-full h-[450px]">
@@ -323,7 +323,7 @@ export default function SolutionTemplate({
 
                   {/* Back Layer (Echo) */}
                   <div className="absolute top-[10%] -right-[5%] w-[85%] h-[85%] rounded-3xl overflow-hidden opacity-40 blur-[2px] translate-x-4 rotate-[3deg]">
-                    <img src={aiFuture.image || "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80"} className="w-full h-full object-cover grayscale mix-blend-multiply opacity-70" />
+                    <img src={aiFuture.image || "/images/ai_hero.jpg"} className="w-full h-full object-cover grayscale mix-blend-multiply opacity-70" />
                     <div className="absolute inset-0 bg-[#0A3A7A] mix-blend-overlay"></div>
                   </div>
 
@@ -332,7 +332,7 @@ export default function SolutionTemplate({
 
                   {/* Front Layer (Main Image) */}
                   <div className="absolute top-0 left-0 w-[90%] h-[90%] rounded-3xl overflow-hidden shadow-[0_30px_60px_rgba(10,58,122,0.15)] -translate-x-4 -translate-y-4 z-20">
-                    <img src={aiFuture.image || "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80"} className="w-full h-full object-cover" />
+                    <img src={aiFuture.image || "/images/chatgpt-1.png"} className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
@@ -347,7 +347,7 @@ export default function SolutionTemplate({
           <div className="max-w-[1300px] mx-auto px-6 lg:px-12 mb-12 flex justify-between items-end">
             <div>
               <h4 className="text-[#ffb916] font-bold tracking-widest uppercase mb-4 text-sm">Success Stories</h4>
-              <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-normal">
+              <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-normal">
                 {caseStudies.title}
               </h2>
             </div>
@@ -366,7 +366,7 @@ export default function SolutionTemplate({
             >
               {caseStudies.studies.map((study, idx) => (
                 <SwiperSlide key={idx}>
-                  <div className="group block relative rounded-3xl overflow-hidden h-[450px]">
+                  <Link href={study.href || "/blogs"} className="group block relative rounded-3xl overflow-hidden h-[450px]">
                     <img src={study.image} alt={study.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#020012] via-[#020012]/60 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
 
@@ -382,7 +382,7 @@ export default function SolutionTemplate({
                         ))}
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -409,7 +409,7 @@ export default function SolutionTemplate({
         <section className="py-10 md:py-20 lg:py-32 px-6 lg:px-12 bg-white">
           <div className="max-w-[900px] mx-auto">
             <div className="text-center mb-16" data-aos="fade-up">
-              <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-bold text-[#0A3A7A] mb-6">
+              <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-bold text-[#0A3A7A] mb-6">
                 Technical <span className="text-[#ffb916]">FAQ</span>
               </h2>
             </div>
@@ -437,12 +437,12 @@ export default function SolutionTemplate({
       {/* 10. GRAND CTA SECTION */}
       {cta && (
         <section className="bg-[#0A3A7A] py-10 md:py-20 lg:py-32 px-6 relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80')] opacity-20 object-cover mix-blend-overlay"></div>
+          <div className="absolute inset-0 bg-[url('/images/solutions-hero.jpg')] opacity-20 object-cover mix-blend-overlay"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#040026] to-transparent opacity-90"></div>
 
           <div className="max-w-[1000px] mx-auto text-center relative z-10" data-aos="zoom-in">
             <h4 className="text-[#ffb916] font-bold tracking-widest uppercase mb-6">{cta.subtitle}</h4>
-            <h2 className="text-[28px] leading-[36px] md:text-[56px] md:leading-[64px] font-normal text-white mb-8 tracking-tight">
+            <h2 className="text-[24px] leading-[32px] md:text-[56px] md:leading-[64px] font-normal text-white mb-8 tracking-tight">
               {cta.title1} <span className="font-bold text-[#ffb916]">{cta.title2}</span>
             </h2>
             <p className="text-blue-100 mb-12 text-[16px] leading-[26px] md:text-[22px] md:leading-[32px] max-w-2xl mx-auto">
@@ -450,12 +450,12 @@ export default function SolutionTemplate({
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
               {cta.button1 && (
-                <Link href={cta.button1.href} className="w-full sm:w-auto px-12 py-5 bg-[#ffb916] text-white font-bold text-[18px] hover:bg-[#0A3A7A] hover:text-white transition-all shadow-[0_0_30px_rgba(212,175,55,0.4)] hover:-translate-y-1 rounded-sm">
+                <Link href={cta.button1.href} className="inline-block text-center w-full sm:w-auto px-6 py-4 md:px-12 md:py-5 bg-[#ffb916] text-white font-bold text-sm md:text-[18px] hover:bg-[#0A3A7A] hover:text-white transition-all shadow-[0_0_30px_rgba(212,175,55,0.4)] hover:-translate-y-1 rounded-sm">
                   {cta.button1.text}
                 </Link>
               )}
               {cta.button2 && (
-                <Link href={cta.button2.href} className="w-full sm:w-auto px-12 py-5 border border-white/30 text-white font-bold text-[18px] hover:bg-white/10 transition-all rounded-sm transform hover:-translate-y-1 hover:shadow-lg">
+                <Link href={cta.button2.href} className="inline-block text-center w-full sm:w-auto px-6 py-4 md:px-12 md:py-5 border border-white/30 text-white font-bold text-sm md:text-[18px] hover:bg-white/10 transition-all rounded-sm transform hover:-translate-y-1 hover:shadow-lg">
                   {cta.button2.text}
                 </Link>
               )}

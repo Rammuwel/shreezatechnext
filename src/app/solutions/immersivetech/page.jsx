@@ -11,7 +11,7 @@ export default function ImmersiveTechPage() {
       parentHref: '/solutions'
     },
     hero: {
-      bgImage: "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&q=80",
+      bgImage: "/images/healthcare_cloud_challenge_1787226450306.jpg",
       badge: "Spatial Computing & XR Engineering",
       title1: "Extended Reality",
       title2: "Beyond the Screen",
@@ -36,7 +36,7 @@ export default function ImmersiveTechPage() {
         "Customers unable to visualize unbuilt real estate or un-packaged products",
         "Fragmented XR landscape with no single engine running on all devices"
       ],
-      image: "https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&q=80",
+      image: "/images/hero-slide-1.jpg",
       floatingStat: {
         value: "75%",
         label: "Better information retention in immersive VR training vs. classroom"
@@ -118,19 +118,19 @@ export default function ImmersiveTechPage() {
       title: "Transforming Industries with XR",
       studies: [
         {
-          image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80",
+          image: "/images/manufacturing_hero_1787089721945.jpg",
           industry: "Industrial Training",
           title: "VR Safety Simulation Platform for High-Voltage Electrical Workers",
           stats: [ { value: "Zero", label: "Incidents" }, { value: "60%", label: "Training Cost Drop" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&q=80",
+          image: "/images/retail_hero_1787089685944.jpg",
           industry: "Medical Simulation",
           title: "Surgical Training VR App for Laparoscopic Procedure Practice",
           stats: [ { value: "95%", label: "Surgeon Confidence" }, { value: "40%", label: "Error Reduction" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80",
+          image: "/images/robotics_hero.jpg",
           industry: "Retail & Real Estate",
           title: "WebAR Try-On App Driving Conversions for Global Fashion Brand",
           stats: [ { value: "30%", label: "Returns Drop" }, { value: "2M+", label: "AR Sessions" } ]

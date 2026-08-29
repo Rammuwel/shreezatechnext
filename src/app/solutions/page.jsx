@@ -205,7 +205,7 @@ export default function SolutionsPage() {
 
       {/* 5. CTA Section (Full Width Premium Layout) */}
       <section className="bg-gradient-to-br from-[#081229] to-[#040026] py-10 md:py-20 lg:py-24 px-6 border-t border-white/10 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop')] opacity-5 object-cover mix-blend-overlay"></div>
+        <div className="absolute inset-0 bg-[url('/images/retail_hero_1787089685944.jpg')] opacity-5 object-cover mix-blend-overlay"></div>
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#ffb916] rounded-full mix-blend-screen filter blur-[150px] opacity-20"></div>
 
         <div className="max-w-[1300px] mx-auto relative z-10 flex flex-col md:flex-row items-center justify-between gap-12" data-aos="fade-up">

@@ -53,7 +53,7 @@ export default function MigotoAIPage() {
 {/* Hero Section */}
       <section className="relative bg-[#162142] overflow-hidden py-10 md:py-20 lg:py-32">
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Abstract Data" className="w-full h-full object-cover opacity-20 mix-blend-screen" />
+          <img src="/images/robotics_hero.jpg.0.3&auto=format&fit=crop&w=1920&q=80" alt="Abstract Data" className="w-full h-full object-cover opacity-20 mix-blend-screen" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#162142] via-[#162142]/90 to-[#162142]/40"></div>
         </div>
 
@@ -87,7 +87,7 @@ export default function MigotoAIPage() {
           
           <div className="w-full lg:w-1/2 mt-12 lg:mt-0">
             <div className="bg-[#f0f4f8] rounded-tl-[100px] rounded-br-[100px] overflow-hidden relative h-[400px]">
-              <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Person training" className="absolute bottom-0 right-0 h-[90%] object-cover object-left" />
+              <img src="/images/services-hero.jpg.0.3&auto=format&fit=crop&w=800&q=80" alt="Person training" className="absolute bottom-0 right-0 h-[90%] object-cover object-left" />
               {/* Dashboard mock */}
               <div className="absolute top-8 left-8 w-[240px] h-[160px] bg-white rounded shadow border border-gray-100 p-2 flex flex-col gap-2">
                  <div className="h-4 w-1/2 bg-gray-200 rounded"></div>
@@ -197,7 +197,7 @@ export default function MigotoAIPage() {
                         <div className="bg-indigo-100 rounded-full h-8 w-8"></div>
                      </div>
                   </div>
-                  <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Woman with tablet" className="absolute bottom-0 right-0 h-[380px] object-cover object-top drop-shadow-2xl" />
+                  <img src="/images/ai_hero.jpg.0.3&auto=format&fit=crop&w=400&q=80" alt="Woman with tablet" className="absolute bottom-0 right-0 h-[380px] object-cover object-top drop-shadow-2xl" />
                 </div>
               </div>
             </div>
@@ -234,7 +234,7 @@ export default function MigotoAIPage() {
                     <div className="absolute right-[-20px] top-[40%] bg-purple-100 rounded-full p-4 border border-white drop-shadow">
                        <svg className="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Man with laptop" className="absolute bottom-0 left-[-30px] h-[320px] object-cover object-top drop-shadow-2xl" />
+                    <img src="/images/chatgpt-1.png.0.3&auto=format&fit=crop&w=400&q=80" alt="Man with laptop" className="absolute bottom-0 left-[-30px] h-[320px] object-cover object-top drop-shadow-2xl" />
                  </div>
               </div>
             </div>
@@ -267,7 +267,7 @@ export default function MigotoAIPage() {
                           <div className="bg-gray-100 h-10 w-full rounded flex justify-end px-2 py-2"><div className="w-4 h-4 rounded text-purple-400 bg-white shadow-sm flex items-center justify-center text-[10px]">✓</div></div>
                        </div>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Man smiling" className="absolute bottom-0 left-[10%] h-[280px] object-cover object-top drop-shadow-2xl" />
+                    <img src="/images/solutions-hero.jpg.0.3&auto=format&fit=crop&w=400&q=80" alt="Man smiling" className="absolute bottom-0 left-[10%] h-[280px] object-cover object-top drop-shadow-2xl" />
                  </div>
               </div>
             </div>
@@ -307,7 +307,7 @@ export default function MigotoAIPage() {
                     <div className="absolute right-10 bottom-10 bg-blue-100 rounded-full p-3 shadow-lg">
                        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Robot" className="w-8 h-8 opacity-80" />
                     </div>
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Man standing" className="absolute bottom-0 left-[5%] h-[320px] object-cover object-top drop-shadow-2xl" />
+                    <img src="/images/about_hero_1786877430368.jpg.0.3&auto=format&fit=crop&w=400&q=80" alt="Man standing" className="absolute bottom-0 left-[5%] h-[320px] object-cover object-top drop-shadow-2xl" />
                  </div>
               </div>
             </div>

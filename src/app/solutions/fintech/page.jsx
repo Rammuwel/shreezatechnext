@@ -36,7 +36,7 @@ export default function FinTechSolutionPage() {
         "Increasingly sophisticated cyber threats and fraud rings",
         "Complex, ever-changing global regulatory requirements (PSD2, GDPR)"
       ],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80",
+      image: "/images/manufacturing_hero_1787089721945.jpg",
       floatingStat: {
         value: "40%",
         label: "Of IT budgets wasted on legacy maintenance"
@@ -117,25 +117,25 @@ export default function FinTechSolutionPage() {
       title: "Trusted by Global Financial Innovators",
       studies: [
         {
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80",
+          image: "/images/retail_hero_1787089685944.jpg",
           industry: "Neobanking",
           title: "Scaling a Digital Bank to 5 Million Users in 12 Months",
           stats: [ { value: "5M", label: "Users" }, { value: "10ms", label: "Latency" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&q=80",
+          image: "/images/robotics_hero.jpg",
           industry: "Decentralized Finance",
           title: "Engineering an Institutional Crypto Custody Solution",
           stats: [ { value: "$2B", label: "Secured" }, { value: "Zero", label: "Breaches" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&q=80",
+          image: "/images/services-hero.jpg",
           industry: "Payment Gateway",
           title: "Achieving 10,000 TPS for a Global E-Commerce Processor",
           stats: [ { value: "10K", label: "TPS" }, { value: "99.99%", label: "Uptime" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80",
+          image: "/images/ai_hero.jpg",
           industry: "Wealth Management",
           title: "Robo-Advisory Platform for High-Net-Worth Individuals",
           stats: [ { value: "30%", label: "AUM Growth" }, { value: "1s", label: "Trade Exec" } ]

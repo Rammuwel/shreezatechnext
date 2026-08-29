@@ -47,7 +47,7 @@ export default function OurServices() {
     <section id="our-services" className="py-10 md:py-20 lg:py-24 bg-gray-50 relative">
       <div className="max-w-[1300px] mx-auto px-6 relative z-10">
         <div className="text-center mb-16" data-aos="fade-up">
-          <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-light text-[#111]">
+          <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-light text-[#111]">
             Comprehensive <span className="font-semibold text-[#0A3A7A]">Services</span>
           </h2>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-[16px] leading-[26px] md:text-[18px] md:leading-[30px]">

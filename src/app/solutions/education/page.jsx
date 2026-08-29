@@ -11,7 +11,7 @@ export default function EducationPage() {
       parentHref: '/solutions'
     },
     hero: {
-      bgImage: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80",
+      bgImage: "/images/services-hero.jpg",
       badge: "Campus Digital Transformation",
       title1: "Smart Campus",
       title2: "Ecosystems",
@@ -36,7 +36,7 @@ export default function EducationPage() {
         "Inability to generate real-time insights into enrollment or retention risk",
         "Vulnerability to ransomware due to outdated IT infrastructure"
       ],
-      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80",
+      image: "/images/ai_hero.jpg",
       floatingStat: {
         value: "40%",
         label: "Of administrative work is pure duplication due to siloed systems"
@@ -118,19 +118,19 @@ export default function EducationPage() {
       title: "Trusted by Leading Institutions",
       studies: [
         {
-          image: "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&q=80",
+          image: "/images/chatgpt-1.png",
           industry: "Universities & Colleges",
           title: "Deploying a Unified ERP Across a 10-Campus University System",
           stats: [ { value: "200K", label: "Students" }, { value: "40%", label: "Admin Savings" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&q=80",
+          image: "/images/solutions-hero.jpg",
           industry: "K-12 Districts",
           title: "Unified Parent-Teacher Communication Portal for a 50-School District",
           stats: [ { value: "50", label: "Schools" }, { value: "95%", label: "Adoption Rate" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80",
+          image: "/images/about_hero_1786877430368.jpg",
           industry: "Vocational Institutes",
           title: "Industry Certification Tracking & Corporate Placement Pipeline",
           stats: [ { value: "100%", label: "Compliance" }, { value: "80%", label: "Placement Rate" } ]

@@ -10,7 +10,7 @@ export default function Clients() {
   return (
     <section id="portfolio" className="py-10 md:py-20 lg:py-24 bg-white border-t border-gray-100">
       <div className="max-w-[1300px] mx-auto px-6 text-center">
-        <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-normal mb-6 text-[#212529]">
+        <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-normal mb-6 text-[#212529]">
           Journeying <span className="text-[#0A3A7A]">Together</span>
         </h2>
         <p className="text-gray-500 text-[20px] leading-[34px] font-normal max-w-2xl mx-auto mb-16">

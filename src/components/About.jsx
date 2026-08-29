@@ -58,7 +58,7 @@ export default function About() {
       <div className="max-w-[1300px] mx-auto px-6 relative z-10">
         {/* Top Heading */}
         <div className="w-full mb-12" data-aos="fade-up">
-          <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-normal text-[#212529] max-w-5xl">
+          <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-normal text-[#212529] max-w-5xl">
             Transforming Ideas into <span className="text-[#0A3A7A]">Robust Digital Realities</span>
           </h2>
         </div>

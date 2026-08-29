@@ -11,7 +11,7 @@ export default function RealEstateSolutionPage() {
       parentHref: '/solutions'
     },
     hero: {
-      bgImage: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80",
+      bgImage: "/images/robotics_hero.jpg",
       badge: "Enterprise Property Technology",
       title1: "Digitizing",
       title2: "Real Estate Portfolios",
@@ -36,7 +36,7 @@ export default function RealEstateSolutionPage() {
         "Lack of real-time visibility into portfolio-wide Net Operating Income (NOI)",
         "Security vulnerabilities in physical access control and smart building IoT"
       ],
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80",
+      image: "/images/services-hero.jpg",
       floatingStat: {
         value: "60%",
         label: "Of property managers still rely on spreadsheets for core operations"
@@ -117,25 +117,25 @@ export default function RealEstateSolutionPage() {
       title: "Trusted by Global Asset Managers",
       studies: [
         {
-          image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80",
+          image: "/images/ai_hero.jpg",
           industry: "Multi-Family Residential",
           title: "Deploying a Unified Tenant App Across 50,000 Units",
           stats: [ { value: "50K", label: "Units" }, { value: "85%", label: "App Adoption" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80",
+          image: "/images/chatgpt-1.png",
           industry: "Commercial & Co-Working",
           title: "Algorithmic Desk Booking for Global Co-Working Space",
           stats: [ { value: "20", label: "Cities" }, { value: "100ms", label: "Booking Speed" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1512403754473-27835f7b9984?auto=format&fit=crop&q=80",
+          image: "/images/solutions-hero.jpg",
           industry: "Industrial Warehousing",
           title: "IoT Facility Management Portal for Massive Logistics Hubs",
           stats: [ { value: "5M", label: "Sq Ft" }, { value: "15%", label: "Energy Saved" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80",
+          image: "/images/about_hero_1786877430368.jpg",
           industry: "Brokerage",
           title: "VR Walkthrough App Generating Leads for Unbuilt Luxury Towers",
           stats: [ { value: "3x", label: "Lead Gen" }, { value: "$500M", label: "Inventory" } ]

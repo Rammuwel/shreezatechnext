@@ -9,7 +9,7 @@ export default function Contact({ title, subtitle }) {
 
           {/* Left Side: Content */}
           <div className="lg:col-span-4 flex flex-col pt-0 lg:pt-8" data-aos="fade-right">
-            <h2 className="text-[28px] leading-[36px] md:text-[44px] md:leading-[52px] font-normal text-[#212529] mb-4 md:mb-6">
+            <h2 className="text-[24px] leading-[32px] md:text-[44px] md:leading-[52px] font-normal text-[#212529] mb-4 md:mb-6">
               {title || (
                 <>
                   Technology to <br />

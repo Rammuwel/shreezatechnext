@@ -11,7 +11,7 @@ export default function ManufacturingSolutionPage() {
       parentHref: '/solutions'
     },
     hero: {
-      bgImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80",
+      bgImage: "/images/solutions-hero.jpg",
       badge: "Industry 4.0 Infrastructure",
       title1: "Engineering the",
       title2: "Smart Factory",
@@ -36,7 +36,7 @@ export default function ManufacturingSolutionPage() {
         "Reactive maintenance models causing catastrophic line stoppages",
         "Vulnerability of cyber-physical systems to industrial espionage"
       ],
-      image: "https://images.unsplash.com/photo-1565043589221-b16629ec2e76?auto=format&fit=crop&q=80",
+      image: "/images/about_hero_1786877430368.jpg",
       floatingStat: {
         value: "$50B",
         label: "Lost annually to unplanned industrial downtime"
@@ -117,25 +117,25 @@ export default function ManufacturingSolutionPage() {
       title: "Deployed in the World's Smartest Factories",
       studies: [
         {
-          image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80",
+          image: "/images/digital_learning_hero_1787090023062.jpg",
           industry: "Automotive",
           title: "Digitizing a 2M Sq-Ft Electric Vehicle Assembly Plant",
           stats: [ { value: "2M", label: "Sq Ft" }, { value: "30%", label: "Yield Increase" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80",
+          image: "/images/healthcare_cloud_challenge_1787226450306.jpg",
           industry: "Pharmaceuticals",
           title: "Cold-Chain Logistics Tracking for FDA Compliance",
           stats: [ { value: "100%", label: "Compliant" }, { value: "Zero", label: "Spoilage" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80",
+          image: "/images/hero-slide-1.jpg",
           industry: "FMCG",
           title: "AI Demand Forecasting for Global Food Packaging",
           stats: [ { value: "10K", label: "Pallets/Day" }, { value: "40%", label: "Waste Reduction" } ]
         },
         {
-          image: "https://images.unsplash.com/photo-1565514020179-0c6f1c4e70e3?auto=format&fit=crop&q=80",
+          image: "/images/manufacturing_hero_1787089721945.jpg",
           industry: "Logistics",
           title: "Global Maritime Fleet Tracking via Satellite IoT",
           stats: [ { value: "500", label: "Vessels" }, { value: "Real-time", label: "Telemetry" } ]
