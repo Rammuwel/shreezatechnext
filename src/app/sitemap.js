@@ -33,23 +33,21 @@ export default function sitemap() {
     '/portfolio'
   ];
 
-  // The links you specifically want Google to show as Sitelinks
+  // The EXACT 4 links you want Google to show as Sitelinks
   const highPriorityRoutes = [
     '/services',
     '/solutions',
     '/about-us',
-    '/contact-us',
-    '/services/web-development',
-    '/services/mobile-app-development'
+    '/contact-us'
   ];
 
   return staticRoutes.map((route) => {
-    let priority = 0.5; // Default low priority for random pages (like retail, manufacturing)
+    let priority = 0.5; // Default low priority for everything else
     
     if (route === '') {
       priority = 1.0; // Homepage is always highest
     } else if (highPriorityRoutes.includes(route)) {
-      priority = 0.9; // Tell Google these are the most important sub-pages
+      priority = 0.9; // High priority ONLY for the 4 pages you requested
     }
 
     return {
