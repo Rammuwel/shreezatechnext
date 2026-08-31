@@ -34,10 +34,10 @@ const poppins = Poppins({
 
 export const metadata = {
   title: {
-    template: "shreezatech | %s",
-    default: "shreezatech | home",
+    template: "%s | ShreezaTech",
+    default: "ShreezaTech | Enterprise IT Solutions & Consulting",
   },
-  description: "Shreezatech provides top-tier digital transformation and consulting IT solutions for enterprises.",
+  description: "ShreezaTech provides top-tier digital transformation and consulting IT solutions for enterprises, specializing in AI, Cloud, and Web Development.",
 };
 
 export default function RootLayout({ children }) {
