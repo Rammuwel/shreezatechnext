@@ -33,11 +33,30 @@ export default function sitemap() {
     '/portfolio'
   ];
 
-  return staticRoutes.map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    // Give homepage the highest priority, and other pages high priority
-    changeFrequency: route === '' ? 'weekly' : 'monthly',
-    priority: route === '' ? 1 : 0.8,
-  }));
+  // The links you specifically want Google to show as Sitelinks
+  const highPriorityRoutes = [
+    '/services',
+    '/solutions',
+    '/about-us',
+    '/contact-us',
+    '/services/web-development',
+    '/services/mobile-app-development'
+  ];
+
+  return staticRoutes.map((route) => {
+    let priority = 0.5; // Default low priority for random pages (like retail, manufacturing)
+    
+    if (route === '') {
+      priority = 1.0; // Homepage is always highest
+    } else if (highPriorityRoutes.includes(route)) {
+      priority = 0.9; // Tell Google these are the most important sub-pages
+    }
+
+    return {
+      url: `${baseUrl}${route}`,
+      lastModified: new Date(),
+      changeFrequency: route === '' ? 'weekly' : 'monthly',
+      priority: priority,
+    };
+  });
 }
