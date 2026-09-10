@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -8,7 +8,20 @@ import { Phone, BarChart2, Umbrella, Monitor, Box, Bot, Code, Smartphone, PenToo
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openMobileDropdown, setOpenMobileDropdown] = useState(null);
+  const [hoveredDesktopDropdown, setHoveredDesktopDropdown] = useState(null);
+  const [isHoverLocked, setIsHoverLocked] = useState(false);
   const pathname = usePathname();
+
+  const handleDesktopDropdownClose = () => {
+    setHoveredDesktopDropdown(null);
+    setIsHoverLocked(true);
+    setTimeout(() => setIsHoverLocked(false), 500); // 500ms lock
+  };
+
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+    setHoveredDesktopDropdown(null);
+  }, [pathname]);
 
   const isActive = (path) => {
     if (path === '/') return pathname === '/';
@@ -51,13 +64,20 @@ export default function Navbar() {
             <Link href="/" className={getLinkClass('/')}>Home</Link>
 
             {/* Services Menu */}
-            <div className="h-full flex items-center group">
-              <Link href="/services" className={getLinkClass('/services')}>
+            <div 
+              className="h-full flex items-center"
+              onMouseEnter={() => { if (!isHoverLocked) setHoveredDesktopDropdown('services'); }}
+              onMouseLeave={() => setHoveredDesktopDropdown(null)}
+            >
+              <Link href="/services" className={getLinkClass('/services')} onClick={handleDesktopDropdownClose}>
                 Services
               </Link>
 
               {/* Mega Menu */}
-              <div className="absolute top-20 left-0 w-full bg-white shadow-xl border-t border-gray-100 py-12 px-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div 
+                className={`absolute top-20 left-0 w-full bg-white shadow-xl border-t border-gray-100 py-12 px-6 transition-all duration-300 z-50 ${hoveredDesktopDropdown === 'services' ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+                onClick={handleDesktopDropdownClose}
+              >
                 <div className="max-w-[1200px] mx-auto grid grid-cols-12 gap-12">
                   {/* Left Column */}
                   <div className="col-span-4 pr-8">
@@ -133,13 +153,20 @@ export default function Navbar() {
               </div>
             </div>
 
-            <div className="h-full flex items-center group">
-              <Link href="/solutions" className={getLinkClass('/solutions')}>
+            <div 
+              className="h-full flex items-center"
+              onMouseEnter={() => { if (!isHoverLocked) setHoveredDesktopDropdown('solutions'); }}
+              onMouseLeave={() => setHoveredDesktopDropdown(null)}
+            >
+              <Link href="/solutions" className={getLinkClass('/solutions')} onClick={handleDesktopDropdownClose}>
                 Solutions
               </Link>
 
               {/* Mega Menu */}
-              <div className="absolute top-20 left-0 w-full bg-white shadow-xl border-t border-gray-100 py-12 px-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div 
+                className={`absolute top-20 left-0 w-full bg-white shadow-xl border-t border-gray-100 py-12 px-6 transition-all duration-300 z-50 ${hoveredDesktopDropdown === 'solutions' ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+                onClick={handleDesktopDropdownClose}
+              >
                 <div className="max-w-[1200px] mx-auto grid grid-cols-12 gap-12">
                   {/* Left Column */}
                   <div className="col-span-4 pr-8">
@@ -225,10 +252,10 @@ export default function Navbar() {
 
           {/* Actions */}
           <div className="hidden lg:flex items-center gap-4 xl:gap-6 border-l border-gray-100 pl-4 xl:pl-8 ml-2">
-            <button className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-[#2F65E0] hover:bg-blue-50 transition-colors shadow-sm">
+            <a href="tel:+918770699454" className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-[#2F65E0] hover:bg-blue-50 transition-colors shadow-sm cursor-pointer">
               <Phone size={18} className="fill-[#2F65E0]" />
-            </button>
-            <Link href="#demo" className="px-7 py-2.5 bg-[#ffb916] border-2 border-[#ffb916] cursor-pointer text-white font-medium transition-all rounded shadow-sm hover:bg-transparent hover:border-[#154EA1] hover:text-[#154EA1]">
+            </a>
+            <Link href="/contact-us" className="px-7 py-2.5 bg-[#ffb916] border-2 border-[#ffb916] cursor-pointer text-white font-medium transition-all rounded shadow-sm hover:bg-transparent hover:border-[#154EA1] hover:text-[#154EA1]">
               Book a Demo
             </Link>
           </div>
@@ -286,7 +313,7 @@ export default function Navbar() {
 
           <Link href="/about-us" className="py-3 border-b border-gray-50 text-gray-800 font-medium" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
           <Link href="/contact-us" className="py-3 border-b border-gray-50 text-gray-800 font-medium" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
-          <Link href="#demo" className="mt-6 text-center px-7 py-3 bg-[#ffb916] border-2 border-[#ffb916] cursor-pointer text-white font-medium transition-all rounded shadow-sm hover:bg-transparent hover:border-[#154EA1] hover:text-[#154EA1]" onClick={() => setIsMobileMenuOpen(false)}>
+          <Link href="/contact-us" className="mt-6 text-center px-7 py-3 bg-[#ffb916] border-2 border-[#ffb916] cursor-pointer text-white font-medium transition-all rounded shadow-sm hover:bg-transparent hover:border-[#154EA1] hover:text-[#154EA1]" onClick={() => setIsMobileMenuOpen(false)}>
             Book a Demo
           </Link>
         </div>

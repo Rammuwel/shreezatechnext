@@ -24,7 +24,7 @@ export default function BlogsPage() {
     <div className="min-h-screen bg-white font-sans">
       
       {/* NovacTech Style Hero Section */}
-      <section className="bg-white py-10 md:py-16 px-6 border-b border-gray-100">
+      <section className="bg-white pt-24 pb-10 md:pt-28 md:pb-16 px-6 border-b border-gray-100">
         <div className="max-w-[1300px] mx-auto">
           
           {/* Breadcrumbs */}

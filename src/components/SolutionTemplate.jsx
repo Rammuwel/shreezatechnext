@@ -28,21 +28,16 @@ export default function SolutionTemplate({
     <div className="font-sans text-gray-800 selection:bg-[#ffb916] selection:text-white ">
 
       {/* 1. GLASSMORPHISM HERO SECTION */}
-      <section className="relative min-h-[450px] md:min-h-[600px] lg:h-[70vh] flex items-center justify-center overflow-hidden bg-[#040026]">
-        {/* Background Video or Image Layer */}
+      <section className="h-[60vh] min-h-[450px] w-full relative overflow-hidden bg-[#040026] flex items-center">
+
         <div className="absolute inset-0 z-0">
           <img src={hero.bgImage} alt="Hero Background" className="w-full h-full object-cover opacity-40 scale-105 animate-[pulse_20s_ease-in-out_infinite_alternate]" />
           <div className="absolute inset-0 bg-gradient-to-b from-[#040026]/80 via-transparent to-[#040026]"></div>
         </div>
 
-        {/* Abstract Geometry */}
-        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-[#0A3A7A] rounded-full mix-blend-screen filter blur-[120px] opacity-50 z-0 animate-pulse"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-[#ffb916] rounded-full mix-blend-screen filter blur-[120px] opacity-20 z-0"></div>
-
-        <div className="max-w-[1300px] mx-auto px-6 relative z-10 w-full pt-32 lg:pt-48 pb-24 flex flex-col lg:flex-row items-center gap-10 md:gap-16">
-          <div className="lg:w-3/5 text-left" data-aos="fade-right">
-
-            <h1 className="text-[24px] leading-[32px] md:text-[56px] lg:text-[75px] md:leading-[64px] font-normal mb-6 md:mb-8 text-white tracking-tight text-balance">
+        <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center pt-24 md:pt-32 relative z-10 w-full" data-aos="fade-right">
+          <div className="max-w-4xl">
+            <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance">
               {hero.title1} <br />
               <span className={`text-transparent bg-clip-text font-bold ${hero.title2Gradient || 'bg-gradient-to-r from-[#ffb916] to-[#00f2fe]'}`}>
                 {hero.title2}
@@ -51,13 +46,7 @@ export default function SolutionTemplate({
             <p className="text-[16px] leading-[26px] md:text-[20px] lg:text-[24px] font-light text-gray-300 mb-8 md:mb-12 max-w-2xl md:leading-relaxed text-balance">
               {hero.description}
             </p>
-            <div className="flex flex-wrap gap-6">
-              {hero.primaryButton && (
-                <Link href={hero.primaryButton.href} className="inline-flex items-center justify-center gap-2 bg-[#ffb916] text-[#0A3A7A] px-4 py-3 md:px-8 md:py-4 rounded-full font-bold hover:bg-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg w-full sm:w-auto text-sm md:text-base text-center">
-                  <span>{hero.primaryButton.text}</span> <ArrowRight size={20} className="shrink-0" />
-                </Link>
-              )}
-            </div>
+
           </div>
 
 
@@ -66,7 +55,7 @@ export default function SolutionTemplate({
 
       {/* 2. BREADCRUMB */}
       <div className={`w-full ${challenge ? 'bg-[#f8fbff]' : 'bg-white'} relative z-20 border-0 border-transparent outline-none shadow-none`}>
-        <div className="max-w-[1300px] mx-auto flex flex-col justify-start items-start md:flex-row md:justify-between md:items-center py-4 px-6 lg:px-12 gap-4">
+        <div className="max-w-[1300px] mx-auto flex flex-col justify-start items-start md:flex-row md:justify-between md:items-center py-2 px-6 lg:px-12 gap-4">
           <nav aria-label="Breadcrumb" className="flex flex-wrap items-center justify-start text-[13px] text-gray-500 font-medium">
             <Link href="/" className="hover:text-[#ffb916] transition-colors focus-visible:outline-none rounded px-1 -ml-1 flex items-center">
               <HomeIcon size={14} />
@@ -390,19 +379,7 @@ export default function SolutionTemplate({
         </section>
       )}
 
-      {/* 8. COMPLIANCE & INTEGRATIONS */}
-      {compliance && (
-        <section className="py-12 md:py-20 bg-gray-50 border-y border-gray-200 overflow-hidden">
-          <div className="max-w-[1300px] mx-auto px-6 lg:px-12 text-center">
-            <h4 className="text-gray-500 font-bold tracking-widest uppercase mb-10 text-sm">{compliance.title}</h4>
-            <div className="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-              {compliance.logos.map((logo, idx) => (
-                <img key={idx} src={logo} alt={`Partner ${idx}`} className="h-12 object-contain" />
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
+
 
       {/* 9. INTERACTIVE FAQ */}
       {faq && (

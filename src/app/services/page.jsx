@@ -180,7 +180,7 @@ export default function ServicesPage() {
           {services.map((service, index) => (
             <div
               key={service.id}
-              className="bg-white p-10 shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-gray-100 hover:shadow-xl hover:border-[#ffb916]/30 transition-all duration-300 group hover:-translate-y-1 flex flex-col h-full"
+              className="bg-white p-10 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-gray-100 hover:shadow-xl hover:border-[#ffb916]/30 transition-all duration-300 group hover:-translate-y-1 flex flex-col h-full"
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >

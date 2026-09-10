@@ -24,7 +24,7 @@ export async function POST(req) {
 
     // Create a transporter
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || 'smtp.gmail.com',
+      host: process.env.SMTP_HOST || 'smtp.hostinger.com',
       port: process.env.SMTP_PORT || 465,
       secure: true, 
       auth: {
@@ -37,7 +37,7 @@ export async function POST(req) {
     const adminMailOptions = {
       from: `"${firstName} ${lastName || ''}" <${process.env.SMTP_USER}>`, 
       replyTo: email,
-      to: process.env.SMTP_USER,
+      to: 'info@shreezatech.com',
       subject: `🔥 New Lead from Website: ${firstName} ${lastName || ''}`,
       html: `
         <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; padding: 40px 0; margin: 0;">

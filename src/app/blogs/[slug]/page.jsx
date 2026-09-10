@@ -28,7 +28,7 @@ export default async function BlogPostPage({ params }) {
   const trendingBlogs = blogs.filter(b => b.slug !== blog.slug).slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-white font-sans py-10 md:py-16 px-6 border-t border-gray-100">
+    <div className="min-h-screen bg-white font-sans pt-24 pb-10 md:pt-28 md:pb-16 px-6 border-t border-gray-100">
       
       <div className="max-w-[1300px] mx-auto flex flex-col lg:flex-row gap-16">
         

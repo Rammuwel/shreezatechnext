@@ -25,16 +25,16 @@ export default function ServiceTemplate({
     <div className="font-sans text-gray-800 selection:bg-[#ffb916] selection:text-white">
 
       {/* 1. HERO SECTION */}
-      <section className="min-h-[450px] md:min-h-[600px] lg:h-[70vh] w-full relative overflow-hidden bg-[#040026] flex items-center">
+      <section className="h-[60vh] min-h-[450px] w-full relative overflow-hidden bg-[#040026] flex items-center">
+
         <div className="absolute inset-0 z-0">
           <img src={hero.slides?.[0]?.image || hero.bgImage} alt="Hero Background" className="w-full h-full object-cover opacity-50 mix-blend-overlay" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#040026] via-[#040026]/80 to-transparent"></div>
         </div>
 
-        <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center pt-32 md:pt-48 relative z-10 w-full">
-          <div className="max-w-4xl" data-aos="fade-right">
-
-            <h1 className="text-[24px] leading-[32px] md:text-[56px] md:leading-[64px] font-normal mb-4 md:mb-6 text-white text-balance">
+        <div className="max-w-[1300px] mx-auto px-6 h-full flex flex-col justify-center pt-24 md:pt-32 relative z-10 w-full" data-aos="fade-right">
+          <div className="max-w-4xl">
+            <h1 className="text-[40px] leading-[56px] font-normal mb-6 text-white text-balance">
               {hero.slides?.[0]?.title1 || hero.title1} <br />
               <span className={hero.slides?.[0]?.title2Gradient || hero.title2Gradient || "text-[#ffb916] font-normal"}>
                 {hero.slides?.[0]?.title2 || hero.title2}
